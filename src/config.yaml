@@ -1,0 +1,14 @@
+#### Configuration
+DEBUG: False
+batch_size: 64
+
+# PATHS
+train_path: ../data/knnw_en.log_spectrogram.npy
+train_labels: ../data/knnw_en.log_spectrogram.npy
+# val_path: /home/gman/785/hw2p2/data/val_data/
+# test_path: /home/gman/785/hw2p2/data/test_data/
+# verify_path: /home/gman/785/hw2p2/data/verification_data/
+# classify_out_path: /home/gman/785/hw2p2/results/classify/
+# verify_out_path: /home/gman/785/hw2p2/results/verify/
+# ray_results_dir: /home/gman/785/hw2p2/ray_results/
+# checkpoints_path: /home/gman/785/hw2p2/checkpoints/
