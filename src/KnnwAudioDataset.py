@@ -43,7 +43,6 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         subtitle_item = self.subtitle_lookup.iloc[i, 3]
         subtitle_item = self.get_tokenization(subtitle_item)
         
-        # audio_item = torch.tensor(audio_item, dtype=torch.float32)
         return audio_item, subtitle_item
         
     def get_index(self, time, start_flag):
