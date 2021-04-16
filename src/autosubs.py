@@ -45,8 +45,6 @@ def split_into_val_train():
         np.random.seed(cfg['random_seed_split'])
         np.random.shuffle(indices)
     train_indices, val_indices = indices[split:], indices[:split]
-    print("train_indices", train_indices[:10])
-    print("val_indices", val_indices[:10])
     # Creating PT data samplers and loaders:
     train_sampler = SubsetRandomSampler(train_indices)
     valid_sampler = SubsetRandomSampler(val_indices)
@@ -61,7 +59,6 @@ train_loader, val_loader = split_into_val_train()
 dataset = train_loader.dataset
 print("Number of subtitles in train", len(train_loader))
 print("Number of subtitles in val", len(val_loader))
-
 print("Train Data example:", next(iter(dataset)), sep="\n")
 
 
