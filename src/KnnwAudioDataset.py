@@ -5,11 +5,6 @@ import torch
 
 
 
-print("Subtitle Lookup Preview:")
-pandas.read_table("../../datasets/knnw/knnw_en_sub.csv", sep = ";", header=0).head()
-
-print("Audio Shape:")
-numpy.load("../../datasets/knnw/knnw_en.spectrogram.npy").shape
 
 class KnnwAudioDataset(torch.utils.data.Dataset):
     
@@ -33,6 +28,14 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         return self.length
     
     def __getitem__(self, i):
+        """getitem for Knnw
+
+        Args:
+            i (int): index
+
+        Returns:
+            [type]: [description]
+        """
         
         start_time = self.subtitle_lookup.iloc[i, 1]
         stop_time = self.subtitle_lookup.iloc[i, 2]
@@ -47,7 +50,15 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         return audio_item, subtitle_item
         
     def get_index(self, time, start_flag):
-        
+        """gets index from timestamp
+
+        Args:
+            time (number): timestamp
+            start_flag (boolean): floor or ceil rounding
+
+        Returns:
+            [type]: [description]
+        """
         if start_flag == True:
             return numpy.floor(time/self.duration_per_frame)
         
@@ -55,7 +66,15 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
             return numpy.ceil(time/self.duration_per_frame)
         
     def get_range(self, start_time, end_time):
-        
+        """get_range
+
+        Args:
+            start_time (number): start time 
+            end_time (number)): end time
+
+        Returns:
+            [type]: all data items inside the range
+        """
         start_index = self.get_index(start_time, start_flag=True)
         stop_index  = self.get_index(end_time, start_flag=False)
         
