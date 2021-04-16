@@ -2,17 +2,13 @@ import pandas
 import numpy
 import torch
 
-
-
-
-
 class KnnwAudioDataset(torch.utils.data.Dataset):
     
     def __init__(self, 
                  audio_path,
                  subtitle_lookup_path,
-                 total_frames=TOTAL_FRAMES, 
-                 total_duration=TOTAL_DURATION):
+                 total_frames, 
+                 total_duration):
         
         self.duration_per_frame = total_duration / total_frames
         
@@ -47,6 +43,7 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         subtitle_item = self.subtitle_lookup.iloc[i, 3]
         subtitle_item = self.get_tokenization(subtitle_item)
         
+        # audio_item = torch.tensor(audio_item, dtype=torch.float32)
         return audio_item, subtitle_item
         
     def get_index(self, time, start_flag):
@@ -83,5 +80,3 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
     def get_tokenization(self, subtitle_item):
         
         return subtitle_item
-
-dataset = KnnwAudioDataset()
