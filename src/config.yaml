@@ -1,10 +1,17 @@
 #### Configuration
 DEBUG: False
-batch_size: 64
+batch_size: 1
+num_workers: 8
+pin_memory: True
+train_shuffle: True
+val_shuffle: False
+validation_split: 0.2
+shuffle_dataset_split: True
+random_seed_split: 42
 
 # PATHS
 train_path: ../data/knnw_en.log_spectrogram.npy
-train_labels: ../data/knnw_en.log_spectrogram.npy
+train_labels: ../data/knnw_en_sub.csv
 # val_path: /home/gman/785/hw2p2/data/val_data/
 # test_path: /home/gman/785/hw2p2/data/test_data/
 # verify_path: /home/gman/785/hw2p2/data/verification_data/
