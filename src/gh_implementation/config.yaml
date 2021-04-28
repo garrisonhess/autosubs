@@ -1,0 +1,87 @@
+#### Configuration
+DEBUG: False
+VAL: False
+TOY_DATA: False
+threshold: 100
+experiment_name: exp
+num_workers: 6
+amp: False
+pin_memory: True
+train_shuffle: True
+val_shuffle: False
+device: "cuda:0"
+run_inference: False
+input_dim: 40
+update_freq: 24
+channels_last: False
+val_workers: 4
+val_batch_size: 32
+min_tf: 0.25
+grad_clip: 2.0
+
+# ray
+experiment_name: exp
+verbosity: 3
+
+# ASHA
+epochs: 200
+grace_period: 200
+reduction_factor: 2
+brackets: 1
+num_samples: 1
+
+# architectural parameters
+enc_h: [256]
+dec_h: [512]
+embed_dim: [256]
+attn_dim: [128]
+conv_channels: [32]
+enc_dropout: [0.3]
+dec_dropout: [0.3]
+use_multihead: [False]
+nheads: [1]
+spec_augment: [True]
+lock_drop: [False]
+encoder_arch: 
+        - [conv_extractor, lstm, lstm, lstm, lstm, lstm, lstm]
+
+
+# hyperparameters
+onecyclelr: [False]
+lr: [0.001]
+weight_decay: [0.000005]
+gamma: [0.5]
+batch_size: [64]
+lr_step: [30]
+
+
+# transfer learning configuration
+warmup_epochs: 0
+pretrained_decoder: True
+pretrained_full: False
+warmup_zero_context: True
+decoder_ckpt_path: ~/hw4p2/decoder_ckpts/decoder-2021-04-24-02-5851-epoch10-dist524-train_model_22c3b_00000.pth
+full_ckpt_path: ~/hw4p2/full_ckpts/full-2021-04-27-22-4054-epoch11-dist491-inner_7666c_00000.pth
+
+
+# schedules
+tf_init: 0.90
+tf_drop_every: 10
+tf_drop: 0.05
+
+
+# PATHS
+train_path: ~/hw4p2/data/train.npy
+train_transcripts_path: ~/hw4p2/data/train_transcripts.npy
+val_path: ~/hw4p2/data/dev.npy
+val_transcripts_path: ~/hw4p2/data/dev_transcripts.npy
+test_path: ~/hw4p2/data/test.npy
+results_path: ~/hw4p2/results/
+ray_results_dir: ~/hw4p2/ray_logs/
+checkpoints_path: ~/hw4p2/checkpoints/
+decoder_ckpt_dir: ~/hw4p2/decoder_ckpts/
+debug_train_path: ~/hw4p2/data/debug/train.npy
+debug_train_transcripts_path: ~/hw4p2/data/debug/train_transcripts.npy
+debug_val_path: ~/hw4p2/data/debug/dev.npy
+debug_val_transcripts_path: ~/hw4p2/data/debug/dev_transcripts.npy
+plot_path: ~/hw4p2/plots/
