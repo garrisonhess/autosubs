@@ -17,7 +17,7 @@ class GLSTM(nn.Module):
     '''
     Pyramidal BiLSTM
     '''
-    def __init__(self, input_size, hidden_size, dropout_prob, pyramidal):
+    def __init__(self, input_size, hidden_size, dropout_prob, pyramidal, proj_size):
         super(GLSTM, self).__init__()
         self.pyramidal = pyramidal
         if pyramidal:
@@ -28,8 +28,20 @@ class GLSTM(nn.Module):
                             , num_layers=1
                             , bidirectional=True
                             , batch_first=True
-                            , bias=True)
-        self.dropout = nn.Dropout(p=dropout_prob)
+                            , bias=True
+                            , proj_size=proj_size)
+
+        if cfg['lock_drop'][0]:
+            self.dropout = LockedDropout(p=dropout_prob)
+        else:
+            self.dropout = nn.Dropout(p=dropout_prob)
+
+        if proj_size > 0:
+            norm_size = 2 * proj_size
+        else:
+            norm_size = 2 * hidden_size
+        
+        self.norm = nn.LayerNorm(norm_size) if cfg['enc_ln'] else nn.Identity()
 
     def forward(self, x, curr_lengths):
         if self.pyramidal:
@@ -37,6 +49,7 @@ class GLSTM(nn.Module):
         packed = pack_padded_sequence(x, curr_lengths, enforce_sorted=False, batch_first=True)
         packed, _ = self.lstm(packed)
         unpacked, _ = pad_packed_sequence(packed, batch_first=True)
+        unpacked = self.norm(unpacked)
         unpacked = self.dropout(unpacked)
         return unpacked, curr_lengths
 
@@ -102,30 +115,21 @@ class ConvExtractor(nn.Module):
         self.relu2 = nn.ReLU(inplace=True)
         self.pool2 = nn.MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=(1, 0))
 
-    # always outputs unpacked in (batch_size, seq_len, out_channels * feat_dim)
     def forward(self, x, input_lengths):
-        curr_lengths = input_lengths
-        # print(f"IN SIZE{x.size()}")
-        # print(f"curr_lengths {curr_lengths}")
         # data comes into a convblock unpacked as (batch_size, seq_len, 40)
         # comes out as (batch_size, seq_len, 40 * out_channels)
+        curr_lengths = input_lengths
         x = x.unsqueeze(1)
         out = self.conv1(x)
         out = self.norm1(out)
         out = self.relu1(out)
-        # print(f"PRE pool 1 shape {out.size()}")
         out = self.pool1(out)
-        # print(f"after pool 1 shape {out.size()}")
         out = self.conv2(out)
         out = self.norm2(out)
         out = self.relu2(out)
-        # print(f"PRE pool 2 shape {out.size()}")
         out = self.pool2(out)
-        # print(f"after pool 2 shape {out.size()}")
         out = out.transpose(1, 2).flatten(2)
-        # print(f"FINAL SIZE: {out.size()}")
         curr_lengths = curr_lengths // 4
-        # print(f"FINAL curr_lengths: {curr_lengths}")
         return out, curr_lengths
 
 
@@ -151,3 +155,26 @@ class SELayer(nn.Module):
         out = self.fc(out).view(batch_size, channels, 1, 1)
         return initial_input * out.expand(initial_input.size())
 
+
+
+class LockedDropout(nn.Module):
+    def __init__(self, p=0.5):
+        self.p = p
+        super().__init__()
+
+    def forward(self, x):
+        """
+        Args:
+            x (:class:`torch.FloatTensor` [sequence length, batch size, rnn hidden size]): Input to
+                apply dropout too.
+        """
+        if not self.training or not self.p:
+            return x
+        x = x.transpose(0, 1)
+        x = x.clone()
+        mask = x.new_empty(1, x.size(1), x.size(2), requires_grad=False).bernoulli_(1 - self.p)
+        mask = mask.div_(1 - self.p)
+        mask = mask.expand_as(x)
+        out = x * mask
+        out = out.transpose(0, 1)
+        return out

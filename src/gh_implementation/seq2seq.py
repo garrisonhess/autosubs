@@ -1,7 +1,6 @@
 from setup import *
 from encoder import Encoder
 from decoder import Decoder
-from lockdrop import *
 
 class Seq2Seq(nn.Module):
     '''

@@ -1,10 +1,11 @@
 from setup import *
 from preprocess import *
 
-def spec_augment(X, max_freq_mask=14, max_time_mask=120, nfreq_masks=2, ntime_masks=2):
+def spec_augment(X, max_freq_mask=14, max_time_mask=120, nfreq_masks=1, ntime_masks=1, max_time_pct=0.2):
 
     time_steps = X.shape[0]
     freq_dim = X.shape[1]
+    time_mask_cap = min(max_time_pct * time_steps, max_time_mask)
 
     # frequency masking
     for i in range(nfreq_masks):
@@ -14,7 +15,7 @@ def spec_augment(X, max_freq_mask=14, max_time_mask=120, nfreq_masks=2, ntime_ma
 
     # time masking
     for i in range(ntime_masks):
-        mask_dim = np.random.randint(low=0, high=max_time_mask)
+        mask_dim = np.random.randint(low=0, high=time_mask_cap)
         mask_start = random.randint(0, time_steps - mask_dim)
         X[mask_start:mask_start + mask_dim, :] = 0
 
@@ -25,18 +26,13 @@ class ASRDataset(Dataset):
     def __init__(self, X_path, Y_path="", transforms=None):
         self.X = np.load(X_path, allow_pickle=True, encoding='bytes')
         self.transforms=transforms
-
-        # sort all the X's by sequence length ascending
-        x_lengths = [self.X[i].shape[0] for i in range(self.X.shape[0])]
-        sorted_idxs = np.argsort(x_lengths, axis=-1, kind=None, order=None)
-        self.X = self.X[sorted_idxs]
+        print(f"transforms: {self.transforms}")
 
         # sort the y's correspondingly
         self.Y = None
         if Y_path != "":
             raw_train_transcript = np.load(Y_path, allow_pickle=True, encoding='bytes')
             self.Y = np.array(transform_letter_to_index(raw_train_transcript, debug=False), dtype=object)
-            self.Y = self.Y[sorted_idxs]
 
     def __len__(self):
         return self.X.shape[0]

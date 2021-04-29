@@ -4,7 +4,6 @@ LETTER_LIST = ['<PAD>', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', '
 
 
 def create_dictionaries(letter_list):
-
     index2letter = dict()
     letter2index = dict()
     for idx, letter in enumerate(letter_list):

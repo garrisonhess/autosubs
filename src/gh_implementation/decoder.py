@@ -1,7 +1,7 @@
 from setup import *
 from attention import Attention
 from preprocess import *
-from lockdrop import *
+from layers import *
 
 class Decoder(nn.Module):
     '''
@@ -40,9 +40,12 @@ class Decoder(nn.Module):
         
         self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
         self.fc = nn.Linear(2 * key_value_size, vocab_size, bias=True)
-        self.embedding.weight = self.fc.weight
+        if cfg['weight_tying']:
+            self.embedding.weight = self.fc.weight
         self.dropout1 = nn.Dropout(p=dec_dropout_prob)
         self.dropout2 = nn.Dropout(p=dec_dropout_prob)
+        self.norm1 = nn.LayerNorm(decoder_hidden_dim) if cfg['dec_ln'] else nn.Identity()
+        self.norm2 = nn.LayerNorm(key_value_size) if cfg['dec_ln'] else nn.Identity()
 
 
 
@@ -62,14 +65,17 @@ class Decoder(nn.Module):
             max_target_len = targets.size(1)
             embeddings = self.embedding(targets)
         else:
-            max_target_len = 600
+            max_target_len = 250
         
         # prepare variables for decoding loop
         mask = torch.arange(max_encoded_seq_len).unsqueeze(0).to(device) >= encoded_seq_lens.unsqueeze(1).to(device, non_blocking=True)
         all_preds = []
         curr_preds = torch.zeros(batch_size, 1).to(device, non_blocking=True)
         attentions = np.zeros((max_encoded_seq_len, max_target_len))
-        context = value[:, 0, :]
+        if mode == 'warmup':
+            context = torch.zeros((batch_size, self.key_value_size), device=device)
+        else:
+            context = value[:, 0, :]
 
         lstm1_hidden = None
         lstm1_cell = None
@@ -82,6 +88,7 @@ class Decoder(nn.Module):
                     init_char = torch.zeros(batch_size, dtype=torch.long, device=device).fill_(letter2index['<SOS>'])
                     char_embed = self.embedding(init_char)
                 else:
+                    # print(f"tf target: {index2letter[targets[:, seq_idx - 1][0].item()]}, model pred: {index2letter[curr_preds.argmax(dim=-1)[0].item()]}")
                     char_embed = embeddings[:, seq_idx - 1, :]
             else:
                 char_idx = torch.zeros(batch_size, dtype=torch.long, device=device).fill_(letter2index['<SOS>']) if seq_idx == 0 else curr_preds.argmax(dim=-1)
@@ -92,13 +99,16 @@ class Decoder(nn.Module):
             # inputs: input, (h_0, c_0)
             if lstm1_hidden is not None:
                 lstm1_hidden, lstm1_cell = self.lstm1(y_context, (lstm1_hidden, lstm1_cell))
+                lstm1_hidden = self.norm1(lstm1_hidden)
                 lstm1_hidden = self.dropout1(lstm1_hidden)
                 lstm2_hidden, lstm2_cell = self.lstm2(lstm1_hidden, (lstm2_hidden, lstm2_cell))
             else:
                 lstm1_hidden, lstm1_cell = self.lstm1(y_context)
+                lstm1_hidden = self.norm1(lstm1_hidden)
                 lstm1_hidden = self.dropout1(lstm1_hidden)
                 lstm2_hidden, lstm2_cell = self.lstm2(lstm1_hidden)
 
+            lstm2_hidden = self.norm2(lstm2_hidden)
             lstm2_hidden = self.dropout2(lstm2_hidden)
 
             # multihead attention
@@ -111,20 +121,21 @@ class Decoder(nn.Module):
             # print(f"value size {value.size()}")
             # print(f"mask size {mask.size()}")
             # Get context from the output of the second LSTM Cell (attention vector size (encoded_seq_lens))
-            if self.use_multihead:
-                context, _ = self.attention(query=lstm2_hidden.unsqueeze(0)
-                                            , key=key.transpose(0, 1)
-                                            , value=value.transpose(0, 1)
-                                            , key_padding_mask=mask
-                                            , need_weights=False
-                                            , attn_mask=None
-                                            )
-                context = context.squeeze(0)
-            else:
-                context, _ = self.attention(query=lstm2_hidden
-                                            , key=key
-                                            , value=value
-                                            , mask=mask)
+            if mode != 'warmup':
+                if self.use_multihead:
+                    context, _ = self.attention(query=lstm2_hidden.unsqueeze(0)
+                                                , key=key.transpose(0, 1)
+                                                , value=value.transpose(0, 1)
+                                                , key_padding_mask=mask
+                                                , need_weights=False
+                                                , attn_mask=None
+                                                )
+                    context = context.squeeze(0)
+                else:
+                    context, attentions[:, seq_idx] = self.attention(query=lstm2_hidden
+                                                , key=key
+                                                , value=value
+                                                , mask=mask)
 
             final_out = torch.cat([lstm2_hidden, context], dim=1)
 

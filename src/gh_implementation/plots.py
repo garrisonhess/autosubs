@@ -3,9 +3,9 @@ from setup import *
 
 
 def plot_attention(epoch_attentions, epoch):
-    attn_plot_size = 64
-    attention = np.zeros((attn_plot_size, attn_plot_size))
-    attention = epoch_attentions[0]
+    attn_plot_size = 32
+    attention = np.array(epoch_attentions[-1])
+    attention = attention[:attn_plot_size, :attn_plot_size]
     plt.clf()
     sns_plot = sns.heatmap(attention, cmap="GnBu")
     plt.title('Decoder Time vs Attention Magnitude', fontsize=12)

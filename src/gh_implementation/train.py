@@ -13,13 +13,16 @@ def train_model(config, **kwargs):
     transforms = None
     if cfg['spec_augment']:
         transforms = spec_augment
+    
     train_dataset = ASRDataset(train_path, train_transcripts_path, transforms=transforms)
     val_dataset = ASRDataset(val_path, val_transcripts_path)
+    if cfg['minival']:
+        val_dataset = torch.utils.data.Subset(val_dataset, [x for x in range(cfg['threshold'])])
 
     if cfg['DEBUG']:
         print(f"debug mode, using subsets of size {cfg['threshold']}")
-        train_dataset = torch.utils.data.Subset(val_dataset, [x for x in range(cfg['threshold'])])
-        val_dataset = torch.utils.data.Subset(val_dataset, [x for x in range(cfg['threshold'])])
+        train_dataset = torch.utils.data.Subset(train_dataset, [x for x in range(cfg['threshold'])])
+        val_dataset = torch.utils.data.Subset(train_dataset, [x for x in range(cfg['threshold'])])
     
     train_loader = DataLoader(train_dataset
                             , batch_size=config['batch_size']
@@ -84,7 +87,6 @@ def train_model(config, **kwargs):
     warmup_epochs = cfg['warmup_epochs']
     # disable encoder training during warmup
     model.encoder.requires_grad_(requires_grad=False)
-    scaler = torch.cuda.amp.GradScaler(enabled=True)
 
     for epoch in range(1, cfg['epochs'] + 1):
         if epoch > warmup_epochs and mode == 'warmup':
@@ -110,9 +112,9 @@ def train_model(config, **kwargs):
                                                     , cfg['amp']
                                                     , cfg['DEBUG']
                                                     , teacher_forcing
-                                                    , scaler)
+                                                    , scaler=None)
         
-        eval_lev_dist = eval(model, val_loader, criterion, epoch, device)
+        eval_lev_dist = eval(model, val_loader, criterion, epoch, device, warmup=(mode == 'warmup'))
 
         # Update Ray Tune
         tune.report(train_loss=train_loss, eval_lev_dist=eval_lev_dist)
@@ -169,61 +171,48 @@ def train(model, mode, warmup_epochs, config, train_loader, optimizer, criterion
         max_target_len = targets.size(1)
         assert(max_seq_len == max(input_lengths))
         assert(max_target_len == max(target_lengths))
+
         optimizer.zero_grad()
-
-
 
 
         # outputs come out as (batch_size, max_target_length, classes)
         if mode == 'warmup':
             # kv dims: (B, T, key_value_size)
-            time_downsample = 1 if cfg['DEBUG'] and cfg['TOY_DATA'] else 8
-            key = torch.rand(size=(batch_size, max_seq_len // time_downsample, cfg['attn_dim'][0]), dtype=torch.float32, device=device)
-            value = torch.rand(size=(batch_size, max_seq_len // time_downsample, cfg['attn_dim'][0]), dtype=torch.float32, device=device)
+            time_downsample = 8
+            key = torch.zeros(size=(batch_size, max_seq_len // time_downsample, cfg['attn_dim'][0]), dtype=torch.float32, device=device)
+            value = torch.zeros(size=(batch_size, max_seq_len // time_downsample, cfg['attn_dim'][0]), dtype=torch.float32, device=device)
             encoded_seq_lens = torch.tensor([z // time_downsample for z in input_lengths], dtype=torch.long)
             outputs, batch_attentions = model.decoder(key=key
-                                    , value=value
-                                    , encoded_seq_lens=encoded_seq_lens
-                                    , device=device
-                                    , teacher_forcing=teacher_forcing
-                                    , targets=targets
-                                    , mode='warmup'
-                                    )
+                                                    , value=value
+                                                    , encoded_seq_lens=encoded_seq_lens
+                                                    , device=device
+                                                    , teacher_forcing=teacher_forcing
+                                                    , targets=targets
+                                                    , mode='warmup'
+                                                    )
         else:
-
-            with torch.cuda.amp.autocast(enabled=True):
-                outputs, batch_attentions = model(inputs=inputs
-                                                , input_lengths=input_lengths
-                                                , teacher_forcing=teacher_forcing
-                                                , device=device
-                                                , targets=targets
+            outputs, batch_attentions = model(inputs=inputs
+                                            , input_lengths=input_lengths
+                                            , teacher_forcing=teacher_forcing
+                                            , device=device
+                                            , targets=targets
                                                 , mode='train')
         
         epoch_attentions.append(batch_attentions)
         outputs = pack_padded_sequence(outputs, target_lengths, batch_first=True, enforce_sorted=False)
         targets = pack_padded_sequence(targets, target_lengths, batch_first=True, enforce_sorted=False)
 
-
-
-
-
         # Calculate the loss and mask it to remove the padding part
         loss = criterion(outputs.data, targets.data).sum()
         loss /= batch_size
-        # loss.backward()
+        loss.backward()
 
+        grad = torch.nn.utils.clip_grad_norm_(model.parameters(), cfg['grad_clip'])
+        if math.isnan(grad):
+            print(f"exploding gradient: {grad}")
+        else:
+            optimizer.step()
 
-
-        scaler.scale(loss).backward()
-        scaler.step(optimizer)
-        scaler.update()
-
-
-        # grad = torch.nn.utils.clip_grad_norm_(model.parameters(), cfg['grad_clip'])
-        # if math.isnan(grad):
-        #     print(f"exploding gradient {grad}")
-        # else:
-        #     optimizer.step()
 
         # log progress
         batch_index += 1
@@ -240,7 +229,7 @@ def train(model, mode, warmup_epochs, config, train_loader, optimizer, criterion
         # update statistics
         running_loss += float(loss.item())
     
-    # plot_attention(epoch_attentions, epoch)
+    plot_attention(epoch_attentions, epoch)
     train_loss = running_loss / len(train_loader.dataset)
     if mode != 'warmup':
         lr_scheduler.step()
@@ -250,13 +239,16 @@ def train(model, mode, warmup_epochs, config, train_loader, optimizer, criterion
 
 
 
-def eval(model, val_loader, criterion, epoch, device, peek=False):
+def eval(model, val_loader, criterion, epoch, device, peek=False, warmup=False):
 
     model.eval()
     torch.set_grad_enabled(False)
     running_loss = 0.
     running_lev_dist = 0.
     ctr = 0
+    mode = 'val'
+    if warmup:
+        mode = 'warmup'
 
     for inputs, targets, input_lengths, target_lengths in val_loader:
         assert(targets.size(0) == len(input_lengths))
@@ -274,7 +266,7 @@ def eval(model, val_loader, criterion, epoch, device, peek=False):
         assert(max_target_len == max(target_lengths))
 
         # outputs come out as (batch_size, max_target_length, classes)
-        outputs, _ = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode='val')
+        outputs, _ = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
         output_paths = []
         for batch_idx, output in enumerate(outputs):
             seq = ''
