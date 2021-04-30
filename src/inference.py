@@ -49,8 +49,8 @@ test_loader = DataLoader(test_dataset, batch_size=128, shuffle=False, num_worker
 # validate model before inference
 eval_lev_dist = eval(model1, val_loader, criterion=nn.CrossEntropyLoss(), epoch=0, device=device, peek=False)
 print(f"Evaluation Levenshtein Distance: {eval_lev_dist}")
-
-
+# eval_lev_dist, eval_beam_lev_dist = eval_beam(model1, val_loader, criterion=nn.CrossEntropyLoss(), epoch=0, device=device, peek=False)
+# print(f"Evaluation Levenshtein Distance: {eval_lev_dist}, Beam Lev Distance: {eval_beam_lev_dist}")
 
 
 
@@ -60,10 +60,9 @@ preds = []
 # perform inference
 for inputs, input_lengths in test_loader:
     inputs = inputs.to(device, non_blocking=True)
-    batch_size = inputs.size()[0]
-    max_seq_len = inputs.size()[3]
+    batch_size = inputs.size(0)
+    max_seq_len = inputs.size(1)
     assert(max_seq_len == max(input_lengths))
-    # input_lengths = torch.tensor(input_lengths, dtype=torch.long)
 
     # outputs come out as (batch_size, max_target_length, classes)
     outputs, _ = model1(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=None, mode='val')

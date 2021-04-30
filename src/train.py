@@ -14,24 +14,8 @@ def train_model(config, **kwargs):
     if cfg['spec_augment']:
         transforms = spec_augment
     
-
-    #####  SET THE KNNW VARIABLES HERE
-    #####  CREATE NEW CONFIG FIELDS FOR PATHS
-    if cfg['dataset'] == "KNNW":
-        train_dataset = KnnwAudioDataset(audio_path=None
-                                        , subtitle_lookup_path=None
-                                        , total_frames=None
-                                        , total_duration=None)
-        val_dataset = KnnwAudioDataset(audio_path=None
-                                    , subtitle_lookup_path=None
-                                    , total_frames=None
-                                    , total_duration=None)
-    else:
-        train_dataset = ASRDataset(train_path, train_transcripts_path, transforms=None)
-        val_dataset = ASRDataset(val_path, val_transcripts_path)
-
-
-
+    train_dataset = ASRDataset(train_path, train_transcripts_path, transforms=transforms)
+    val_dataset = ASRDataset(val_path, val_transcripts_path)
     if cfg['minival']:
         val_dataset = torch.utils.data.Subset(val_dataset, [x for x in range(cfg['threshold'])])
 
@@ -329,3 +313,4 @@ def eval(model, val_loader, criterion, epoch, device, peek=False, warmup=False):
     lev_dist = running_lev_dist / len(val_loader.dataset)
 
     return lev_dist
+
