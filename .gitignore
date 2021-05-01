@@ -6,8 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
-data/
-checkpoints/
+data/*.zip
+data/*.wav
+data/*.npy
+checkpoints/*.pth
 zips/
 
 
