@@ -1,0 +1,6102 @@
+﻿1,None,
+00:00:01,650 --> 00:00:10,800
+TOHO CORPORATION
+
+2,Mitsuha
+00:00:53,940 --> 00:00:58,090
+Some mornings, I wake up crying
+without knowing why.
+
+3,Mitsuha
+00:00:58,700 --> 00:01:01,440
+That's when everything happens
+now and again.
+
+4,Taki
+00:01:02,060 --> 00:01:06,540
+Whatever that dream was I had,
+I can never remember it.
+
+5,Taki+Mitsuha
+00:01:06,540 --> 00:01:09,550
+- But...
+- But...
+
+6,Mitsuha
+00:01:09,550 --> 00:01:12,190
+the only thing that
+does last when I wake up
+
+7, Mitsuha
+00:01:12,190 --> 00:01:14,190
+is a sense of loss,
+
+8, Mitsuha
+00:01:14,560 --> 00:01:17,190
+which lingers for a long time afterwards.
+
+9,Taki
+00:01:23,850 --> 00:01:26,700
+I'm always searching for something
+
+10,Taki
+00:01:26,700 --> 00:01:28,700
+or someone.
+
+11,Mitsuha
+00:01:28,750 --> 00:01:31,090
+Mitsuha: I've been consumed by this feeling...
+
+12,Mitsuha
+00:01:31,920 --> 00:01:34,090
+ever since that day.
+
+13,Taki
+00:01:35,040 --> 00:01:38,910
+Taki: The day... a star fell.
+
+14,Taki
+00:01:38,910 --> 00:01:40,460
+It was almost like...
+
+15,Mitsuha
+00:01:40,460 --> 00:01:42,450
+-like seeing something out of a dream.
+
+16,Mitsuha
+00:01:43,760 --> 00:01:46,450
+Nothing more or less...
+
+17,Mitsuha+Taki
+00:01:46,460 --> 00:01:48,400
+- than a breathtaking view.
+- than a breathtaking view.
+
+18,Band
+00:01:48,970 --> 00:01:54,430
+Ah, if only our voices speak at night
+
+19,Band
+00:01:54,430 --> 00:01:58,100
+could ever reach the very
+edge of this world
+
+20,Band
+00:01:58,100 --> 00:01:59,610
+and of time
+
+21,Band
+00:01:59,910 --> 00:02:04,790
+instead of fading into air and dust.
+
+22,Band
+00:02:04,790 --> 00:02:07,840
+Then what will the words, could it ever be
+
+23,Band
+00:02:07,840 --> 00:02:10,540
+farthest words from "probably"?
+
+24,Band
+00:02:10,550 --> 00:02:13,050
+Let's make a promise that will never fade.
+
+25,Band
+00:02:13,050 --> 00:02:16,830
+Let's say it together on
+the count of three, oh.
+
+26,Band
+00:02:27,750 --> 00:02:30,960
+Ah, I'm told that some part of
+every wish will be heard,
+
+27,Band
+00:02:30,960 --> 00:02:33,730
+but lately I've lost sight of
+the truth in those words.
+
+28,Band
+00:02:33,730 --> 00:02:36,980
+I can't even remember when
+I gave up believing.
+
+29,Band
+00:02:36,980 --> 00:02:38,550
+What could have been the reason?
+
+30,Band
+00:02:38,550 --> 00:02:41,870
+Ah, the very moment that the rain will stop
+
+31,Band
+00:02:41,870 --> 00:02:44,410
+in the place rainbow born and dies.
+
+32,Band
+00:02:44,410 --> 00:02:46,350
+And where the end of this life lies,
+
+33,Band
+00:02:46,350 --> 00:02:50,020
+I've always been insisting there was
+something that I've longing for.
+
+34,Band
+00:02:54,610 --> 00:02:59,990
+One day we'll reach to emotions
+unexplored, unprecedented.
+
+35,Band
+00:02:59,990 --> 00:03:04,720
+We'll high-five love we've yet to
+discover and give a kiss to time.
+
+36,Band
+00:03:04,720 --> 00:03:07,380
+The five dimensions keeps on teasing me,
+
+37,Band
+00:03:07,380 --> 00:03:10,440
+but I will keep on looking at you, dear.
+
+38,Band
+00:03:10,440 --> 00:03:14,770
+Let's make a sign for when we
+say "nice to meet you" again.
+
+39,Band
+00:03:16,290 --> 00:03:17,660
+I'm on my way to you,
+
+40,Band
+00:03:17,660 --> 00:03:20,610
+chasing after your name.
+
+41,Mitsuha
+00:03:44,120 --> 00:03:46,140
+Taki...
+
+42,Mitsuha
+00:03:46,140 --> 00:03:47,890
+Taki.
+
+43,Mitsuha
+00:03:47,890 --> 00:03:49,900
+Taki!
+
+44,Mitsuha
+00:03:50,660 --> 00:03:52,270
+Don't you remember?
+
+45,Mitsuha
+00:03:55,290 --> 00:03:58,330
+My name is...
+
+46,Mitsuha
+00:03:58,330 --> 00:03:59,020
+Mitsuha!
+
+47,Yotsuha
+00:04:35,200 --> 00:04:38,010
+Sis, what are you... doing?
+
+48,Mitsuha
+00:04:38,030 --> 00:04:41,390
+Whoa, they're so realistic-feeling...
+
+49,Yotsuha
+00:04:42,200 --> 00:04:43,110
+"Sis"?
+
+50,Mitsuha
+00:04:43,110 --> 00:04:44,220
+Me?
+
+51,Yotsuha
+00:04:44,220 --> 00:04:45,880
+Are you still asleep?
+
+52,Yotsuha
+00:04:45,880 --> 00:04:49,010
+Breakfast time, hurry up!
+
+53,Mitsuha
+00:05:08,600 --> 00:05:10,050
+Huh?
+
+54,Mitsuha
+00:05:10,050 --> 00:05:11,420
+Wha-?
+
+55,Mitsuha
+00:05:11,640 --> 00:05:13,260
+WHAAAT?!
+
+56,Yotsuha
+00:05:19,930 --> 00:05:22,490
+Do you wanna have any of
+last night's fish, grandma?
+
+57,Grandma
+00:05:22,490 --> 00:05:24,190
+You can eat it.
+
+58,Mitsuha+Grandma
+00:05:24,710 --> 00:05:26,210
+- Mornin'!
+- Mornin'!
+
+59,Yotsuha
+00:05:26,210 --> 00:05:28,330
+Lazy butt, you're so slow!
+
+60,Mitsuha
+00:05:28,330 --> 00:05:30,540
+I'll fix breakfast tomorrow.
+
+61,Mitsuha
+00:05:35,930 --> 00:05:37,490
+Oh, that's a lot...
+
+62,Mitsuha
+00:05:37,490 --> 00:05:38,850
+-Oh, well.
+
+63,Grandma+Mitsuha
+00:05:38,850 --> 00:05:41,060
+- You're back to normal today.
+- Huh?
+
+64,Yatsuha+Mitsuha
+00:05:41,060 --> 00:05:45,750
+- You were so crazy yesterday.
+- What do you mean, "crazy"?
+
+65,Radio
+00:05:46,690 --> 00:05:49,380
+-Attention, citizens of Itomori.
+
+66,Radio
+00:05:49,380 --> 00:05:50,650
+Good morning!
+
+67,Radio
+00:05:50,650 --> 00:05:54,400
+This is an official announcement
+from Itomori Town Hall.
+
+68,Radio
+00:05:54,400 --> 00:05:57,330
+It is in regards to the mayoral election.
+
+69,Radio
+00:05:57,330 --> 00:06:00,390
+The election will be held
+on the 20th of next month.
+
+70,Radio
+00:06:00,760 --> 00:06:04,240
+The election committee would
+like to remind everyone tha-
+
+71,None
+00:06:06,450 --> 00:06:12,320
+"Comet to pass by in a month:
+Visible to the naked eye"
+
+72,TV
+00:06:06,720 --> 00:06:10,040
+A comet that comes only
+once every 1,200 years
+
+73,TV
+00:06:10,040 --> 00:06:12,770
+will finally be headed our way in a month.
+
+74,TV
+00:06:12,770 --> 00:06:17,120
+The comet will be visible to the naked eye for
+several days once it approaches the Earth...
+
+75,Yotsuha
+00:06:17,120 --> 00:06:19,270
+Just make up with him already, okay?
+
+76,Mitsuha+TV
+00:06:19,270 --> 00:06:25,360
+- That's an adult matter.
+- According to JAXA's spokesperson, they're preparing for the celestial show of the millennium.
+
+77,None
+00:06:20,440 --> 00:06:24,070
+"Position of Comet Tiamat"
+
+78,None
+00:06:24,070 --> 00:06:25,070
+"Closest on October 4th"
+
+79,Mitsuha+Yotsuha
+00:06:41,430 --> 00:06:43,120
+- We're leaving!
+- We're leaving!
+
+80,Yotsuha
+00:06:46,390 --> 00:06:50,550
+Yotsuha: I can't wait 'til the festival!
+It's gonna be so much fun!
+
+81,Yotsuha
+00:07:03,600 --> 00:07:05,570
+Study hard, sis!
+
+82,Saya
+00:07:08,400 --> 00:07:09,860
+Ah!
+
+83,Saya
+00:07:10,850 --> 00:07:12,420
+Mitsuha!
+
+84,Mitsuha  
+00:07:12,420 --> 00:07:14,370
+Good mornin', Saya! Mornin', Teshi!
+
+85,Saya+Teshi
+00:07:14,370 --> 00:07:17,040
+- Mornin'!
+- Come on, would you get off already?
+
+86,Saya+Teshi
+00:07:17,040 --> 00:07:19,160
+- What for, meanie?
+- 'Cause you're heavy.
+
+87,Saya+Mitsuha
+00:07:19,160 --> 00:07:22,360
+- Hey, that's rude!
+- Y'know, I gotta say. You two make a great couple.
+
+88,Saya+Teshi
+00:07:22,360 --> 00:07:24,050
+- No, we don't!
+- No, we don't!
+
+89,Mitsuha
+00:07:25,730 --> 00:07:28,930
+Oh, I see you actually
+bothered to do your hair today.
+
+90,Mitsuha+Teshi
+00:07:28,930 --> 00:07:32,780
+-Wait, what?
+-Oh, yeah. What happened?
+Did your grandma exorcise all your demons?
+
+91,Mitsuha+Teshi
+00:07:32,780 --> 00:07:36,200
+- Exorcise?
+- Somethin' totally possessed your body!
+
+92,Saya
+00:07:36,200 --> 00:07:39,190
+Would you just give it a rest
+with all this occult nonsense?
+
+93,Saya+Mitsuha
+00:07:39,190 --> 00:07:43,660
+- Mitsuha's gotta be feelin'
+stressed enough as it is, right?
+- What are you guys talking about?
+
+94,Teshi
+00:07:43,660 --> 00:07:45,660
+Are you feelin' okay?
+
+95,Toshiki
+00:07:46,910 --> 00:07:53,710
+And above all, restoring the town's fiscal health
+so we can continue our revitalization project.
+
+96,Toshiki
+00:07:53,710 --> 00:07:59,610
+It's only when all these things are achieved
+that we can create a safe and secure community.
+
+97,Toshiki+BystanderA
+00:07:59,920 --> 00:08:04,900
+- As the incumbent, my administration...
+- Miyamizu's gonna get another term anyway.
+
+98,BystanderB
+00:08:04,900 --> 00:08:08,270
+I hear he's been dullin' out the pork.
+Just between us.
+
+99,StudentA+Mitsuha
+00:08:08,270 --> 00:08:11,450
+- Hey, Miyamizu.
+- Mornin'.
+
+100,StudentA
+00:08:11,450 --> 00:08:15,650
+Looks like the mayor and the
+contractor's kid are pretty cozy, too.
+
+101,Toshiki
+00:08:15,650 --> 00:08:19,790
+-To improve the quality of
+life of each and every resident.
+
+102,Toshiki+Mitsuha
+00:08:20,840 --> 00:08:22,540
+- Mitsuha!
+- [Gasp]
+
+103,Toshiki
+00:08:22,670 --> 00:08:25,140
+Stand up straight when you're walking!
+
+104,BystanderC
+00:08:25,550 --> 00:08:27,510
+Oh, he's tough on his family.
+
+105,BystanderD
+00:08:27,510 --> 00:08:28,970
+Well, that's the mayor for ya.
+
+106,StudentB+StudentC
+00:08:28,970 --> 00:08:31,420
+- Awkward.
+- Sucks to be her.
+
+107,Sara
+00:08:32,420 --> 00:08:34,140
+Mitsuha!
+
+108,Mitsuha
+00:08:34,830 --> 00:08:36,480
+In front of everyone.
+
+109,None
+00:08:39,900 --> 00:08:41,180
+"Who are you?"
+
+110,Teacher
+00:08:48,680 --> 00:08:51,110
+"Tasokare" [Twilight]
+
+111,Teacher
+00:08:50,450 --> 00:08:54,010
+"Two light." That's the
+origin of the word twilight.
+
+112,Teacher
+00:08:54,010 --> 00:08:56,770
+I'm sure everyone here knows that word.
+
+113,Teacher
+00:08:56,770 --> 00:09:00,220
+It's dusk, a time when
+it's neither day nor night.
+
+114,Teacher
+00:09:00,500 --> 00:09:02,690
+When the border between worlds blur,
+
+115,Teacher
+00:09:02,690 --> 00:09:05,670
+and one might encounter
+something not human.
+
+116,Teacher
+00:09:06,510 --> 00:09:10,350
+Another older term for it is dusk light.
+
+117,Teacher
+00:09:10,350 --> 00:09:13,510
+Some people also call it "golden hour".
+
+118,None
+00:09:10,750 --> 00:09:16,210
+"Karetaso/Kawatare = Who is that?"
+
+119,StudentD
+00:09:13,510 --> 00:09:16,370
+-What about "magic hour"?
+It's something my grandma says.
+
+120,Teacher
+00:09:16,370 --> 00:09:20,140
+-Well, golden hour and magic
+hour are technically the same,
+
+121,Teacher
+00:09:20,140 --> 00:09:22,860
+but it's a term that
+mostly photographers use.
+
+122,None
+00:09:22,860 --> 00:09:27,220
+"Who are you?"
+
+123,StudentD+Class
+00:09:23,300 --> 00:09:26,780
+- Well, she does take a lot of pictures.
+- [CLASS Laughing]
+
+124,Teacher
+00:09:28,090 --> 00:09:29,980
+-Okay, next...
+
+125,Teacher+Mitsuha
+00:09:29,980 --> 00:09:32,330
+- Miyamizu!
+- Uh, yes?
+
+126,Teacher
+00:09:32,330 --> 00:09:35,700
+Well, I can see that you
+remember your own name today.
+
+127,Class
+00:09:35,700 --> 00:09:37,700
+[Laughing]
+
+128,Saya+Mitsuha
+00:09:39,000 --> 00:09:41,660
+Sayaka: You... don't remember?
+Mitsuha: Uh-uh...
+
+129,Sara
+00:09:41,660 --> 00:09:45,880
+Well, believe it or not, you forgot where
+your own desk and locker were yesterday.
+
+130,Sara
+00:09:45,880 --> 00:09:49,980
+Plus, you had the worst case of bedhead,
+and you didn't have your ribbon on, either!
+
+131,Mitsuha
+00:09:52,860 --> 00:09:54,540
+What?! No way!
+
+132,Sara
+00:09:54,540 --> 00:09:57,190
+Yeah, it was like you
+had amnesia or somethin'.
+
+133,Mitsuha
+00:09:57,190 --> 00:10:01,840
+Now that you mention it, I do feel like
+I've been havin' weird dreams lately.
+
+134,Mitsuha
+00:10:01,840 --> 00:10:05,860
+Like a dream about someone else's life?
+
+135,Mitsuha
+00:10:06,020 --> 00:10:08,120
+It's all so fuzzy.
+
+136,Teshi
+00:10:08,120 --> 00:10:10,660
+Wait a sec, I've got it...
+
+137,Teshi
+00:10:10,660 --> 00:10:12,420
+It's memories from a previous life,
+
+138,Teshi
+00:10:12,420 --> 00:10:16,250
+or maybe your subconscious linked to the
+Everett interpretation of the multiverse!
+
+139,Sara
+00:10:16,250 --> 00:10:17,570
+Keep your full mouth shut!
+
+140,Mitsuha
+00:10:17,570 --> 00:10:22,390
+Wait a minute! Teshi, don't tell me you
+were the one who wrote in my noteboo... k.
+
+141,Mitsuha
+00:10:23,080 --> 00:10:24,510
+Forget it.
+
+142,Sara
+00:10:25,170 --> 00:10:29,500
+But you really were actin' just a
+little funny yesterday, Mitsuha.
+
+143,Sara
+00:10:29,800 --> 00:10:31,730
+You been feelin' okay?
+
+144,Mitsuha
+00:10:32,450 --> 00:10:35,450
+That's what's weird. I feel fine.
+
+145,Sara
+00:10:35,580 --> 00:10:39,600
+Maybe it's from stress. You know, you've
+got that ritual comin' up soon, don'tcha?
+
+146,Mitsuha
+00:10:39,600 --> 00:10:41,800
+Ugh, don't remind me!
+
+147,Mitsuha
+00:10:41,800 --> 00:10:46,380
+I can't stand this place anymore!
+It's too small and town-ey.
+
+148,Mitsuha
+00:10:46,380 --> 00:10:50,870
+I wanna graduate already and
+go to Tokyo as soon as I can!
+
+149,Sara
+00:10:50,960 --> 00:10:56,130
+-Can't say I blame you. There really
+is nothin' at all in this town.
+
+150,Sara+Mitsuha
+00:10:57,100 --> 00:11:01,660
+-There's only one train that stops here every two
+hours -and all the stores close at nine o' clock.
+
+151,Sara
+00:11:01,660 --> 00:11:03,770
+No bookstores, no dentists,
+
+152,None
+00:11:03,490 --> 00:11:05,940
+"Mother's" "Cat's Eye Pub"
+
+153,Mitsuha
+00:11:03,770 --> 00:11:06,140
+but two cocktail lounges
+for whatever reason.
+
+154,Sara+Mitsuha
+00:11:06,140 --> 00:11:08,620
+- No jobs in town.
+- No one date-able.
+
+155,Sara
+00:11:08,620 --> 00:11:11,230
+Even the days are too short.
+
+156,Teshi
+00:11:12,340 --> 00:11:13,470
+You know what?!
+
+157,Sara+Mitsuha
+00:11:13,470 --> 00:11:15,150
+- No, what?
+- No, what?
+
+158,Teshi
+00:11:15,960 --> 00:11:18,500
+Forget that stuff.
+Why don't we go to a café?
+
+159,Sara+Mitsuha
+00:11:18,500 --> 00:11:19,960
+- A café?
+- Really?
+
+160,Sara+Mitsuha
+00:11:19,960 --> 00:11:21,260
+- Where?!
+- Where?!
+
+161,BystanderD
+00:11:25,820 --> 00:11:26,800
+Hello, kids!
+
+162,Sara+Teshi
+00:11:26,800 --> 00:11:28,160
+- Hi, there!
+- Evenin', ma'am!
+
+163,Sara+Teshi
+00:11:33,050 --> 00:11:36,740
+- How is this a café?
+- Like this town's got a café.
+
+164,Sara
+00:11:37,050 --> 00:11:39,680
+Mitsuha just went straight home.
+
+165,Sara+Teshi
+00:11:40,670 --> 00:11:45,480
+- Things have gotta be really
+rough for her right now.
+- She's on center stage and all.
+
+166,Sara
+00:11:45,480 --> 00:11:46,480
+Yeah...
+
+167,Sara+Teshi
+00:11:49,810 --> 00:11:52,440
+- Hey, Teshi...
+- Hm?
+
+168,Sara
+00:11:52,800 --> 00:11:55,900
+What are you gonna do after
+you graduate high school?
+
+169,Teshi
+00:11:55,900 --> 00:11:58,880
+Where'd that come from?
+You talkin' about the future?
+
+170,Sara
+00:11:58,880 --> 00:12:00,370
+Mh-hm.
+
+171,Teshi
+00:12:00,660 --> 00:12:05,950
+I dunno. I think I'll probably just end up
+livin' in this town, y'know. Same as ever.
+
+172,Yotsuha
+00:12:21,880 --> 00:12:23,940
+I wanna do what you're doin'.
+
+173,Grandma
+00:12:23,940 --> 00:12:26,850
+It's still too soon for you to
+try, Yotsuha.
+
+174,Grandma
+00:12:26,850 --> 00:12:29,380
+Listen to the thread's voice.
+
+175,Grandma
+00:12:29,380 --> 00:12:35,880
+When you twine it round and round like this, feelings
+will start flowing between you and the thread.
+
+176,Yotsuha+Mitsuha
+00:12:36,710 --> 00:12:40,950
+- It's not like threads talk...
+- She's telling you to focus.
+
+177,Grandma
+00:12:40,950 --> 00:12:46,570
+Etched within our braided cords is a
+thousand years' worth of Itomori's history.
+
+178,Grandma
+00:12:46,570 --> 00:12:50,620
+Listen. Somethin' happened
+two hundred years ago...
+
+179,Mitsuha
+00:12:50,620 --> 00:12:52,040
+Here she goes.
+
+180,Grandma
+00:12:52,040 --> 00:12:59,170
+The bathroom of sandal maker Mayugoro Yamazaki
+caught on fire and this whole area burned down.
+
+181,Grandma
+00:12:59,270 --> 00:13:02,650
+The shrine and old
+documents were destroyed.
+
+182,Grandma+Mitsuha
+00:13:02,840 --> 00:13:06,070
+- This is known as...
+- Mayugoro's Great Fire.
+
+183,Yotsuha
+00:13:06,320 --> 00:13:10,600
+They named the fire after him?!
+I feel bad for Mayugoro.
+
+184,Grandma
+00:13:11,390 --> 00:13:15,150
+The meaning behind our festivals
+was lost because of that.
+
+185,Grandma
+00:13:15,150 --> 00:13:17,740
+Only the surface was left.
+
+186,Grandma
+00:13:17,740 --> 00:13:22,040
+But even if those words are
+gone, those words shouldn't fade.
+
+187,Grandma
+00:13:22,040 --> 00:13:26,530
+That's the Miyamizu shrine's duty.
+Our important task.
+
+188,Grandma
+00:13:27,220 --> 00:13:28,830
+Ugh...
+
+189,Grandma
+00:13:28,830 --> 00:13:32,660
+Despite all that, that son-in-law of mine!
+
+190,Grandma
+00:13:32,660 --> 00:13:38,360
+Abandoning the Shinto priesthood and leaving
+this house were bad enough, but politics?!
+
+191,Grandma
+00:13:38,360 --> 00:13:41,010
+Oh, he's hopeless!
+
+192,Toshiki
+00:13:41,460 --> 00:13:43,540
+-Have another, mister foreman.
+
+193,Toshiki+Foreman
+00:13:46,570 --> 00:13:50,390
+- I'll be counting on your
+help again for this election.
+- Leave it to me.
+
+194,Foreman
+00:13:50,390 --> 00:13:54,320
+You'll get the votes from the
+Kadoiri and Sakagami Districts, guaranteed.
+
+195,BackCharA+BackCharB
+00:13:54,320 --> 00:13:57,960
+- How's the datin' scene?
+- It ain't easy, that's for sure.
+
+196,Teshi+TeshiMom
+00:13:59,350 --> 00:14:03,520
+- Smells like corruption in there.
+- What are you talkin' about?
+
+197,Foreman+TeshiMom
+00:14:04,000 --> 00:14:07,280
+- We're gonna need two
+or three more bottles.
+- Yes, dear.
+
+198,Foreman
+00:14:07,280 --> 00:14:10,310
+Katsuhiko, you're gonna help
+out at the site this weekend.
+
+199,Foreman+Teshi
+00:14:10,310 --> 00:14:13,520
+- We'll be usin' explosives,
+so you better study up.
+- Grngh.
+
+200,Foreman
+00:14:13,520 --> 00:14:14,580
+What was that?!
+
+201,Teshi
+00:14:14,580 --> 00:14:16,580
+Got it!
+
+202,Teshi
+00:14:29,280 --> 00:14:31,930
+Guess we both can't stand things here.
+
+203,BystanderE
+00:14:50,460 --> 00:14:53,180
+Is that Yotsuha? She's all grown up.
+
+204,BystanderF
+00:14:53,180 --> 00:14:55,900
+They're lookers, alright.
+Just like their mother.
+
+205,Teshi+Saya
+00:14:57,550 --> 00:15:00,520
+- Heya!
+- Hey.
+
+206,Teshi
+00:15:32,330 --> 00:15:34,700
+World's oldest kind of sake,
+
+207,Teshi
+00:15:34,700 --> 00:15:40,660
+but chewin' on rice, spittin' it out, and then
+lettin' it ferment naturally, it becomes alcohol.
+
+208,Saya
+00:15:40,660 --> 00:15:42,660
+Kuchikamizake.
+
+209,Saya
+00:15:42,790 --> 00:15:45,720
+Do the gods really appreciate that.
+The way it's ma-
+
+210,Teshi
+00:15:45,720 --> 00:15:47,910
+Yeah, of course they do!
+
+211,StudentA
+00:15:49,660 --> 00:15:53,010
+Hey, check it out. It's Miyamizu.
+
+212,StudentB+StudentC
+00:15:57,500 --> 00:16:04,030
+-Ugh! I'd never do that!
+-And in front of everybody!
+Embarrassing, right?
+
+213,Yotsuha
+00:16:17,550 --> 00:16:19,870
+You should try to cheer up, sis.
+
+214,Yotsuha
+00:16:20,040 --> 00:16:23,010
+Who cares if a few of the kids
+from your school saw that?
+
+215,Mitsuha
+00:16:23,010 --> 00:16:25,940
+It must be nice for you
+not being a teenager.
+
+216,Yotsuha
+00:16:26,410 --> 00:16:31,000
+Hey, I know! You should just sell
+Kuchikamizake and move to Tokyo!
+
+217,Yotsuha
+00:16:31,000 --> 00:16:35,860
+I bet you could sell it with all sorts of
+stuff like photos and making-of videos.
+
+218,Yotsuha
+00:16:35,860 --> 00:16:41,910
+Oh, and then you can call it "Shrine
+Maiden's Sake"! You'll make buttloads!
+
+219,None
+00:16:41,890 --> 00:16:43,890
+"Shrine Maiden's Sake"
+
+220,Mitsuha
+00:16:44,600 --> 00:16:48,280
+I can't! There are liquor laws!
+
+221,Yotsuha
+00:16:48,280 --> 00:16:50,470
+That's what you have a problem with?
+
+222,Mitsuha
+00:16:56,430 --> 00:17:01,320
+I hate this town! I hate this life, too!
+
+223,Mitsuha
+00:17:01,320 --> 00:17:08,690
+Please make me a handsome
+Tokyo boy in my next life!
+
+224,Yotsuha
+00:17:10,140 --> 00:17:12,770
+Yotsuha: What a jackass.
+
+225,Taki
+00:17:40,320 --> 00:17:41,820
+Ow...
+
+226,Taki
+00:17:54,290 --> 00:17:55,480
+Where...?
+
+227,Taki
+00:17:56,150 --> 00:17:57,260
+Huh?
+
+228,Taki
+00:18:03,520 --> 00:18:04,840
+Hmm?
+
+229,Taki
+00:18:06,610 --> 00:18:09,020
+Something's... there...
+
+230,Taki
+00:18:13,900 --> 00:18:15,040
+Aaaah!
+
+231,Taki
+00:18:22,810 --> 00:18:23,810
+Eh!
+
+232,TakiDad
+00:18:23,880 --> 00:18:25,840
+Taki's Father: Taki, you up?
+
+233,TakiDad
+00:18:27,940 --> 00:18:31,780
+It was your turn to cook breakfast,
+wasn't it? Did you sleep in?
+
+234,Taki
+00:18:31,950 --> 00:18:33,690
+I'm sorry.
+
+235,TakiDad
+00:18:34,020 --> 00:18:36,040
+Ugh, I'm heading out.
+
+236,TakiDad+Taki
+00:18:36,040 --> 00:18:39,110
+- Finish the miso.
+- Uh, okay...
+
+237,TakiDad
+00:18:39,110 --> 00:18:42,640
+Make sure you go to school,
+even if you're late. Seeya.
+
+238,Taki
+00:18:43,280 --> 00:18:45,550
+H-have a nice day.
+
+239,Taki
+00:18:56,140 --> 00:18:57,860
+What a strange dream...
+
+240,Taki
+00:18:58,430 --> 00:18:59,300
+[Gasp]
+
+241,None
+00:18:59,330 --> 00:19:02,390
+"From Tsukasa: Run, you're late!"
+
+242,Taki
+00:19:03,140 --> 00:19:06,080
+Huh? It's from "Tsukasa"?
+
+243,Taki
+00:19:06,580 --> 00:19:08,990
+Who's that? Hrm.
+
+244,Taki
+00:19:13,780 --> 00:19:15,160
+Uhhh...
+
+245,Taki
+00:19:17,280 --> 00:19:19,660
+I gotta go pee.
+
+246,Taki
+00:19:28,160 --> 00:19:30,430
+Way too real...
+
+247,None
+00:20:20,140 --> 00:20:22,140
+"Shinjuku Station"
+
+248,Taki
+00:20:40,840 --> 00:20:43,750
+I'm in Tokyo!
+
+249,None
+00:20:45,690 --> 00:20:49,690
+"Jingu High School"
+
+250,Crowd
+00:20:50,060 --> 00:20:51,840
+- Where did you get this?
+- Daikanyama.
+
+251,Crowd
+00:20:51,840 --> 00:20:53,360
+Guess who's opening at our next gig?
+
+252,Crowd
+00:20:53,360 --> 00:20:57,180
+- W-wait wait, we have a gig?
+- Hey, let's skip club stuff
+today and catch a movie.
+
+253,Taki
+00:20:59,790 --> 00:21:00,850
+Uh...
+
+254,Tsukasa
+00:21:01,690 --> 00:21:03,710
+Taaaki!
+
+255,Tsukasa
+00:21:04,540 --> 00:21:07,660
+Can't believe you got in at noon.
+Come on, let's grab lunch!
+
+256,Tsukasa
+00:21:08,780 --> 00:21:11,250
+You ignored my text, too!
+
+257,Taki+Tsukasa
+00:21:11,250 --> 00:21:15,380
+- Mr. Tsukasa.
+- "Mister"? You don't have to go that far.
+
+258,Shinta+Taki
+00:21:16,690 --> 00:21:18,870
+- You got lost?
+- Yeah.
+
+259,Shinta
+00:21:18,900 --> 00:21:23,030
+Wait a second. How'd you wind up
+getting lost on the way to school?
+
+260,Taki
+00:21:23,030 --> 00:21:24,110
+Uh...
+
+261,Taki+Shinta
+00:21:24,110 --> 00:21:26,900
+-Well, a girl-
+-A girl?
+
+262,Taki
+00:21:26,900 --> 00:21:27,870
+A gal-
+
+263,Shinta+Tsukasa
+00:21:27,870 --> 00:21:28,600
+- Hm?
+- Hm?
+
+264,Taki
+00:21:28,600 --> 00:21:29,500
+I mean...
+
+265,Shinta+Tsukasa
+00:21:29,500 --> 00:21:30,390
+- Huh?!
+- Huh?!
+
+266,Taki
+00:21:30,390 --> 00:21:31,400
+A guy...
+
+267,Shinta+Tsukasa
+00:21:31,400 --> 00:21:33,120
+- [Nod]
+- [Nod]
+
+268,Taki
+00:21:33,320 --> 00:21:39,830
+Y'know, guys just wanna have fun. Every day's a
+festival when you're living in Tokyo... as a guy.
+
+269,Shinta
+00:21:39,830 --> 00:21:42,160
+Hey, you... sound funny.
+
+270,Tsukasa
+00:21:42,170 --> 00:21:44,260
+-And where's your lunch?
+
+271,Shinta+Tsukasa
+00:21:44,260 --> 00:21:46,950
+- Seriously?
+- What is up with you?
+
+272,Shinta+Tsukasa
+00:21:46,950 --> 00:21:50,370
+- We could share somethin'.
+- Let's make a croquette-egg sandwich.
+
+273,Crowd
+00:21:50,460 --> 00:21:52,310
+-Yes! Hahahaha!
+
+274,Taki
+00:21:52,930 --> 00:21:54,730
+Ah...
+
+275,Taki
+00:21:54,730 --> 00:21:56,410
+Thank you!
+
+276,Shinta+Tsukasa
+00:21:57,810 --> 00:22:01,190
+- Wanna hit the café later?
+- Oh, that one? Sure.
+
+277,Tsukasa
+00:22:01,190 --> 00:22:02,000
+-You in, Taki?
+
+278,Taki
+00:22:02,000 --> 00:22:05,080
+-What? What?! WHAT?!
+
+279,Taki
+00:22:05,080 --> 00:22:06,360
+A café?!
+
+280,Shinta+Tsukasa
+00:22:09,510 --> 00:22:13,580
+- They've got nice timberwork in here.
+- Yeah, it's pretty intricate.
+
+281,Tsukasa
+00:22:13,950 --> 00:22:15,720
+Taki, all set?
+
+282,Taki
+00:22:15,720 --> 00:22:17,630
+Uh...[Gasp]
+
+283,Taki
+00:22:17,630 --> 00:22:20,860
+I could live for a whole month
+on what these pancakes cost!
+
+284,Shinta
+00:22:21,450 --> 00:22:23,900
+-Uh... maybe a decade ago.
+
+285,Taki
+00:22:23,900 --> 00:22:25,850
+-Hmmm...
+
+286,Taki
+00:22:25,850 --> 00:22:28,380
+Oh, well! It's only a dream!
+
+287,Taki
+00:22:34,510 --> 00:22:36,880
+Dreams are great!
+
+288,Taki
+00:22:37,020 --> 00:22:39,020
+Huh?
+
+289,Taki
+00:22:41,560 --> 00:22:44,970
+Wha? Oh no! I think that I'm late for work.
+
+290,Shinta+Tsukasa
+00:22:45,160 --> 00:22:48,260
+- You got a shift today?
+- Guess you better get goin'.
+
+291,Taki
+00:22:48,260 --> 00:22:50,460
+Right.
+
+292,Taki
+00:22:51,110 --> 00:22:53,710
+Sorry, but uh...
+
+293,Taki
+00:22:53,710 --> 00:22:56,470
+Where exactly do I work?
+
+294,Shinta+Tsukasa
+00:22:56,470 --> 00:22:57,910
+- Wha?
+- Wha?
+
+295,Kitchen
+00:23:03,940 --> 00:23:08,430
+- Tables six, seven, and ten are waiting!
+- Table twelve! Taki!
+
+296,Taki
+00:23:08,430 --> 00:23:09,490
+Got it!
+
+297,Taki
+00:23:09,700 --> 00:23:11,020
+Here you go.
+
+298,Taki
+00:23:11,020 --> 00:23:14,250
+So, the zucchini and tomato
+salad with a side of...
+
+299,Customers+Taki
+00:23:14,350 --> 00:23:15,590
+- We didn't order that!
+- Wha?
+
+300,Kitchen
+00:23:15,590 --> 00:23:20,320
+- Taki! I told you that
+we are out of truffles!
+- Taki, you gotta talk louder!
+
+301,Kitchen
+00:23:20,320 --> 00:23:21,500
+Taki!
+
+302,Taki
+00:23:22,610 --> 00:23:24,940
+When is this nightmare gonna be over?!
+
+303,Customers
+00:23:33,260 --> 00:23:34,500
+Diner: Waiter.
+
+304,Customers+Taki
+00:23:34,780 --> 00:23:38,080
+- Hey, you.
+- Uh, yes?
+
+305,Customers
+00:23:38,880 --> 00:23:42,420
+See this? Does it look right?
+A toothpick's in it.
+
+306,Customers
+00:23:42,730 --> 00:23:45,420
+What would have happened if we ate it?
+
+307,Customers
+00:23:45,710 --> 00:23:48,370
+It's really lucky I noticed when I did.
+
+308,Customers+Taki
+00:23:48,940 --> 00:23:52,790
+-Do something.
+-Uh... it's just that...
+
+309,Taki
+00:23:52,850 --> 00:23:56,770
+Well, I don't even think
+we have toothpicks at this-
+
+310,Customers
+00:23:56,770 --> 00:23:58,820
+What?!
+
+311,Okudera
+00:23:58,820 --> 00:24:02,450
+Excuse me. Is everything alright over here?
+
+312,Customers+Okudera
+00:24:02,450 --> 00:24:05,760
+- Well, like I was trying to tell the guy...
+- I'll take care of this.
+
+313,Staff
+00:24:06,250 --> 00:24:08,420
+What's wrong with you today?
+
+314,Okudera
+00:24:09,300 --> 00:24:12,690
+We truly apologize.
+Your meal is on the house tonight.
+
+315,Customers
+00:24:12,690 --> 00:24:13,840
+Why, thank you.
+
+316,Okudera
+00:24:14,030 --> 00:24:16,490
+You weren't hurt, were you?
+
+317,Taki+Staff
+00:24:26,660 --> 00:24:30,710
+- Uh... Oku... dera?
+- That's "Miss" to you.
+
+318,Taki+Okudera
+00:24:30,990 --> 00:24:34,740
+-Miss Okudera. About before-
+-We just had some bad luck is all.
+
+319,Taki+Okudera
+00:24:34,740 --> 00:24:38,260
+-No, I- I-
+-Those guys were definitely scamming us.
+
+320,Okudera
+00:24:38,260 --> 00:24:41,330
+I handled it according to the
+manual, but still...
+
+321,Staff
+00:24:41,660 --> 00:24:44,570
+Uh-Ms. Okudera, your skirt!
+
+322,Staff
+00:24:45,800 --> 00:24:48,000
+- Are you alright?
+- Did something happen?
+
+323,Staff
+00:24:48,000 --> 00:24:49,920
+Looks like someone cut it.
+
+324,Okudera
+00:24:49,920 --> 00:24:51,910
+That guy...
+
+325,Staff
+00:24:52,340 --> 00:24:54,910
+- Do you remember what he looked like?
+- No...
+
+326,Taki+Staff
+00:24:54,980 --> 00:24:58,750
+- Come with me.
+- Hey, Taki.
+
+327,Taki
+00:24:59,390 --> 00:25:00,730
+Okay, take off your skirt.
+
+328,Okudera
+00:25:00,730 --> 00:25:01,590
+What?!
+
+329,Taki
+00:25:01,590 --> 00:25:03,360
+N- wh- I'll... I'll look the other way!
+
+330,Taki
+00:25:07,830 --> 00:25:09,850
+Hold on, this won't take long.
+
+331,Taki
+00:25:14,090 --> 00:25:16,520
+All done! Ta-da!
+
+332,Okudera
+00:25:16,840 --> 00:25:20,510
+You're really good, Taki!
+It's way cuter now!
+
+333,Taki
+00:25:21,770 --> 00:25:26,620
+By the way, I wanted to thank you for
+all your help with that customer earlier.
+
+334,Okudera
+00:25:27,130 --> 00:25:31,000
+To be honest, well...
+I was worried about you.
+
+335,Okudera
+00:25:31,000 --> 00:25:35,000
+You aren't that strong,
+but you're quick to pick a fight.
+
+336,Okudera
+00:25:35,000 --> 00:25:37,040
+I like you better today.
+
+337,Okudera
+00:25:37,280 --> 00:25:40,720
+You've got a feminine side.
+Who woulda guessed?
+
+338,None
+00:25:41,960 --> 00:25:43,960
+"JR Yamanote Line: 7 min."
+
+339,Taki
+00:25:51,390 --> 00:25:55,220
+I gotta say,
+this dream sure does seem real.
+
+340,Taki
+00:25:59,290 --> 00:26:02,080
+Ah, looks like he keeps a journal.
+
+341,Taki
+00:26:06,290 --> 00:26:07,990
+So organized.
+
+342,Taki
+00:26:08,590 --> 00:26:11,490
+I wish I lived in Tokyo.
+
+343,Taki
+00:26:14,890 --> 00:26:16,670
+One of her.
+
+344,Taki
+00:26:21,280 --> 00:26:23,830
+Unrequited love?
+
+345,None
+00:26:28,530 --> 00:26:34,540
+"Walked to the station with Ms. Okudera
+after work, thanks to my feminine powers!"
+
+346,None
+00:26:36,040 --> 00:26:37,380
+"Who are you?"
+
+347,None 
+00:26:47,130 --> 00:26:50,790
+"Mitsuha"
+
+348,Taki
+00:27:06,940 --> 00:27:09,380
+What is this?
+
+349,None
+00:27:07,880 --> 00:27:09,380
+"Mitsuha"
+
+350,Taki
+00:27:12,520 --> 00:27:13,810
+Wha?!
+
+351,Taki
+00:27:13,810 --> 00:27:15,300
+What?!
+
+352,None
+00:27:14,920 --> 00:27:17,750
+"Thanks to my feminine powers!"
+
+353,Taki
+00:27:15,300 --> 00:27:17,200
+What is going on?!
+
+354,Shinta
+00:27:18,590 --> 00:27:20,140
+So, café today?
+
+355,Taki
+00:27:20,200 --> 00:27:22,530
+Thanks, but I gotta go to work.
+
+356,Tsukasa
+00:27:22,530 --> 00:27:24,700
+Ha, do you remember where to go?
+
+357,Taki
+00:27:24,700 --> 00:27:26,680
+Huh?...Ah!
+
+358,Tsukasa
+00:27:26,680 --> 00:27:30,740
+Wait a second. Was that you, Tsukasa? Are you
+the one that's been messing with my phone?
+
+359,Taki
+00:27:30,790 --> 00:27:33,370
+Uh... Never mind.
+
+360,Taki
+00:27:33,690 --> 00:27:35,120
+Later.
+
+361,Shinta
+00:27:35,120 --> 00:27:37,720
+Well, he's back to normal.
+
+362,Tsukasa
+00:27:37,720 --> 00:27:40,440
+I think he was kinda... cute yesterday.
+
+363,Taki
+00:27:40,440 --> 00:27:42,420
+Uhhhhh....
+
+364,Taki
+00:27:44,050 --> 00:27:46,160
+Uh... what's up?
+
+365,Staff
+00:27:46,160 --> 00:27:48,480
+Don't play dumb.
+What about bro code, huh?!
+
+366,Staff
+00:27:48,480 --> 00:27:51,420
+Yeah, you walked home
+with her yesterday, right?
+
+367,Taki
+00:27:51,940 --> 00:27:55,630
+Uh, what are you talking about?
+Me and Ms. Okudera?
+
+368,Staff
+00:27:55,630 --> 00:27:57,310
+- So what did you guys do?!
+- So what did you guys do?!
+- So what did you guys do?!
+
+369,Taki
+00:27:57,310 --> 00:28:00,630
+Uh, well... I don't remember, actually.
+
+370,Staff
+00:28:00,630 --> 00:28:02,610
+Quit messin' around and tell us!
+
+371,Okudera
+00:28:02,610 --> 00:28:05,540
+Okudera, reporting for duty!
+
+372,Okudera+Staff
+00:28:05,990 --> 00:28:11,400
+-Don't slack off today, you guys.
+We're gonna have a good day today.
+-Yeah...
+
+373,Okudera
+00:28:11,400 --> 00:28:13,780
+Aren't we, Taki?
+
+374,Staff
+00:28:21,370 --> 00:28:22,900
+Hmmm?
+
+375,None
+00:28:22,900 --> 00:28:26,400
+"Mitsuha? Who are you?? What are you??"
+
+376,Yotsuha
+00:28:26,930 --> 00:28:29,900
+Yotsuha: I see you're not touching
+your boobies today.
+
+377,Yotsuha
+00:28:29,900 --> 00:28:32,980
+Breakfast time! Hurry up!
+
+378,Mitsuha
+00:28:35,820 --> 00:28:37,050
+MY BOOBS?!
+
+379,Mitsuha
+00:28:39,510 --> 00:28:41,640
+Mornin'!
+
+380,Mitsuha
+00:28:46,650 --> 00:28:50,220
+I feel like everyone's
+starin' at me for some reason.
+
+381,Saya+Mitsuha
+00:28:50,460 --> 00:28:54,680
+- Well you did kinda make a scene yesterday.
+- Uh?!
+
+382,None
+00:28:55,150 --> 00:28:57,150
+"Still-life drawing"
+
+383,StudentB
+00:28:56,210 --> 00:28:58,320
+-Did you see all the election posters?
+
+384,StudentA
+00:28:58,320 --> 00:29:01,490
+-Doesn't matter who wins, nothin'll
+change, 'cept for who gets the kickback.
+
+385,StudentB
+00:29:01,490 --> 00:29:06,010
+-Shhh! Somebody's daddy's dependent on it.
+
+386,Taki
+00:29:06,200 --> 00:29:08,080
+-They're talking about me, right?
+
+387,Saya
+00:29:08,080 --> 00:29:10,460
+Uh... [Nod]
+
+388,Mitsuha
+00:29:10,760 --> 00:29:12,740
+Wait, Mitsuha?!
+
+389,Mitsuha
+00:29:22,210 --> 00:29:25,020
+I... I...
+
+390,Mitsuha
+00:29:25,470 --> 00:29:27,220
+I did what?!
+
+391,Yotsuha
+00:29:29,380 --> 00:29:31,220
+Mitsuha?
+
+392,None
+00:29:36,520 --> 00:29:40,520
+"What is this life?"
+
+393,Mitsuha
+00:29:37,860 --> 00:29:40,730
+Could this... could this mean-
+
+394,Taki
+00:29:40,730 --> 00:29:45,030
+-No, no, no, no! Could this mean...
+that we're really-
+
+395,Mitsuha
+00:29:45,480 --> 00:29:48,400
+That we're...
+in our dreams, that guy and I-
+
+396,Taki
+00:29:48,400 --> 00:29:51,430
+That we're...
+in our dreams, that girl and I-
+
+397,None
+00:29:50,980 --> 00:29:52,040
+"Life in Tokyo"
+
+398,None
+00:29:50,980 --> 00:29:52,040
+"What is this life?"
+
+399,Taki+Mitsuha
+00:29:52,290 --> 00:29:53,540
+- We're switching places?!
+- We're switching places?!
+
+400,Band
+00:30:08,380 --> 00:30:13,140
+At last, hello, you've opened your eyes,
+
+401,Band
+00:30:13,140 --> 00:30:18,690
+but why won't you even look me in the eyes,
+what's wrong with you?
+
+402,Band
+00:30:18,690 --> 00:30:23,250
+You angrily tell me that I'm late.
+
+403,Band
+00:30:23,250 --> 00:30:27,990
+Well, I'm sorry, but I did my best
+and running at my fastest pace!
+
+404,Mitsuha
+00:30:27,990 --> 00:30:30,740
+Mitsuha: I'm slowly beginning to
+realize what's going on.
+
+405,Mitsuha
+00:30:30,850 --> 00:30:34,200
+Taki's in high school and living in Tokyo.
+
+406,Taki
+00:30:34,860 --> 00:30:40,490
+Taki: Two or three times a week, I'll suddenly and randomly
+switch with Mitsuha, who's somewhere out in the boonies.
+
+407,Taki
+00:30:40,500 --> 00:30:44,540
+The trigger is sleep. The cause is unknown.
+
+408,None
+00:30:41,490 --> 00:30:43,990
+"Condition: Sleep? Cause: Unknown"
+
+409,Mitsuha
+00:30:44,580 --> 00:30:49,390
+Mitsuha: Any memories I have of the switch
+get more and more hazy after I wake up.
+
+410,Taki
+00:30:49,390 --> 00:30:52,450
+Taki: But there's no doubt that
+we're switching places.
+
+411,Taki
+00:30:52,450 --> 00:30:55,150
+The reactions of everyone
+around us prove it.
+
+412,Taki
+00:30:55,150 --> 00:30:56,620
+And that's why...
+
+413,Mitsuha
+00:30:56,620 --> 00:31:01,730
+Mitsuha: That's why we decided to lay out some ground
+rules so we could protect each other's way of life.
+
+414,None
+00:30:57,850 --> 00:31:01,040
+"Strictly forbidden!"
+
+415,None
+00:31:01,180 --> 00:31:04,130
+"No baths! No looking! No touching!"
+
+416,Mitsuha 
+00:31:01,730 --> 00:31:06,530
+Things to watch out for during the switches,
+and a list of stuff we should never do.
+
+417,None
+00:31:04,230 --> 00:31:07,470
+"Don't waste money!
+No dialect! Don't be late!"
+
+418,Taki
+00:31:06,600 --> 00:31:11,160
+Taki: We also agreed to leave each other reports
+on our phones on the days we switch places...
+
+419,Mitsuha
+00:31:11,160 --> 00:31:15,560
+Mitsuha: So that we can work together to get
+through this... weird thing that's happening.
+
+420,Mitsuha
+00:31:16,160 --> 00:31:17,570
+-And yet...
+
+421,Taki
+00:31:17,630 --> 00:31:19,030
+-And yet...
+
+422,Mitsuha+Taki
+00:31:19,430 --> 00:31:21,520
+- I cannot believe this guy!
+- I cannot believe this girl!
+
+423,Band
+00:31:21,520 --> 00:31:24,100
+Back in the Zenzenzense 'til this day,
+
+424,Band
+00:31:24,100 --> 00:31:26,100
+been looking everywhere for you.
+
+425,Band
+00:31:26,100 --> 00:31:28,590
+I followed the sound of
+your innocent laughter,
+
+426,Band
+00:31:28,590 --> 00:31:31,690
+and it guided me in the right way.
+
+427,Band
+00:31:31,690 --> 00:31:34,210
+Even if every piece of you disappeared
+
+428,Band
+00:31:34,210 --> 00:31:36,450
+and if it scattered everywhere...
+
+429,Mitsuha
+00:31:36,450 --> 00:31:39,110
+Mitsuha: Guys will stare. Watch the skirt!
+
+430,Mitsuha
+00:31:39,110 --> 00:31:41,810
+These are basics for a girl!
+
+431,None
+00:31:39,620 --> 00:31:40,950
+"Careful with skirts!"
+
+432,Taki+Mitsuha
+00:31:44,250 --> 00:31:49,410
+Taki: Stop wasting my money on sweets!
+Mitsuha: It's goin' in your body.
+Plus, I also worked for that money.
+
+433,None
+00:31:48,890 --> 00:31:50,300
+"Braided Cords..."
+
+434,Taki
+00:31:49,410 --> 00:31:51,070
+Taki: Braiding cords is impossible!
+
+435,Mitsuha+Taki
+00:31:51,070 --> 00:31:54,660
+Mitsuha: You work way too many shifts!
+Taki: 'Cause you keep wasting money!
+
+436,Band
+00:31:54,660 --> 00:31:59,210
+I wonder if we can push our way through
+
+437,Band
+00:31:59,210 --> 00:32:04,910
+the countless barrier that's waiting
+in the future just beyond our view.
+
+438,Band
+00:32:04,910 --> 00:32:09,420
+Side-by-side, no way we can lose.
+
+439,Band
+00:32:09,420 --> 00:32:14,520
+We'll beat destiny at its own game
+and make it follow our own rules.
+
+440,Mitsuha
+00:32:15,040 --> 00:32:19,700
+Mitsuha: Had tea with Ms. Okudera on the
+way home. You two have a good thing going!
+
+441,Taki
+00:32:19,700 --> 00:32:23,210
+Taki: Quit messing with my
+relationships, Mitsuha!
+
+442,Mitsuha
+00:32:23,210 --> 00:32:26,850
+-Hey, Taki... why is a girl
+confessing her love to me?
+
+443,Taki
+00:32:26,850 --> 00:32:29,350
+-Maybe you're just more
+popular when I'm you.
+
+444,Mitsuha
+00:32:29,350 --> 00:32:32,490
+-You're so full of yourself!
+Like you have a girlfriend!
+
+445,None
+00:32:29,940 --> 00:32:32,360
+"Don't be so full of yourself!!"
+
+446,Taki
+00:32:32,490 --> 00:32:33,970
+-It's not like you have anyone, either!
+
+447,Taki+Mitsuha
+00:32:33,970 --> 00:32:35,720
+- I don't...
+- I don't...
+
+448,None
+00:32:35,570 --> 00:32:37,530
+"Dummy"
+
+449,None
+00:32:35,570 --> 00:32:37,530
+"Idiot"
+
+450,Mitsuha+Taki
+00:32:35,720 --> 00:32:37,870
+- Because I don't want a relationship!
+- Because I don't want a relationship!
+
+451,Taki
+00:32:59,500 --> 00:33:02,210
+I shouldn't for her sake.
+
+452,Yotsuha
+00:33:05,390 --> 00:33:07,710
+Yotsuha: You sure do like your own boobies.
+
+453,Yotsuha
+00:33:07,970 --> 00:33:11,960
+Time to go! Get ready!
+
+454,TV
+00:33:13,000 --> 00:33:19,810
+Over the course of the last few days, the Tiamat comet
+has been visible, but when and where can people see it?
+
+455,None
+00:33:19,240 --> 00:33:25,250
+"Comet Tiamat to Reach Perigee"
+
+456,TV
+00:33:19,930 --> 00:33:26,980
+The Tiamat comet will be moving in the same direction
+the sun does: from East to West from our point of view.
+
+457,Yotsuha
+00:33:27,450 --> 00:33:30,310
+Why are you wearin' your uniform?
+
+458,Yotsuha
+00:33:37,900 --> 00:33:43,370
+Yotsuha: Grandma, why does our shrine god's
+relic have to be kept so far away?
+
+459,Grandma
+00:33:43,370 --> 00:33:46,830
+'Cause of Mayugoro, I don't really know.
+
+460,Mitsuha+Yotsuha
+00:33:46,830 --> 00:33:50,420
+- Who's Mayugoro?
+- What? He's famous!
+
+461,Mitsuha
+00:33:58,150 --> 00:34:00,340
+Hop on, grandma.
+
+462,Yotsuha+Mitsuha
+00:34:04,570 --> 00:34:06,780
+- Oh!
+- Watch out! Careful!
+
+463,Grandma
+00:34:17,740 --> 00:34:22,070
+Mitsuha. Yotsuha. Do you know about Musubi?
+
+464,Mitsuha
+00:34:22,070 --> 00:34:23,200
+Mu... subi?
+
+465,Grandma
+00:34:23,200 --> 00:34:29,060
+It's what we used to call the local guardian
+deity long ago, and it means "union".
+
+466,Grandma
+00:34:29,060 --> 00:34:32,300
+This word has profound meaning.
+
+467,Grandma
+00:34:32,300 --> 00:34:40,300
+Tying strings together is a union, connecting to
+people is a union, and the flow of time is a union.
+
+468,Grandma
+00:34:40,870 --> 00:34:47,710
+These are all part of the god's power. The
+braided cords that we make are tied to that.
+
+469,Grandma
+00:34:47,710 --> 00:34:53,270
+A skill from the god,
+they represent the flow of time itself.
+
+470,Grandma
+00:34:53,970 --> 00:35:01,940
+They assemble and take shape. They twist,
+tangle, unravel now and then, break...
+
+471,Grandma
+00:35:01,940 --> 00:35:04,050
+and reconnect.
+
+472,Grandma
+00:35:04,230 --> 00:35:08,240
+That's what a union is. What time is.
+
+473,Grandma+Mitsuha
+00:35:11,310 --> 00:35:14,080
+- Have a drink.
+- Thanks.
+
+474,Yotsuha+Grandma
+00:35:14,560 --> 00:35:19,100
+- I want some, too!
+- That's also a union.
+
+475,Grandma
+00:35:19,650 --> 00:35:26,310
+Whether it's water, rice or sake, when something
+becomes a part of a person, it's a union.
+
+476,Grandma
+00:35:26,310 --> 00:35:32,960
+It joins their soul, which is why the offering
+we're making today is such an important custom.
+
+477,Grandma
+00:35:32,960 --> 00:35:36,350
+It connects the god with people.
+
+478,Yotsuha
+00:35:37,990 --> 00:35:40,110
+Hey, I can see it!
+
+479,Mitsuha
+00:35:42,990 --> 00:35:48,980
+This is where it is.
+The sacred relic of Miyamizu Shrine.
+
+480,Grandma
+00:36:04,220 --> 00:36:10,490
+What lies ahead is the hereafter.
+It's the netherworld.
+
+481,Yotsuha
+00:36:11,780 --> 00:36:14,360
+The netherworld!
+
+482,Grandma
+00:36:15,950 --> 00:36:23,170
+In order to return to this world, you have to
+leave behind what is most important to you.
+
+483,Grandma
+00:36:25,160 --> 00:36:28,380
+Like the kuchikamizake.
+
+484,Mitsuha
+00:36:28,400 --> 00:36:30,230
+Kuchikamizake?
+
+485,Grandma
+00:36:30,230 --> 00:36:37,160
+You'll offer it at the foot of the shrine
+god's relic. After all, it is half of you.
+
+486,Mitsuha
+00:36:38,830 --> 00:36:41,670
+Half... of Mitsuha.
+
+487,Yotsuha
+00:36:58,970 --> 00:37:02,010
+Wow, it's already magic hour!
+
+488,Mitsuha
+00:37:02,090 --> 00:37:04,010
+Magic hour?
+
+489,Yotsuha+Mitsuha
+00:37:13,870 --> 00:37:19,730
+- Oh, yeah! Maybe I can see the comet!
+- Huh? The comet?
+
+490,Grandma
+00:37:20,320 --> 00:37:23,490
+Oh, Mitsuha...
+
+491,Grandma
+00:37:23,490 --> 00:37:26,990
+you're dreaming right now, aren't you?
+
+492,Taki
+00:37:38,050 --> 00:37:40,950
+I'm crying? But why?
+
+493,None
+00:37:43,010 --> 00:37:45,510
+"I'm almost there. Looking forward to it!"
+
+494,Taki
+00:37:46,130 --> 00:37:49,820
+Ms. Okudera? She's almost where?
+
+495,Taki
+00:37:51,150 --> 00:37:54,160
+Oh, Mitsuha. What did you do?
+
+496,Taki
+00:37:54,390 --> 00:37:55,480
+Date?!
+
+497,Mitsuha
+00:38:03,120 --> 00:38:06,300
+Mitsuha: "Tomorrow's your Tokyo date with Ms.
+Okudera."
+
+498,None
+00:38:06,320 --> 00:38:09,090
+"Meet up at the station at 10:30!"
+
+499,Mitsuha
+00:38:10,480 --> 00:38:14,020
+Well, that's what I had planned, but...
+
+500,Okudera+Taki
+00:38:27,260 --> 00:38:29,790
+- Hi, Taki.
+- Huh? Agh!
+
+501,Okudera+Taki
+00:38:30,610 --> 00:38:35,620
+- Wait long?
+- Yeah. Aah-no! Uh...
+
+502,Taki+Okudera
+00:38:43,860 --> 00:38:48,110
+- I just got here.
+- Thank goodness. Let's go!
+
+503,Mitsuha
+00:38:49,690 --> 00:38:54,090
+Must be nice.
+They've probably met up about now.
+
+504,Mitsuha
+00:38:57,520 --> 00:38:59,880
+Huh?
+
+505,Mitsuha
+00:39:02,230 --> 00:39:04,740
+Why am I...?
+
+506,Mitsuha
+00:39:05,020 --> 00:39:07,070
+Why...?
+
+507,Mitsuha
+00:39:12,400 --> 00:39:19,700
+"It was a date I wanted to go on, but if it so happens that
+you end up goin', you better be grateful and enjoy it!"
+
+508,Taki
+00:39:20,380 --> 00:39:27,780
+This is nice! It's my first time here.
+So, is this one of your usual go-to spots?
+
+509,Mitsuha
+00:39:24,990 --> 00:39:30,270
+Mitsuha: "At any rate, I bet you've
+never even been on a single date."
+
+510,Taki
+00:39:27,780 --> 00:39:30,270
+No way, it's too expensive!
+
+511,Taki
+00:39:31,250 --> 00:39:33,230
+I don't know what to say to her.
+
+512,Mitsuha
+00:39:33,230 --> 00:39:37,900
+"That's why I've handpicked some links
+below to help you out, ya wallflower!"
+
+513,Taki
+00:39:37,900 --> 00:39:38,940
+For real?
+
+514,None
+00:39:39,530 --> 00:39:40,370
+"You, too, can get a girlfriend!"
+
+515,None
+00:39:42,540 --> 00:39:45,830
+"Despite social anxiety, I got a girl!"
+"The dos and don'ts of texting!"
+
+516,Taki
+00:39:46,230 --> 00:39:48,370
+She's making fun of me!
+
+517,None
+00:39:48,380 --> 00:39:52,390
+"Photo Exhibition: Nostalgia"
+
+518,Okudera
+00:40:17,170 --> 00:40:18,960
+You know something, Taki?
+
+519,Okudera
+00:40:19,530 --> 00:40:24,230
+Today, you're...
+you're like a different person.
+
+520,Taki
+00:40:32,450 --> 00:40:37,810
+Ms. Okudera. You getting hungry?
+We could get dinner.
+
+521,Okudera+Taki
+00:40:38,090 --> 00:40:43,630
+- Uh... let's call it a day.
+- U-uh... Alright.
+
+522,Okudera+Taki
+00:40:44,060 --> 00:40:48,470
+- I could be wrong, and I'm sorry if I am...
+- About?
+
+523,Okudera
+00:40:48,590 --> 00:40:52,410
+But you used to have a
+little crush on me, am I right?
+
+524,Okudera
+00:40:53,710 --> 00:40:57,070
+But right now,
+there's someone else you like, huh?
+
+525,Taki+Okudera
+00:40:57,130 --> 00:41:01,760
+- N-n-no! U-uh-it's not that...
+- Really?
+
+526,Taki+Okudera
+00:41:01,760 --> 00:41:06,190
+- There's no one. It's not like that.
+- Are you sure about that?
+
+527,Okudera
+00:41:07,340 --> 00:41:11,040
+Well, thanks for today. See you at work!
+
+528,Taki
+00:41:25,740 --> 00:41:27,750
+Taki: By the time the date's over,
+
+529,Taki+Mitsuha
+00:41:27,750 --> 00:41:31,190
+-you should be able to
+see the comet in the sky.
+-"...you should be able to
+see the comet in the sky."
+
+530,Taki
+00:41:34,020 --> 00:41:37,710
+What does she mean? Weirdo.
+
+531,Mitsuha
+00:42:05,090 --> 00:42:06,130
+-Oh.
+
+532,Mitsuha
+00:42:06,130 --> 00:42:07,820
+Mitsuha: It's you, Teshi.
+
+533,Mitsuha
+00:42:08,280 --> 00:42:12,520
+No. I just didn't feel like
+goin', that's all. I'm fine.
+
+534,Mitsuha
+00:42:13,490 --> 00:42:16,610
+What? The festival?
+
+535,Mitsuha
+00:42:16,610 --> 00:42:18,440
+Ah...
+
+536,Mitsuha
+00:42:18,440 --> 00:42:23,250
+Oh yeah, the comet.
+It'll be at its brightest today, right?
+
+537,Mitsuha
+00:42:23,550 --> 00:42:26,490
+Okay, got it. Seeya later!
+
+538,Saya
+00:42:30,030 --> 00:42:33,600
+You're just looking forward to seeing
+Mitsuha in a yukata, aren'tcha?
+
+539,Teshi
+00:42:33,600 --> 00:42:35,340
+I- I am not!
+
+540,Teshi
+00:42:35,340 --> 00:42:37,340
+I mean, it didn't even cross my mind.
+
+541,Teshi+Mitsuha
+00:42:38,380 --> 00:42:43,730
+- Y'know, she sounded kinda down when I talked to her.
+- Maybe she just didn't want a call from ya.
+
+542,Teshi
+00:42:43,730 --> 00:42:45,120
+It's not funny!
+
+543,Mitsuha+Teshi+Saya
+00:42:45,120 --> 00:42:47,450
+- Sorry to keep ya.
+- Oh, she's here!
+- You're late!
+
+544,Saya+Teshi
+00:42:47,560 --> 00:42:50,060
+- [Gasp]
+- [Gasp]
+
+545,Saya+Teshi
+00:42:50,060 --> 00:42:54,110
+- Mitsuha, what happened to-?
+- [Gasp]
+
+546,Teshi
+00:42:54,110 --> 00:42:56,070
+-Your hair!
+
+547,Mitsuha
+00:42:56,070 --> 00:42:59,200
+I guess... it's weird.
+
+548,Teshi
+00:43:07,710 --> 00:43:11,120
+You think it's gotta do with some guy.
+Like, he broke her heart?
+
+549,Saya
+00:43:11,120 --> 00:43:14,480
+Guys always just assume that
+it has to do with a boy.
+
+550,Saya+Teshi
+00:43:14,480 --> 00:43:21,370
+- She said she felt like cuttin' it.
+- Ya sure about that? You really think she
+felt like cuttin' off that much of it?
+
+551,Mitsuha
+00:43:21,370 --> 00:43:24,750
+Hey guys, I can see it!
+
+552,Mitsuha+Saya+Teshi
+00:43:41,750 --> 00:43:45,400
+- Whoa, ho-ho!
+- Whoa...
+- Ah.
+
+553,Mitsuha
+00:43:49,370 --> 00:43:51,590
+Huh?
+
+554,Phone
+00:44:02,160 --> 00:44:07,780
+Phone: "The number you are trying to reach is currently
+outside the cellular network or has been turned off due-"
+
+555,Taki
+00:44:10,410 --> 00:44:15,320
+Taki: I'll just have to tell her how lousy
+the date ended up the next time we switch.
+
+556,Taki
+00:44:15,320 --> 00:44:17,630
+That's what I thought.
+
+557,Taki
+00:44:17,630 --> 00:44:20,430
+But, for some reason,
+
+558,Taki
+00:44:20,430 --> 00:44:24,630
+the switches Mitsuha and I had
+been going through until now...
+
+559,Taki
+00:44:24,630 --> 00:44:28,400
+they never happened again.
+
+560,None
+00:45:01,070 --> 00:45:04,080
+"Mountains in Gifu Prefecture"
+
+561,None
+00:45:14,900 --> 00:45:16,530
+"Hida Mountains"
+
+562,Taki
+00:46:19,270 --> 00:46:20,560
+Wha-
+
+563,Taki
+00:46:20,560 --> 00:46:21,940
+What are-
+
+564,Taki
+00:46:21,940 --> 00:46:24,530
+What are you doing here?
+
+565,Okudera
+00:46:26,690 --> 00:46:29,580
+Okudera: Tsukasa told me about it, so here I am.
+
+566,Taki
+00:46:32,790 --> 00:46:37,900
+I asked for two things: to cover my shift
+and to back up my alibi if my dad asked.
+
+567,Tsukasa
+00:46:37,900 --> 00:46:39,980
+Relax, Takagi's gonna take your shift.
+
+568,Takagi
+00:46:39,980 --> 00:46:41,400
+Takagi: Gotch'a covered!
+
+569,Takagi
+00:46:41,400 --> 00:46:43,350
+But you owe me dinner.
+
+570,Taki+Tsukasa
+00:46:43,510 --> 00:46:46,600
+- So, you're all in on it...
+- You've got everyone worried about you.
+
+571,Taki+Tsukasa
+00:46:46,600 --> 00:46:50,700
+- Huh?
+- We can't ignore this! What if somebody's
+trying to pull one over on you?
+
+572,Taki
+00:46:50,700 --> 00:46:51,850
+Like catfish?
+
+573,Okudera
+00:46:52,030 --> 00:46:54,330
+I mean, you met this person
+online, didn't you?
+
+574,Taki
+00:46:54,330 --> 00:46:56,800
+No, not exactly! It's kinda complicated.
+
+575,Tsukasa
+00:46:56,800 --> 00:46:58,860
+- Could be from a dating site-
+- She's NOT!
+
+576,Tsukasa
+00:46:59,540 --> 00:47:03,610
+It's because you've been acting awfully
+fishy lately, so we're keeping an eye on you.
+
+577,Taki
+00:47:03,620 --> 00:47:05,320
+I don't need a babysitter, okay!
+
+578,Taki
+00:47:07,860 --> 00:47:12,980
+Taki: The switches stopped, my calls never
+connected, and texts never went through.
+
+579,Taki
+00:47:13,160 --> 00:47:17,690
+That's why I decided to
+go see Mitsuha in person.
+
+580,Taki
+00:47:17,690 --> 00:47:20,680
+I wanted to see her, but...
+
+581,Okudera
+00:47:22,400 --> 00:47:27,730
+-What? You don't know where she is exactly?
+The town's landscape is your only clue?
+
+582,Taki
+00:47:27,900 --> 00:47:29,740
+Yeah.
+
+583,Okudera
+00:47:31,530 --> 00:47:35,410
+And you can't contact her?
+What's that about?
+
+584,Taki+Tsukasa
+00:47:35,620 --> 00:47:38,990
+-Where are we?
+You're a terrible tour guide-
+-'Cause I'm not one!
+
+585,Okudera
+00:47:39,530 --> 00:47:42,570
+Oh, well. Guess we'll help you search.
+
+586,Okudera+Taki
+00:47:42,570 --> 00:47:47,230
+- Aww, it's so cute! Look, Taki!
+- Seriously, guys?
+
+587,Okudera
+00:47:47,230 --> 00:47:49,600
+Okudera: It moved! Awww!
+
+588,Taki
+00:48:18,310 --> 00:48:19,410
+Taki: This is a lost cause.
+
+589,Okudera+Tsukasa
+00:48:19,410 --> 00:48:20,530
+- What?!
+- What?!
+
+590,Okudera
+00:48:20,530 --> 00:48:23,500
+After everything that
+we've done for you today?!
+
+591,Taki
+00:48:26,010 --> 00:48:28,650
+You haven't done anything!
+
+592,Okudera+Tsukasa
+00:48:31,780 --> 00:48:34,980
+- One Takayama Ramen.
+- One Takayama Ramen.
+
+593,Taki
+00:48:34,980 --> 00:48:36,500
+I guess I'll have the same.
+
+594,Waitress
+00:48:36,500 --> 00:48:37,840
+Sure.
+
+595,Waitress+Chef
+00:48:37,840 --> 00:48:40,310
+Waitress: Three orders of ramen.
+Chef: Got it.
+
+596,Taki+Tsukasa
+00:48:42,200 --> 00:48:46,410
+- Think we can make it
+back to Tokyo tonight?
+- Well, I think we'll be cuttin' it close.
+
+597,Tsukasa
+00:48:46,410 --> 00:48:47,540
+Let me take a look.
+
+598,Taki+Okudera
+00:48:47,540 --> 00:48:51,180
+- K, thanks.
+- Wait, Taki. You sure about that?
+
+599,Taki
+00:48:52,980 --> 00:48:58,030
+Yeah. I kinda feel like maybe I've been
+barking up the wrong tree this whole time.
+
+600,Waitress
+00:49:02,020 --> 00:49:05,190
+Hey, that's a sketch of Itomori, isn't it?
+
+601,Waitress
+00:49:06,830 --> 00:49:08,690
+It's drawn really well.
+
+602,Waitress
+00:49:08,690 --> 00:49:11,070
+Come take a look at this, hon!
+
+603,Chef
+00:49:11,860 --> 00:49:15,040
+Yeah, that's Itomori. Takes me back.
+
+604,Waitress
+00:49:15,040 --> 00:49:17,630
+My husband was born and raised
+there, you know.
+
+605,Taki
+00:49:17,820 --> 00:49:19,970
+Itomori?
+
+606,Taki
+00:49:21,050 --> 00:49:25,630
+Yes, of course! That's the place!
+It's nearby, right?
+
+607,Waitress
+00:49:25,780 --> 00:49:27,140
+You don't...?
+
+608,Chef
+00:49:27,140 --> 00:49:29,050
+Itomori was...
+
+609,Tsukasa
+00:49:29,050 --> 00:49:30,990
+Itomori...[Gasp]
+
+610,Tsukasa+Okudera
+00:49:30,990 --> 00:49:34,640
+- But that's where-!
+- Wait! Isn't that the
+area where that comet-?
+
+611,Taki
+00:49:35,220 --> 00:49:36,840
+Huh?
+
+612,None
+00:49:42,320 --> 00:49:45,330
+"Keep Out"
+
+613,Okudera
+00:50:24,000 --> 00:50:25,150
+Hey...
+
+614,Okudera
+00:50:25,150 --> 00:50:27,280
+Okudera: Is this place really where she's from?
+
+615,Tsukasa
+00:50:27,280 --> 00:50:31,190
+Tsukasa: No way. Taki must have just
+confused this with somewhere else.
+
+616,Taki
+00:50:31,190 --> 00:50:33,300
+Taki: No, I didn't.
+
+617,Taki 
+00:50:33,300 --> 00:50:35,420
+This was the place.
+
+618,Taki
+00:50:35,420 --> 00:50:37,730
+The schoolyard, these mountains,
+
+619,Taki
+00:50:37,730 --> 00:50:39,230
+even this high school here!
+
+620,Taki
+00:50:39,230 --> 00:50:40,790
+I remember it all!
+
+621,Tsukasa
+00:50:40,790 --> 00:50:42,740
+There's no way you could.
+
+622,Tsukasa
+00:50:42,740 --> 00:50:46,550
+You've gotta know about that
+disaster three years ago, right?
+
+623,Tsukasa+Taki
+00:50:46,750 --> 00:50:51,050
+- Hundreds of people died.
+- They died...
+
+624,Taki
+00:50:51,050 --> 00:50:53,100
+three years ago?
+
+625,Taki
+00:50:53,100 --> 00:50:55,920
+It can't be...
+
+626,Taki
+00:50:56,120 --> 00:50:57,940
+There's no way...
+
+627,Taki
+00:50:57,940 --> 00:50:59,570
+I mean...
+
+628,Taki
+00:50:59,570 --> 00:51:02,250
+I still have the memos she wrote.
+
+629,Taki
+00:51:19,140 --> 00:51:22,840
+They're fading.
+
+630,Tsukasa
+00:51:30,830 --> 00:51:35,610
+Comet Tiamat, with an orbital period
+of 1,200 years,
+
+631,None
+00:51:33,330 --> 00:51:37,790
+"Itomori, the Town that Vanished"
+
+632,Tsukasa
+00:51:35,610 --> 00:51:39,780
+made a close approach to Earth
+three years ago in October.
+
+633,None
+00:51:38,040 --> 00:51:41,790
+"Meteor Strikes, Wipes out Town"
+
+634,Tsukasa
+00:51:39,780 --> 00:51:43,850
+Nobody foresaw that its nucleus
+would split at its perigee.
+
+635,None
+00:51:43,300 --> 00:51:44,930
+"Town Annihilated"
+
+636,None
+00:51:45,050 --> 00:51:46,600
+"Over 500 dead or missing"
+
+637,None
+00:51:46,800 --> 00:51:48,180
+"Itomori, the Town that Vanished"
+
+638,Tsukasa
+00:51:49,790 --> 00:51:54,460
+A fragment that broke off of it
+became a meteor and struck Japan.
+
+639,None
+00:51:53,430 --> 00:51:56,310
+"Itomori, comet, damage"
+
+640,Okudera
+00:51:55,710 --> 00:51:59,960
+It looks like that day was the
+same date as the Autumn Festival.
+
+641,Tsukasa
+00:52:00,120 --> 00:52:02,490
+The point of impact was here.
+
+642,Tsukasa
+00:52:02,950 --> 00:52:07,890
+At 8:42 PM (20:42), it fell right around
+where people were gathered for the festival.
+
+643,None
+00:52:10,320 --> 00:52:13,830
+"Names of the Victims"
+
+644,Tsukasa
+00:52:12,070 --> 00:52:14,300
+Over 500 died.
+
+645,Tsukasa
+00:52:14,300 --> 00:52:16,880
+It was a third of the town's population,
+
+646,Tsukasa
+00:52:16,880 --> 00:52:18,880
+and now, nobody lives in Itomori anymore.
+
+647,Taki
+00:52:28,170 --> 00:52:30,200
+Teshigawara...
+
+648,Taki
+00:52:30,200 --> 00:52:31,690
+and Sayaka.
+
+649,None
+00:52:32,850 --> 00:52:37,350
+"Mitsuha Miyamizu"
+
+650,Okudera
+00:52:36,540 --> 00:52:37,710
+That's her?!
+
+651,Okudera
+00:52:37,710 --> 00:52:39,940
+You were wrong! You gotta be!
+
+652,Okudera
+00:52:39,940 --> 00:52:43,700
+After all,
+this girl here died three years ago!
+
+653,Taki
+00:52:43,700 --> 00:52:48,420
+Just... two or three weeks ago,
+she said that I'd be able to see the comet.
+
+654,Taki
+00:52:48,950 --> 00:52:50,670
+That means-!
+
+655,Grandma+Taki
+00:52:50,670 --> 00:52:55,920
+- "You're dreaming right now... aren't you?"
+- I...
+
+656,Taki
+00:52:56,440 --> 00:52:59,640
+I...
+
+657,Taki
+00:52:59,640 --> 00:53:00,640
+What...
+
+658,Taki
+00:53:00,640 --> 00:53:01,370
+was I?
+
+659,Okudera
+00:53:15,100 --> 00:53:16,970
+Sounds lively over there.
+
+660,Tsukasa
+00:53:16,970 --> 00:53:19,970
+They only have one room left.
+I'm really sorry.
+
+661,Okudera
+00:53:19,970 --> 00:53:21,880
+It's not a problem.
+
+662,Okudera
+00:53:22,340 --> 00:53:23,600
+How's Taki?
+
+663,Tsukasa
+00:53:23,600 --> 00:53:26,210
+He's still reading articles on Itomori.
+
+664,Tsukasa
+00:53:26,210 --> 00:53:30,890
+He's goin' through all those newspapers
+and magazines at random. Seems obsessive.
+
+665,Okudera+Tsukasa
+00:53:35,290 --> 00:53:38,380
+- What is it?
+- Oh, sorry. You smoke, huh?
+
+666,Okudera
+00:53:38,690 --> 00:53:42,070
+Yeah. I did quit at one point.
+
+667,Tsukasa
+00:53:43,020 --> 00:53:46,100
+What do you think about
+what Taki's been saying?
+
+668,Okudera
+00:53:48,820 --> 00:53:51,550
+I had feelings for him, y'know.
+
+669,Okudera
+00:53:51,550 --> 00:53:53,780
+The way he's been recently.
+
+670,Okudera
+00:53:53,780 --> 00:53:57,750
+I mean, he was a nice guy
+before, but he's even nicer now.
+
+671,Okudera
+00:53:58,370 --> 00:54:00,770
+Kind-of... frantic.
+
+672,Okudera
+00:54:00,770 --> 00:54:02,800
+It was cute.
+
+673,Okudera
+00:54:02,800 --> 00:54:07,480
+Although, I do think what he's been
+telling us is definitely strange-sounding.
+
+674,Okudera
+00:54:09,250 --> 00:54:15,440
+But in the end, the fact remains that Taki's met
+someone, and that someone is the reason he changed.
+
+675,Okudera
+00:54:15,840 --> 00:54:19,700
+That much is for sure.
+
+676,None
+00:54:16,940 --> 00:54:19,850
+"Worst-Ever Itomori Comet Disaster"
+
+677,Taki
+00:54:33,220 --> 00:54:35,720
+It was all just a dream.
+
+678,Taki
+00:54:36,590 --> 00:54:38,590
+I recognized the landscape
+
+679,Taki
+00:54:38,590 --> 00:54:43,110
+because I unconsciously remembered
+the news from three years ago.
+
+680,Taki
+00:54:43,960 --> 00:54:46,870
+If it's not that, is she... a ghost?
+
+681,Taki
+00:54:47,260 --> 00:54:48,890
+Or...
+
+682,Taki
+00:54:48,890 --> 00:54:50,780
+did I just make it up?
+
+683,Taki
+00:54:50,780 --> 00:54:52,440
+The whole thing?
+
+684,Taki
+00:54:55,770 --> 00:54:58,300
+What was her name?
+
+685,Taki
+00:54:58,300 --> 00:55:00,300
+I can't remember.
+
+686,Okudera
+00:55:02,020 --> 00:55:04,630
+Tsukasa said he was gonna
+go ahead and take a bath.
+
+687,Taki
+00:55:04,700 --> 00:55:06,420
+Ms. Okudera,
+
+688,Taki
+00:55:06,420 --> 00:55:07,530
+Uh...
+
+689,Taki
+00:55:07,530 --> 00:55:09,080
+I, um...
+
+690,Taki
+00:55:09,080 --> 00:55:12,590
+I realize I've been saying
+a lot of strange things.
+
+691,Taki
+00:55:12,590 --> 00:55:15,100
+I'm really sorry, and thank you.
+
+692,None
+00:55:20,000 --> 00:55:21,640
+"The Tatara Iron-Making Site"
+
+693,None
+00:55:21,640 --> 00:55:24,510
+"The Braided Cords of Itomori"
+
+694,Okudera
+00:55:23,360 --> 00:55:25,810
+Braided cords. Pretty.
+
+695,Okudera
+00:55:26,530 --> 00:55:28,540
+That band on your wrist.
+
+696,Okudera+Taki
+00:55:28,540 --> 00:55:31,490
+- That's one, isn't it?
+- Hm? Oh.
+
+697,Taki
+00:55:31,490 --> 00:55:33,230
+This thing? Guess so.
+
+698,Taki
+00:55:33,230 --> 00:55:34,620
+Somebody...
+
+699,Taki
+00:55:34,620 --> 00:55:37,000
+Someone gave it to me.
+
+700,Taki
+00:55:37,000 --> 00:55:40,470
+I wear it sometimes as...
+kind-of a lucky charm.
+
+701,Okudera
+00:55:42,580 --> 00:55:44,030
+Who was it?
+
+702,Okudera+Taki
+00:55:46,150 --> 00:55:51,970
+- It's late. Why don't you go
+down and take a bath, too?
+- Sure-wait.
+
+703,Taki
+00:55:54,300 --> 00:55:57,100
+Yeah. Someone who makes these,
+
+704,Taki
+00:55:57,100 --> 00:55:59,100
+they once told me something.
+
+705,Taki
+00:55:59,100 --> 00:56:02,100
+The cords represent the flow of time.
+
+706,Taki
+00:56:02,100 --> 00:56:03,870
+They twist and tangle,
+
+707,Taki
+00:56:03,870 --> 00:56:05,680
+unravel and connect,
+
+708,Taki
+00:56:05,680 --> 00:56:08,710
+and that's what time is.
+
+709,Taki
+00:56:10,320 --> 00:56:11,690
+Maybe if I could-
+
+710,None
+00:56:29,570 --> 00:56:32,200
+"Around here?"
+
+711,Mitsuha
+00:56:37,820 --> 00:56:39,720
+Taki...
+
+712,Mitsuha
+00:56:39,730 --> 00:56:41,700
+Distant Voice: Taki.
+
+713,Mitsuha
+00:56:41,700 --> 00:56:44,710
+Taki!
+
+714,Mitsuha
+00:56:44,710 --> 00:56:46,620
+Don't you remember?!
+
+715,Okudera
+00:56:46,620 --> 00:56:49,040
+[Gasp]
+
+716,None
+00:57:00,830 --> 00:57:05,840
+"I have to go somewhere. Go back to Tokyo
+without me. I'll return later. Thanks."
+
+717,Okudera
+00:57:09,110 --> 00:57:10,110
+Taki...
+
+718,Chef
+00:57:34,560 --> 00:57:36,730
+Eat this bento up there.
+
+719,Chef
+00:57:37,720 --> 00:57:41,990
+Your drawing of Itomori.
+You did a real good job.
+
+720,Taki
+00:58:19,370 --> 00:58:21,860
+-They assemble and take shape,
+
+721,Taki
+00:58:21,860 --> 00:58:23,600
+they twist, tangle,
+
+722,Taki
+00:58:23,600 --> 00:58:25,280
+unravel now and then,
+
+723,Taki
+00:58:25,280 --> 00:58:26,050
+break,
+
+724,Taki
+00:58:26,050 --> 00:58:27,980
+and reconnect.
+
+725,Taki
+00:58:28,610 --> 00:58:30,490
+That's what a union is.
+
+726,Taki
+00:58:30,490 --> 00:58:32,920
+What time is.
+
+727,Taki
+00:58:43,910 --> 00:58:46,370
+There it is.
+
+728,Taki
+00:58:47,400 --> 00:58:48,990
+It's really there!
+
+729,Taki
+00:58:49,940 --> 00:58:51,080
+It wasn't...
+
+730,Taki
+00:58:51,080 --> 00:58:53,380
+a dream.
+
+731,Taki
+00:59:23,410 --> 00:59:26,990
+What lies ahead is the netherworld.
+
+732,Taki
+00:59:49,470 --> 00:59:51,690
+It's still here.
+
+733,Taki
+00:59:52,800 --> 00:59:57,380
+This was Yotsuha's, and this was mine.
+
+734,Taki
+00:59:59,410 --> 01:00:01,270
+This was before the comet.
+
+735,Taki
+01:00:01,780 --> 01:00:03,980
+So when I switched places with her,
+
+736,Taki
+01:00:04,300 --> 01:00:07,010
+it was also three years in the past.
+
+737,Taki
+01:00:08,250 --> 01:00:12,020
+Our times... got tangled somehow.
+
+738,Taki
+01:00:12,750 --> 01:00:15,580
+This is... half of her.
+
+739,Taki
+01:00:29,850 --> 01:00:30,970
+Musubi,
+
+740,Taki
+01:00:32,220 --> 01:00:36,020
+if it's true, and time can be unraveled,
+
+741,Taki
+01:00:36,020 --> 01:00:39,070
+just give me one more chance.
+
+742,Taki
+01:00:49,290 --> 01:00:50,940
+Agh!
+
+743,Taki
+01:00:51,360 --> 01:00:52,780
+[Gasp]
+
+744,Taki
+01:00:52,780 --> 01:00:55,000
+A comet!
+
+745,Taki
+01:01:01,030 --> 01:01:04,030
+ngh! Hh...
+
+746,None
+01:01:48,200 --> 01:01:56,790
+[Heartbeat]
+
+747,Mitsuha+Futaba
+01:01:56,790 --> 01:02:00,930
+- [Crying]
+- Your name's going to be...
+
+748,Futaba
+01:02:00,930 --> 01:02:02,180
+Mitsuha.
+
+749,Toshiki
+01:02:08,670 --> 01:02:11,040
+Both of you are my treasures.
+
+750,Futaba
+01:02:11,040 --> 01:02:14,140
+You're going to be a big sister!
+
+751,None
+01:02:13,320 --> 01:02:14,790
+"Get well soon, Mom!"
+
+752,MitsuhaMom
+01:02:16,060 --> 01:02:20,310
+I'm so sorry, my dears...
+
+753,Yotsuha
+01:02:20,770 --> 01:02:23,980
+Dad, when is mommy coming home?
+
+754,Toshiki+Grandma
+01:02:24,760 --> 01:02:28,080
+- I couldn't help her!
+- Get ahold of yourself!
+
+755,Toshiki+Grandma
+01:02:28,080 --> 01:02:31,350
+- Who cares about the shrine?!
+- But you're in charge now!
+
+756,Toshiki+Grandma
+01:02:31,350 --> 01:02:35,260
+- I loved Futaba, not Miyamizu Shrine!
+- Get out!
+
+757,Grandma
+01:02:38,550 --> 01:02:40,540
+Now listen to me, girls.
+
+758,Grandma
+01:02:40,540 --> 01:02:44,980
+Starting today,
+you'll be living with grandma.
+
+759,Mitsuha
+01:02:49,180 --> 01:02:50,430
+"Who are you?"
+
+760,Mitsuha
+01:02:49,220 --> 01:02:51,800
+"Who am I?" Who are you?
+
+761,Mitsuha
+01:02:50,430 --> 01:02:51,680
+"Mitsuha"
+
+762,Mitsuha
+01:02:51,680 --> 01:02:52,780
+"Idiot"
+
+763,Mitsuha
+01:02:51,800 --> 01:02:53,290
+Don't be full of yourself!
+
+764,Mitsuha
+01:02:53,290 --> 01:02:55,380
+Like you have a girlfriend!
+
+765,Mitsuha
+01:02:55,380 --> 01:02:56,800
+Must be nice.
+
+766,Mitsuha
+01:02:56,800 --> 01:02:59,310
+They've probably met up about now.
+
+767,Mitsuha
+01:03:00,480 --> 01:03:01,830
+Why am I...?
+
+768,Mitsuha+Yotsuha
+01:03:01,830 --> 01:03:06,090
+- I'm going to Tokyo.
+- What?! Wait, Sis!
+
+769,Mitsuha
+01:03:07,540 --> 01:03:09,050
+Grandma?
+
+770,Mitsuha
+01:03:09,050 --> 01:03:12,080
+Would you mind doing me a favor?
+
+771,Mitsuha
+01:03:12,080 --> 01:03:15,100
+Oh yeah, the comet.
+
+772,Mitsuha
+01:03:15,100 --> 01:03:18,170
+It'll be at its brightest today, right?
+
+773,Taki
+01:03:18,170 --> 01:03:20,570
+-Mitsuha, don't go there!
+
+774,Taki
+01:03:21,230 --> 01:03:22,620
+Mitsuha!
+
+775,Taki
+01:03:22,620 --> 01:03:26,070
+You've gotta get out of town
+before the comet strikes!
+
+776,Taki
+01:03:26,070 --> 01:03:28,160
+[Gasp]
+
+777,Taki
+01:03:28,160 --> 01:03:30,600
+Mitsuha, run!
+
+778,Taki
+01:03:30,660 --> 01:03:37,340
+Mitsuha! Mitsuha! Mitsuha!
+
+779,Mitsuha
+01:03:42,540 --> 01:03:45,010
+[Gasp]
+
+780,Mitsuha
+01:03:53,860 --> 01:03:55,350
+Taki (as Mitsuha): Mitsuha.
+
+781,Mitsuha
+01:03:55,350 --> 01:03:57,980
+She's alive!
+
+782,Mitsuha
+01:03:58,630 --> 01:04:04,330
+[Sobbing]
+
+783,Yotsuha
+01:04:07,510 --> 01:04:09,580
+Let me guess, you're touching your boo-
+
+784,Yotsuha
+01:04:09,580 --> 01:04:10,670
+[Gasp]
+
+785,Mitsuha
+01:04:10,930 --> 01:04:14,770
+[Crying] Her sister!
+
+786,Mitsuha
+01:04:16,140 --> 01:04:18,330
+Yotsuha!
+
+787,Yotsuha
+01:04:18,330 --> 01:04:19,350
+Yotsuha: Ungh!
+
+788,Yotsuha
+01:04:19,350 --> 01:04:21,670
+[Shudder]
+
+789,Yotsuha
+01:04:21,670 --> 01:04:24,170
+I think she's finally lost it.
+
+790,Yotsuha
+01:04:24,170 --> 01:04:27,540
+Just for today,
+I-I'm gonna head out first...
+
+791,Yotsuha
+01:04:27,540 --> 01:04:28,860
+She's lost it...
+
+792,Yotsuha
+01:04:28,860 --> 01:04:30,070
+Really lost it...
+
+793,Yotsuha
+01:04:30,070 --> 01:04:31,410
+Totally!
+
+794,Yotsuha
+01:04:31,410 --> 01:04:32,660
+Totally...
+
+795,TV
+01:04:32,660 --> 01:04:38,410
+-For all you stargazers out there, the comet Tiamat
+has been visible to the naked eye for about a week now.
+
+796,TV
+01:04:38,410 --> 01:04:44,770
+Tonight, it will finally reach its perigee around 7:40 PM (19:40),
+and be at its maximum brightness when viewed from the Earth's...
+
+797,Mitsuha
+01:04:44,770 --> 01:04:47,730
+It's tonight! There's still time left!
+
+798,Grandma
+01:04:48,160 --> 01:04:50,220
+Mornin', Mitsuha!
+
+799,Grandma
+01:04:50,220 --> 01:04:52,510
+What's this?
+
+800,Grandma
+01:04:52,510 --> 01:04:53,850
+Hold on...
+
+801,Grandma+Mitsuha
+01:04:53,850 --> 01:04:57,690
+- You're not Mitsuha, are you?
+- W-wait, how did you-?
+
+802,Mitsuha
+01:04:58,120 --> 01:05:00,170
+You already knew?
+
+803,Grandma
+01:05:00,170 --> 01:05:07,200
+No, but watching the way you've been
+behaving lately stirred some memories up.
+
+804,Gradnma
+01:05:07,550 --> 01:05:09,890
+When I was a young girl,
+
+805,Grandma
+01:05:09,890 --> 01:05:13,010
+I had some pretty strange dreams myself.
+
+806,Mitsuha
+01:05:13,010 --> 01:05:13,810
+Huh?
+
+807,Grandma
+01:05:13,810 --> 01:05:20,710
+Though it's been so long, the memories of who I became
+in those dreams have pretty much faded at this point.
+
+808,Mitsuha
+01:05:20,710 --> 01:05:21,940
+Faded?
+
+809,Grandma
+01:05:21,960 --> 01:05:27,230
+Treasure the experience.
+Dreams eventually will fade away.
+
+810,Grandma
+01:05:27,230 --> 01:05:30,050
+I went through similar times myself,
+
+811,Grandma
+01:05:30,050 --> 01:05:32,700
+and so did your mother.
+
+812,Mitsuha
+01:05:33,200 --> 01:05:34,310
+What if...
+
+813,Mitsuha
+01:05:34,310 --> 01:05:36,960
+all those dreams that
+the Miyamizu people had!
+
+814,Mitsuha
+01:05:36,960 --> 01:05:39,300
+It had to do with today!
+
+815,Mitsuha
+01:05:39,950 --> 01:05:42,720
+Grandma, you have to listen to me!
+
+816,Mitsuha
+01:05:43,040 --> 01:05:44,490
+Tonight,
+
+817,Mitsuha
+01:05:44,490 --> 01:05:46,800
+the comet is going to fall on Itomori!
+
+818,Mitsuha+Grandma
+01:05:46,800 --> 01:05:49,190
+- You're all gonna die!
+- Huh?
+
+819,Mitsuha
+01:05:55,390 --> 01:05:57,390
+"Nobody's gonna believe that?"
+
+820,Mitsuha
+01:05:57,390 --> 01:06:00,340
+I didn't expect that out
+of Mitsuha's grandma.
+
+821,Mitsuha
+01:06:00,340 --> 01:06:04,270
+It doesn't matter!
+There's no way I'm gonna let them all die!
+
+822,Saya
+01:06:04,820 --> 01:06:06,280
+Mitsuha!
+
+823,Saya
+01:06:06,280 --> 01:06:07,820
+What happened... to-?
+
+824,Teshi
+01:06:09,150 --> 01:06:10,550
+What'd you-?
+
+825,Teshi
+01:06:10,550 --> 01:06:11,520
+Your hair!
+
+826,Mitsuha+Teshi
+01:06:11,520 --> 01:06:16,000
+-Ugh, the haircut?
+Looked better before, huh?
+-No, i-i-it's good!
+
+827,Mitsuha
+01:06:16,000 --> 01:06:20,690
+Nevermind that! If we don't do
+something about tonight, we'll all die!
+
+828,Mitsuha
+01:06:22,410 --> 01:06:25,400
+It's up to us to save everyone!
+
+829,Shopkeeper
+01:06:29,350 --> 01:06:31,410
+Wait, shouldn't you be in school?
+
+830,Saya
+01:06:31,410 --> 01:06:36,120
+Well, we sort-of have to save the
+town, or something.
+
+831,Shopkeeper
+01:06:36,120 --> 01:06:37,120
+Heh?
+
+832,Mitsuha+Teshi
+01:06:37,820 --> 01:06:41,380
+- The warning system?
+- Yeah, those speakers all over the town.
+
+833,None
+01:06:41,470 --> 01:06:44,890
+"Superimposition, frequency"
+
+834,Mitsuha
+01:06:45,400 --> 01:06:48,280
+I get it. It could work!
+
+835,Mitsuha+Teshi
+01:06:48,280 --> 01:06:52,540
+- Niiiice job, Teshi.
+- Hey, I don't think you should
+be sittin' so close to me.
+
+836,Mitsuha+Teshi
+01:06:52,540 --> 01:06:56,150
+- What's wrong. Uh-oh! You shyyy?
+- Would you quit it?!
+
+837,Teshi
+01:06:56,150 --> 01:06:58,400
+It ain't proper and you know it!
+
+838,None
+01:06:58,400 --> 01:07:00,880
+"Club Discontinued - Keep Out"
+
+839,Mitsuha
+01:06:59,680 --> 01:07:01,830
+Taki (as Mitsuha): T-hahahahaha!
+
+840,Mitsuha
+01:07:01,830 --> 01:07:05,130
+Such a gentleman.
+
+841,Saya
+01:07:06,060 --> 01:07:08,000
+I bought all the snacks, guys.
+
+842,Saya+Mitsuha
+01:07:08,000 --> 01:07:10,470
+- Here's the change.
+- Sorry for the trouble.
+
+843,Saya
+01:07:10,470 --> 01:07:11,470
+I didn't mind.
+
+844,Teshi+Mitsuha
+01:07:11,590 --> 01:07:14,660
+- We oughta be gettin' paid.
+- Quit complaining.
+
+845,Saya
+01:07:15,500 --> 01:07:17,670
+So? Wha'dcha come up with?
+
+846,Saya
+01:07:17,670 --> 01:07:20,080
+Got an evacuation plan?
+
+847,Saya
+01:07:23,090 --> 01:07:24,610
+A- A-
+
+848,Saya
+01:07:24,610 --> 01:07:26,020
+A BOMB?!
+
+849,Teshi
+01:07:26,020 --> 01:07:30,370
+Yeah, we have water gel explosives we
+use for construction at our storage site.
+
+850,Saya
+01:07:30,370 --> 01:07:33,010
+AND the warning system?
+
+851,Teshi
+01:07:33,360 --> 01:07:37,150
+Our startup frequency can hijack the
+town's warning system pretty easily,
+
+852,Mitsuha
+01:07:37,150 --> 01:07:41,340
+so we can broadcast an evacuation warning
+for the whole town right from school!
+
+853,Mitsuha
+01:07:41,380 --> 01:07:43,690
+Look, we're outside the disaster area here,
+
+854,Mitsuha
+01:07:43,690 --> 01:07:46,460
+so we'll just make an announcement
+to evacuate to the school.
+
+855,Saya
+01:07:46,460 --> 01:07:47,770
+It's-
+
+856,Saya+Mistuha
+01:07:47,770 --> 01:07:50,970
+- It's totally a crime!
+- You'll be in charge
+of the broadcast, Saya.
+
+857,Saya+Teshi
+01:07:50,970 --> 01:07:53,460
+- Why me?!
+- You're in the Broadcast Club.
+
+858,Teshi+Mitsuha
+01:07:53,590 --> 01:07:57,250
+- And I'll be in charge of the explosives.
+- While I go have a word with the mayor.
+
+859,Saya+Teshi
+01:07:57,250 --> 01:08:02,140
+- Why?
+- 'Cause if the evacuation order's not comin' from Town Hall, then nobody's gonna go anyway.
+
+860,Mitsuha
+01:08:02,140 --> 01:08:05,470
+But if I talk to the mayor,
+as his daughter, I can convince him.
+
+861,Saya
+01:08:05,470 --> 01:08:08,120
+It's the perfect plan!
+
+862,Saya
+01:08:08,700 --> 01:08:11,300
+Fine, I don't really care
+one way or the other.
+
+863,Saya
+01:08:11,300 --> 01:08:14,190
+This is just a theory of yours, right?
+
+864,Teshi
+01:08:14,800 --> 01:08:15,810
+Well...
+
+865,Teshi
+01:08:15,810 --> 01:08:21,590
+Theories can be based on reality. Like, do you know the
+story of how Itomori Lake was formed? It's a crater!
+
+866,None
+01:08:19,750 --> 01:08:23,750
+"A meteor crater lake
+formed 1,200 years ago."
+
+867,Teshi+Mitsuha
+01:08:21,590 --> 01:08:28,090
+- That means a meteor hit this area
+at least once a thousand years ago!
+- Right. That's why-!
+
+868,Mitsuha
+01:08:28,090 --> 01:08:29,890
+Nice one, Teshi!
+
+869,Mitsuha+Teshi
+01:08:33,620 --> 01:08:35,520
+- Let's go evacuate the town!
+- Let's go evacuate the town!
+
+870,Toshiki
+01:08:39,700 --> 01:08:42,710
+Mitsuha's Father: What on earth
+are you talking about?!
+
+871,Mitsuha
+01:08:43,720 --> 01:08:45,040
+Like I said,
+
+872,Toshiki+Mitsuha
+01:08:45,040 --> 01:08:50,000
+-We have to evacuate everyone
+in town before tonight or else-
+-Enough! Shut up!
+
+873,Toshiki
+01:08:54,580 --> 01:08:58,470
+"The comet's going to split
+in two and strike the town?"
+
+874,None
+01:08:58,020 --> 01:09:01,010
+"Itomori Town Hall"
+
+875,Toshiki
+01:08:58,470 --> 01:09:01,140
+"Over 500 will die?"
+
+876,Toshiki
+01:09:01,140 --> 01:09:04,620
+How dare you stand there
+and spout such nonsense!
+
+877,Toshiki
+01:09:05,110 --> 01:09:08,030
+If you're serious, you must be sick!
+
+878,Toshiki
+01:09:08,030 --> 01:09:12,000
+I guess recklessness is a Miyamizu trait.
+
+879,Toshiki
+01:09:12,820 --> 01:09:16,450
+I'll have a car take you to the
+city hospital for an examination.
+
+880,Toshiki
+01:09:16,450 --> 01:09:20,380
+We will continue this discussion
+after you've seen a doctor.
+
+881,Mitsuha
+01:09:21,820 --> 01:09:23,880
+You!
+
+882,Mitsuha
+01:09:24,570 --> 01:09:28,010
+You son of a- !
+
+883,Toshiki
+01:09:34,440 --> 01:09:36,000
+Mitsuha's Father: Mitsuha...
+
+884,Toshiki
+01:09:37,020 --> 01:09:38,390
+No...
+
+885,Toshiki
+01:09:38,970 --> 01:09:40,410
+Wait a minute...
+
+886,Toshiki
+01:09:41,520 --> 01:09:43,590
+Who are you?
+
+887,Kids
+01:09:58,000 --> 01:10:01,950
+-I'll see you guys at the festival, ba-bye!
+-We'll meet ya at the step stone shrine.
+Don't be late, k?
+
+888,Kids
+01:10:01,950 --> 01:10:04,910
+- Ba-bye!
+- Seeya!
+- Later!
+
+889,Mitsuha
+01:10:06,030 --> 01:10:07,710
+You shouldn't go!
+
+890,Mitsuha+Kids
+01:10:07,710 --> 01:10:11,880
+-You've got to leave town!
+Tell all of your friends!
+-What's wrong with you?!
+
+891,Yotsuha+Mitsuha+Kids
+01:10:11,880 --> 01:10:15,300
+- Mitsuha!
+- What was that about?
+- Come on, let's go.
+
+892,Yotsuha
+01:10:15,300 --> 01:10:17,700
+What are you doing, huh?
+
+893,Mitsuha
+01:10:18,060 --> 01:10:20,030
+If it was Mitsuha,
+
+894,Mitsuha
+01:10:20,030 --> 01:10:22,320
+would she have been able to convince him?
+
+895,Mitsuha
+01:10:22,320 --> 01:10:24,190
+- Is all this my fault?!
+- Huh?!
+
+896,Mitsuha
+01:10:24,190 --> 01:10:27,930
+Yotsuha, promise me that you'll
+leave town with grandma before dark!
+
+897,Yotsuha
+01:10:27,930 --> 01:10:28,570
+What?!
+
+898,Mitsuha+Yotsuha
+01:10:28,570 --> 01:10:31,670
+- You're gonna die if you stay here!
+- What are you talking about?!
+
+899,Yotsuha
+01:10:31,670 --> 01:10:37,530
+And why did you suddenly go to Tokyo yesterday?!
+You've been acting really strange lately!
+
+900,Mitsuha+Yotsuha
+01:10:38,300 --> 01:10:42,750
+- Went to Tokyo?
+- Hey! Mitsuha!
+
+901,Teshi
+01:10:44,700 --> 01:10:46,960
+How'd it go with your old man?
+
+902,Teshi
+01:10:48,810 --> 01:10:51,250
+Hey, Mitsuha!
+
+903,Teshi
+01:10:51,250 --> 01:10:52,900
+What's with your sister?
+
+904,Yotsuha
+01:10:52,900 --> 01:10:55,280
+Don't know.
+
+905,None
+01:11:02,360 --> 01:11:03,510
+[Ding]
+
+906,Mitsuha
+01:11:04,070 --> 01:11:06,410
+Could she be over there?
+
+907,Sara
+01:11:06,580 --> 01:11:08,890
+What's that? What's over there?
+
+908,Mitsuha+Teshi
+01:11:09,210 --> 01:11:12,030
+- Let me use your bike, Teshi.
+- Hey.
+
+909,Teshi
+01:11:12,030 --> 01:11:14,040
+Mitsuha.
+
+910,Teshi
+01:11:14,350 --> 01:11:16,060
+And what do we do?
+
+911,Mitsuha
+01:11:16,060 --> 01:11:18,200
+Get things ready like we planned!
+
+912,Mitsuha
+01:11:18,200 --> 01:11:20,930
+I'm counting on you!
+
+913,Taki
+01:11:46,360 --> 01:11:49,010
+Mitsuha: Oh my gosh! I'm Taki again!
+
+914,Taki
+01:11:52,090 --> 01:11:54,630
+What's Taki doin' out here?
+
+915,Taki
+01:12:03,710 --> 01:12:05,480
+The town!
+
+916,Taki
+01:12:05,480 --> 01:12:07,370
+It's gone!
+
+917,Taki
+01:12:16,780 --> 01:12:18,000
+So...
+
+918,Taki
+01:12:18,540 --> 01:12:20,000
+does that mean...
+
+919,Taki
+01:12:22,350 --> 01:12:24,910
+I... died?!
+
+920,Mitsuha
+01:12:34,800 --> 01:12:36,710
+"Taki."
+
+921,Mitsuha
+01:12:36,710 --> 01:12:39,020
+"Taki!"
+
+922,Mitsuha
+01:12:40,140 --> 01:12:41,800
+"Don't you remember?!"
+
+923,Mitsuha
+01:12:54,520 --> 01:12:56,550
+I'm going to Tokyo for a few hours.
+
+924,Yotsuha
+01:12:56,550 --> 01:12:58,370
+Wha? Right now?
+
+925,Mitsuha+Yotsuha
+01:12:58,370 --> 01:12:59,800
+- But why?
+- Uh...
+
+926,Mitsuha
+01:12:59,800 --> 01:13:01,210
+For a date.
+
+927,Yotsuha+Mitsuha
+01:13:01,210 --> 01:13:05,320
+- You have a boyfriend in Tokyo?!
+- I-I didn't say it was a date for me.
+
+928,Mitsuha
+01:13:06,730 --> 01:13:09,000
+"I'll be back tonight."
+
+929,Mitsuha
+01:13:11,440 --> 01:13:17,000
+Mitsuha: If I suddenly show up, will it
+be a nuisance or a surprise?
+
+930,Mitsuha
+01:13:17,000 --> 01:13:20,000
+He might not like it if I do.
+
+931,Phone
+01:13:27,060 --> 01:13:31,370
+"The number you are trying to reach
+is currently outside the cellular network."
+
+932,Mitsuha
+01:13:31,370 --> 01:13:34,620
+I guess it won't happen, but...
+
+933,Mitsuha
+01:13:34,620 --> 01:13:36,640
+What if it did?
+
+934,Mitsuha
+01:13:36,640 --> 01:13:38,590
+What would I do?
+
+935,Mitsuha
+01:13:38,590 --> 01:13:40,640
+Would I annoy him?
+
+936,None
+01:13:40,330 --> 01:13:43,330
+"Tiamat Makes
+Closest Approach Tomorrow"
+
+937,Mitsuha
+01:13:40,640 --> 01:13:44,750
+Would it be awkward, or maybe...
+
+938,Mitsuha
+01:13:44,750 --> 01:13:47,990
+he'd be glad to see me.
+
+939,Phone
+01:13:48,300 --> 01:13:52,590
+"The number you are trying to reach
+is currently outside the cellular network."
+
+940,Mitsuha
+01:13:53,350 --> 01:13:55,870
+I guess we won't meet.
+
+941,Mitsuha
+01:13:56,970 --> 01:14:01,860
+But... there's one thing I'm certain of.
+
+942,Mitsuha
+01:14:02,330 --> 01:14:04,520
+If we see each other,
+
+943,Mitsuha
+01:14:04,520 --> 01:14:07,320
+We'll definitely know right away...
+
+944,Mitsuha
+01:14:07,840 --> 01:14:11,530
+that you were the one who was in me,
+
+945,Mitsuha
+01:14:11,530 --> 01:14:14,800
+and that I was the one who was in...
+
+946,Mitsuha
+01:14:14,800 --> 01:14:16,550
+- you.
+- Sorry!
+
+947,Mitsuha
+01:14:38,580 --> 01:14:39,640
+[Gasp]
+
+948,Mitsuha
+01:14:47,860 --> 01:14:50,000
+'Scuse me.
+
+949,Mitsuha
+01:15:09,740 --> 01:15:12,000
+Taki: Agh!
+
+950,Mitsuha
+01:15:21,410 --> 01:15:22,630
+That time...
+
+951,Mitsuha
+01:15:22,630 --> 01:15:24,230
+three years ago.
+
+952,Mitsuha
+01:15:24,230 --> 01:15:26,290
+Before I even knew you...
+
+953,Mitsuha
+01:15:29,490 --> 01:15:31,830
+Mitsuha: [Whispering] Taki...
+
+954,Mitsuha
+01:15:31,830 --> 01:15:34,800
+Taki?
+
+955,Mitsuha+Taki
+01:15:34,800 --> 01:15:37,010
+- Taki!
+- Huh?
+
+956,Mitsuha
+01:15:37,130 --> 01:15:40,000
+Uh... It's me!
+
+957,Mitsuha+Taki
+01:15:41,710 --> 01:15:44,410
+- Don't you... remember?
+- Uh...
+
+958,Taki
+01:15:45,110 --> 01:15:48,010
+Sorry, who are you?
+
+959,Mitsuha
+01:15:51,610 --> 01:15:53,470
+I- I'm sorry.
+
+960,Mitsuha
+01:15:56,690 --> 01:15:58,000
+Ah!
+
+961,Mitsuha
+01:16:00,740 --> 01:16:03,000
+Mitsuha: But, he's Taki!
+
+962,Taki
+01:16:03,750 --> 01:16:04,960
+Taki: What a weird girl.
+
+963,Conductor
+01:16:05,190 --> 01:16:09,070
+Train announcer: "Yotsuya. Yotsuya.
+Stay clear of the doors."
+
+964,Mitsuha+Taki
+01:16:14,110 --> 01:16:15,620
+- Hold on!
+- Huh?
+
+965,Mitsuha+Taki
+01:16:15,870 --> 01:16:17,620
+- Egh!
+- What's your name?
+
+966,Mitsuha
+01:16:18,410 --> 01:16:20,100
+Mitsuha!
+
+967,Mitsuha
+01:16:20,100 --> 01:16:21,360
+My name is...
+
+968,Mitsuha
+01:16:21,360 --> 01:16:23,480
+"Mitsuha!"
+
+969,Mitsuha
+01:16:28,980 --> 01:16:31,230
+Taki (as Mitsuha): Three years ago...
+
+970,Mitsuha
+01:16:31,230 --> 01:16:33,230
+you showed up.
+
+971,Mitsuha
+01:16:33,230 --> 01:16:37,010
+It was... to see me!
+
+972,Taki
+01:16:47,590 --> 01:16:49,940
+Mitsuha (as Taki): Taki.
+
+973,Mitsuha
+01:16:57,500 --> 01:17:00,360
+[Echoing] Mitsuha!
+
+974,Taki
+01:17:00,360 --> 01:17:02,690
+Taki?
+
+975,Mitsuha
+01:17:16,290 --> 01:17:18,340
+Mitsuha!
+
+976,Mitsuha
+01:17:18,340 --> 01:17:20,500
+You're here, right?
+
+977,Mitsuha
+01:17:20,500 --> 01:17:22,520
+Inside my body?
+
+978,Taki
+01:17:22,520 --> 01:17:24,730
+Taki?!
+
+979,Taki
+01:17:24,730 --> 01:17:27,080
+Taki, where are you?!
+
+980,Mitsuha
+01:17:27,080 --> 01:17:29,250
+Taki (as Mitsuha): That was Mitsuha.
+
+981,Mitsuha
+01:17:29,250 --> 01:17:31,140
+I can hear her voice, but...
+
+982,Taki
+01:17:32,090 --> 01:17:34,850
+Taki, where are you?
+
+983,Taki
+01:17:35,250 --> 01:17:37,200
+Taki!!
+
+984,None
+01:17:40,790 --> 01:17:41,930
+[Ding]
+
+985,Mitsuha+Taki
+01:17:41,930 --> 01:17:42,940
+- Uh!
+- Huh?
+
+986,Taki+Mitsuha
+01:17:49,640 --> 01:17:54,890
+Mitsuha (as Taki): Taki, are you...?
+Taki (as Mitsuha)i: Are you there?
+
+987,Taki+Mitsuha
+01:18:19,840 --> 01:18:21,050
+- Magic hour.
+- Magic hour.
+
+988,Taki+Mitsuha
+01:18:21,050 --> 01:18:22,050
+[Gasp]
+
+989,Taki
+01:18:23,730 --> 01:18:25,020
+Uh...
+
+990,Taki
+01:18:35,890 --> 01:18:36,910
+Taki: Mitsuha.
+
+991,Mitsuha
+01:18:43,600 --> 01:18:44,850
+Mitsuha: Taki.
+
+992,Mitsuha
+01:18:45,760 --> 01:18:47,000
+Taki!
+
+993,Mitsuha
+01:18:47,570 --> 01:18:49,730
+[Sobbing] You're really here!
+
+994,Mitsuha+Taki
+01:18:53,930 --> 01:18:57,080
+- Taki!
+- I came all this way to see you,
+
+995,Taki
+01:18:57,260 --> 01:18:59,150
+which wasn't easy...
+
+996,Taki
+01:18:59,150 --> 01:19:01,630
+since you were pretty far away.
+
+997,Mitsuha
+01:19:02,750 --> 01:19:04,560
+How is that even...?
+
+998,Mitsuha
+01:19:04,560 --> 01:19:06,210
+Because, back then!
+
+999,Taki
+01:19:06,210 --> 01:19:09,400
+Well, I drank some of your kuchikamizake.
+
+1000,Mitsuha
+01:19:09,440 --> 01:19:11,370
+Huh?
+
+1001,Taki
+01:19:11,370 --> 01:19:13,050
+Oh...
+
+1002,Mitsuha
+01:19:13,050 --> 01:19:15,210
+You... you drank that?!
+
+1003,Taki
+01:19:15,210 --> 01:19:15,940
+Huh?
+
+1004,Mitsuha
+01:19:15,940 --> 01:19:18,240
+- STUPID PERVERT!
+- Wha-WHA?!
+
+1005,Mitsuha
+01:19:18,240 --> 01:19:21,250
+Mitsuha: Yeah, that's right! You were
+touching my boobies, WEREN'T YOU?!
+
+1006,Taki
+01:19:21,250 --> 01:19:22,120
+Taki: WHA- ?!
+
+1007,Taki+Mitsuha
+01:19:22,120 --> 01:19:24,950
+- Wha-ho-how do you even- ?!
+- 'Cause Yotsuha saw you!
+
+1008,Taki
+01:19:24,950 --> 01:19:27,440
+I just-I couldn't help myself!
+
+1009,Mitsuha+Taki
+01:19:27,440 --> 01:19:30,680
+- But it was just the one time!
+- "Just the one time?"
+
+1010,Mitsuha
+01:19:32,820 --> 01:19:35,350
+How many times is it the issue?!
+
+1011,Taki
+01:19:35,350 --> 01:19:36,740
+Sorry!
+
+1012,Mitsuha
+01:19:36,740 --> 01:19:37,940
+Wait...
+
+1013,Mitsuha
+01:19:37,940 --> 01:19:39,040
+Is that...?
+
+1014,Taki
+01:19:39,510 --> 01:19:40,220
+Oh.
+
+1015,Taki
+01:19:40,220 --> 01:19:43,700
+Yeah, it's yours,
+but you visited before I knew you.
+
+1016,Taki
+01:19:43,700 --> 01:19:45,980
+So, I didn't know who you were.
+
+1017,Taki
+01:19:46,380 --> 01:19:47,910
+Here.
+
+1018,Taki
+01:19:47,910 --> 01:19:50,300
+I kept it for three years,
+
+1019,Taki
+01:19:50,300 --> 01:19:54,000
+but I think it's time you got it back.
+
+1020,Taki+Mitsuha
+01:20:02,770 --> 01:20:05,530
+- Whaddya think?
+- Oh, uh, well...
+
+1021,Taki+Mitsuha
+01:20:05,530 --> 01:20:10,100
+- it's not bad.
+- Oh, you're lyin'!
+
+1022,Taki
+01:20:10,100 --> 01:20:10,810
+Busted!
+
+1023,Mitsuha
+01:20:10,810 --> 01:20:13,390
+Why you gotta be like that?
+
+1024,Mitsuha+Taki
+01:20:14,200 --> 01:20:24,900
+- [Laughing]
+- [Laughing]
+
+1025,Taki
+01:20:27,380 --> 01:20:29,120
+Hey, Mitsuha.
+
+1026,Taki
+01:20:29,120 --> 01:20:31,200
+You still have a lot to do.
+
+1027,Taki
+01:20:31,200 --> 01:20:32,760
+Listen.
+
+1028,Mitsuha+Taki
+01:20:32,760 --> 01:20:35,410
+- It's coming.
+- Don't worry.
+
+1029,Taki
+01:20:35,410 --> 01:20:37,760
+- You still have enough time.
+- [Nod]
+
+1030,Mitsuha
+01:20:37,760 --> 01:20:39,700
+I'll do my best.
+
+1031,Mitsuha
+01:20:40,620 --> 01:20:43,410
+It looks like magic hour is almost...
+
+1032,Taki
+01:20:43,410 --> 01:20:45,010
+over.
+
+1033,Taki
+01:20:46,750 --> 01:20:48,270
+Hey, Mitsuha.
+
+1034,Taki
+01:20:48,270 --> 01:20:51,560
+Just so we don't forget
+things when we wake up...
+
+1035,Taki
+01:20:55,280 --> 01:20:57,990
+Let's write down our names.
+
+1036,Taki
+01:20:57,990 --> 01:21:00,150
+Here.
+
+1037,Taki
+01:21:10,920 --> 01:21:12,970
+Mitsuha.
+
+1038,Taki
+01:21:14,770 --> 01:21:16,120
+Hey.
+
+1039,Taki
+01:21:16,120 --> 01:21:18,120
+Mitsuha?
+
+1040,Taki
+01:21:25,550 --> 01:21:27,990
+I was planning to tell you...
+
+1041,Taki
+01:21:28,810 --> 01:21:30,890
+that wherever you are in the world,
+
+1042,Taki
+01:21:30,890 --> 01:21:35,020
+I swear that I'll find you
+again, no matter what.
+
+1043,Taki
+01:21:37,480 --> 01:21:38,560
+Your name...
+
+1044,Taki
+01:21:38,560 --> 01:21:40,550
+is Mitsuha.
+
+1045,Taki
+01:21:41,130 --> 01:21:42,360
+It'll be okay!
+
+1046,Taki
+01:21:42,360 --> 01:21:43,920
+I'll remember!
+
+1047,Taki
+01:21:43,920 --> 01:21:44,660
+Mitsuha.
+
+1048,Taki
+01:21:44,820 --> 01:21:45,620
+Mitsuha.
+
+1049,Taki
+01:21:45,620 --> 01:21:46,610
+Mitsuha!
+
+1050,Taki
+01:21:46,610 --> 01:21:48,040
+Your name is Mitsuha!
+
+1051,Taki
+01:21:48,040 --> 01:21:49,310
+Your name is-!
+
+1052,Taki
+01:22:00,530 --> 01:22:02,040
+Who...
+
+1053,Taki
+01:22:02,040 --> 01:22:04,040
+are you?
+
+1054,Taki
+01:22:05,090 --> 01:22:06,180
+And what...
+
+1055,Taki
+01:22:06,180 --> 01:22:08,930
+did I even come here for?
+
+1056,Taki
+01:22:08,930 --> 01:22:09,910
+I came...
+
+1057,Taki
+01:22:09,910 --> 01:22:12,180
+I came all this way to see her!
+
+1058,Taki
+01:22:12,180 --> 01:22:13,930
+I came to save her!
+
+1059,Taki
+01:22:13,930 --> 01:22:16,110
+I wanted her to be alive!
+
+1060,Taki
+01:22:16,110 --> 01:22:17,610
+Who was it again?
+
+1061,Taki
+01:22:17,610 --> 01:22:18,640
+Who?
+
+1062,Taki
+01:22:18,640 --> 01:22:20,590
+Who did I come to see?
+
+1063,Taki
+01:22:20,590 --> 01:22:22,170
+Someone precious!
+
+1064,Taki
+01:22:22,170 --> 01:22:24,600
+Someone I don't wanna forget!
+
+1065,Taki
+01:22:24,600 --> 01:22:26,750
+Someone I shouldn't!
+
+1066,Taki
+01:22:26,750 --> 01:22:28,170
+Who was it?
+
+1067,Taki
+01:22:28,170 --> 01:22:29,750
+Who was it?!
+
+1068,Taki
+01:22:29,750 --> 01:22:30,640
+Who?!
+
+1069,Taki
+01:22:30,890 --> 01:22:31,890
+Who?!
+
+1070,Taki
+01:22:31,890 --> 01:22:34,730
+What's your name?!
+
+1071,Mitsuha
+01:22:48,440 --> 01:22:49,730
+Mitsuha: Taki.
+
+1072,Mitsuha
+01:22:49,730 --> 01:22:50,810
+Taki.
+
+1073,Mitsuha
+01:22:50,810 --> 01:22:52,220
+Taki.
+
+1074,Mitsuha
+01:22:52,220 --> 01:22:53,470
+It'll be fine!
+
+1075,Mitsuha
+01:22:53,470 --> 01:22:54,670
+I remember!
+
+1076,Mitsuha
+01:22:54,670 --> 01:22:56,410
+I'll never forget!
+
+1077,Mitsuha
+01:22:56,410 --> 01:22:57,470
+Taki.
+
+1078,Mitsuha
+01:22:57,590 --> 01:22:58,850
+Taki.
+
+1079,Mitsuha
+01:22:58,850 --> 01:23:00,140
+Your name is...
+
+1080,Mitsuha
+01:23:00,140 --> 01:23:02,990
+Taki!
+
+1081,None
+01:23:11,400 --> 01:23:13,400
+"Itomori Substation"
+
+1082,Mitsuha
+01:23:16,370 --> 01:23:17,860
+Teshi!
+
+1083,Mitsuha
+01:23:17,860 --> 01:23:18,860
+Mitsuha!
+
+1084,Mitsuha+Teshi
+01:23:19,310 --> 01:23:22,680
+- Where the heck have you been?
+- He said sorry for breakin' your bike.
+
+1085,Teshi
+01:23:22,680 --> 01:23:24,440
+Wha? Who did?
+
+1086,Mitsuha
+01:23:24,440 --> 01:23:26,000
+I did!
+
+1087,Teshi
+01:23:26,580 --> 01:23:29,530
+You're gonna have to
+explain it to me later.
+
+1088,Teshi
+01:23:33,320 --> 01:23:35,310
+That thing is gonna fall, right?
+
+1089,Teshi+Mitsuha
+01:23:35,310 --> 01:23:38,500
+- For real?
+- For real. I saw it with my own eyes.
+
+1090,Teshi
+01:23:38,500 --> 01:23:41,310
+What? You did, huh?
+
+1091,Teshi
+01:23:41,310 --> 01:23:44,040
+Well, I guess it's settled, then.
+
+1092,Teshi
+01:23:44,040 --> 01:23:46,460
+We're both officially criminals.
+
+1093,None
+01:23:47,240 --> 01:23:49,240
+"Broadcasting Room"
+
+1094,Saya
+01:23:47,890 --> 01:23:51,260
+What?! Do I really have to...?!
+
+1095,Teshi
+01:23:51,260 --> 01:23:55,360
+Once the town's power goes out, the emergency
+generator should kick in right away.
+
+1096,Teshi
+01:23:55,360 --> 01:23:57,540
+Use the broadcast equipment once it does.
+
+1097,Mitsuha
+01:23:57,540 --> 01:24:00,920
+Don't be scared, Saya!
+And repeat it as many times as you can!
+
+1098,Teshi
+01:24:00,920 --> 01:24:02,300
+Woo-hoo!
+
+1099,Teshi+Saya
+01:24:02,300 --> 01:24:07,250
+- You can do it!
+- Aw, nuts! It's do or die!
+
+1100,Mitsuha+Teshi
+01:24:13,090 --> 01:24:16,280
+- Shouldn't it be goin' off?
+- Hell if I know!
+
+1101,Mitsuha+Teshi
+01:24:24,770 --> 01:24:26,850
+- Oooh...
+- Ha ha!
+
+1102,Crowd
+01:24:27,110 --> 01:24:29,020
+- What was that?
+- It was pretty loud, too.
+
+1103,Crowd
+01:24:29,020 --> 01:24:30,960
+Look over there!
+
+1104,Crowd
+01:24:55,350 --> 01:24:58,990
+- Hey look, up there!
+- Whoa!
+
+1105,Sara
+01:25:06,660 --> 01:25:10,050
+This is Itomori Town Hall!
+
+1106,Sara+Crowd
+01:25:10,050 --> 01:25:15,000
+- Reports of an explosion at
+the substation are coming in!
+- An explosion? Did I hear that right?
+
+1107,Sara
+01:25:15,000 --> 01:25:19,560
+Wildfires are possible,
+as well as the threat of more explosions!
+
+1108,Sara
+01:25:19,560 --> 01:25:25,840
+Residents in the followin' areas, please
+evacuate to Itomori High School immediately.
+
+1109,Sara
+01:25:26,320 --> 01:25:28,550
+Kadoiri District.
+
+1110,Sara+Crowd
+01:25:28,550 --> 01:25:31,160
+- Sakagami District!
+- Honey, we should go.
+
+1111,Sara
+01:25:31,160 --> 01:25:34,610
+The broadcast isn't coming from us?
+Well, who the hell is it, then?
+
+1112,Sara
+01:25:34,610 --> 01:25:36,730
+Miyamori District.
+
+1113,Sara
+01:25:37,390 --> 01:25:39,910
+Oyazawa District.
+
+1114,Teshi
+01:25:39,990 --> 01:25:42,180
+Let's go, Mitsuha!
+
+1115,Mitsuha
+01:25:43,600 --> 01:25:45,010
+Teshi!
+
+1116,Teshi+Mitsuha
+01:25:51,150 --> 01:25:56,590
+- Everyone, run! There's a wildfire!
+- Wildfire, please run!
+
+1117,Teshi+Mitsuha
+01:25:56,590 --> 01:26:01,440
+- Get outta here! Run, there's a fire!
+- It's not safe here! Please, evacuate!
+
+1118,Teshi
+01:26:01,630 --> 01:26:04,090
+It's not workin',
+we're runnin' out of time!
+
+1119,Teshi+Mitsuha
+01:26:04,090 --> 01:26:06,600
+- Mitsuha!
+- [Sobbing]
+
+1120,Teshi
+01:26:06,600 --> 01:26:08,000
+What's wrong?
+
+1121,Teshi
+01:26:08,500 --> 01:26:10,570
+What is it...?
+
+1122,Mitsuha
+01:26:10,570 --> 01:26:13,980
+I can't remember what his name is anymore!
+
+1123,Teshi
+01:26:15,300 --> 01:26:19,160
+What is with you?!
+You're the one who started all of this!
+
+1124,Teshi
+01:26:19,160 --> 01:26:22,640
+We can't evacuate everyone
+without firefighters!
+
+1125,Teshi
+01:26:22,640 --> 01:26:25,900
+Get goin'! You gotta convince your old man!
+
+1126,Teshi
+01:26:33,210 --> 01:26:37,100
+Everybody, get to the high school! HURRY!
+
+1127,Crowd
+01:26:39,030 --> 01:26:40,990
+Oh, it's Mitsuha.
+
+1128,Crowd
+01:26:43,760 --> 01:26:48,700
+-Why would terrorists attack way out here?
+What is Chubu Electric saying?
+-They're still checking.
+
+1129,Toshiki
+01:26:48,700 --> 01:26:51,210
+Any update? No wildfires yet?
+
+1130,Toshiki
+01:26:51,210 --> 01:26:53,300
+You sure? Got it.
+
+1131,Toshiki
+01:26:54,460 --> 01:26:58,440
+Make them stop this broadcast immediately!
+Haven't you located its source yet?
+
+1132,Crowd
+01:26:58,440 --> 01:27:01,390
+Mayor, the Takayama sensor
+station just called!
+
+1133,Toshiki
+01:27:02,490 --> 01:27:04,040
+From the high school?
+
+1134,Sara
+01:27:04,180 --> 01:27:09,780
+Once again, residents in the following
+areas, please evacuate to Itomori High...
+
+1135,Crowd
+01:27:09,780 --> 01:27:12,660
+- Ah!
+- What are you doing?! Turn that off!
+
+1136,Mitsuha+Teshi
+01:27:15,200 --> 01:27:17,600
+- They got Saya!
+- Oh no.
+
+1137,Crowd
+01:27:20,900 --> 01:27:23,780
+What were you thinking, Natori?! I swear!
+
+1138,TownHall
+01:27:27,270 --> 01:27:30,780
+This is Itomori Town Hall.
+
+1139,TownHall
+01:27:30,780 --> 01:27:35,310
+We are currently confirming
+the reports of the accident.
+
+1140,TownHall+Crowd
+01:27:35,490 --> 01:27:42,180
+- We instruct all residents to remain calm and stay where they are until further notice.
+- I guess... we have to stay put?
+
+1141,Firefighters
+01:27:42,430 --> 01:27:44,700
+- What is goin' on?
+- So stay on standby.
+
+1142,Teshi
+01:27:45,500 --> 01:27:50,360
+Come on! They said everyone should evacuate!
+The high school's the evacuation center!
+
+1143,TeshiDad
+01:27:50,360 --> 01:27:52,500
+-Katsuhiko!
+
+1144,TeshiDad
+01:27:54,760 --> 01:27:55,740
+Tell me...
+
+1145,TeshiDad
+01:27:55,740 --> 01:27:58,510
+What do you think you're doing?!
+
+1146,Teshi
+01:28:00,700 --> 01:28:02,490
+Sorry, Mitsuha.
+
+1147,Teshi
+01:28:03,480 --> 01:28:05,440
+This is the end.
+
+1148,Teshi
+01:28:05,840 --> 01:28:07,020
+[Gasp]
+
+1149,Teshi
+01:28:07,020 --> 01:28:08,520
+Oh, my God!
+
+1150,Teshi
+01:28:08,520 --> 01:28:11,330
+It's actually splittin' apart!
+
+1151,TV
+01:28:17,710 --> 01:28:23,890
+Look at that! The comet has split into two large
+parts and meteors are now falling to Earth!
+
+1152,TV
+01:28:24,140 --> 01:28:28,380
+- Uh, I don't believe anyone
+could have predicted this.
+- Either way, we have
+quite the mystical view here.
+
+1153,TV
+01:28:28,380 --> 01:28:31,870
+-So, what does the comet's
+nucleus splitting mean for us?
+
+1154,TV
+01:28:31,870 --> 01:28:37,690
+-The comet's not within the Roche limit, so the nucleus
+itself must've had a structural weakness for this to happen.
+
+1155,TV
+01:28:37,690 --> 01:28:42,520
+-Comet Shoemaker-Levy 9 broke apart
+and collided with Jupiter in 1994.
+
+1156,TV+Mitsuha
+01:28:43,060 --> 01:28:45,220
+- There were at least 21 fragments...
+- I'm going outside to take a look.
+
+1157,TV
+01:28:45,220 --> 01:28:48,650
+- The fragments will likely burn up
+well before reaching the ground.
+- Does it pose a danger?
+
+1158,TV
+01:28:48,650 --> 01:28:53,020
+-Probability of a meteor actually landing
+on a populated area is quite small.
+
+1159,TV
+01:28:53,020 --> 01:28:54,650
+-never foresaw this development.
+
+1160,TV
+01:28:54,650 --> 01:28:58,770
+- To predict the trajectory...
+- As we stand here witnessing
+this spectacle,
+
+1161,TV
+01:28:58,770 --> 01:29:00,270
+unassisted...
+
+1162,TV
+01:29:00,270 --> 01:29:01,590
+and with our bare eyes,
+
+1163,TV
+01:29:01,590 --> 01:29:06,970
+it strikes me that living in such an age
+has never felt more fortunate than now.
+
+1164,Mitsuha
+01:29:09,580 --> 01:29:10,700
+Mitsuha: Hey...
+
+1165,Mitsuha
+01:29:11,210 --> 01:29:12,310
+Who...
+
+1166,Mitsuha
+01:29:12,310 --> 01:29:14,000
+are you?
+
+1167,Mitsuha
+01:29:16,830 --> 01:29:18,200
+Who?
+
+1168,Mitsuha
+01:29:18,560 --> 01:29:20,240
+Who?
+
+1169,Mitsuha
+01:29:20,330 --> 01:29:22,260
+Who is he?
+
+1170,Mitsuha
+01:29:22,260 --> 01:29:24,030
+Someone precious.
+
+1171,Mitsuha
+01:29:24,030 --> 01:29:26,020
+Someone I shouldn't forget!
+
+1172,Mitsuha
+01:29:26,020 --> 01:29:28,740
+Someone I didn't want to!
+
+1173,Mitsuha
+01:29:28,740 --> 01:29:30,430
+Who?
+
+1174,Mitsuha
+01:29:30,430 --> 01:29:31,510
+Who?!
+
+1175,Mitsuha
+01:29:31,510 --> 01:29:33,410
+Who are you?!
+
+1176,Mitsuha
+01:29:33,410 --> 01:29:36,150
+What's your name?!
+
+1177,Mitsuha
+01:29:41,010 --> 01:29:42,460
+Oh no!
+
+1178,Mitsuha
+01:29:42,520 --> 01:29:43,880
+Ah! Argh!
+
+1179,Mitsuha
+01:29:47,660 --> 01:29:48,780
+Ungh!
+
+1180,Taki
+01:30:01,840 --> 01:30:04,410
+-"So that we don't forget
+things when we wake up..."
+
+1181,Taki
+01:30:04,410 --> 01:30:06,990
+"Let's write down our names."
+
+1182,None
+01:30:15,110 --> 01:30:18,510
+"I love you"
+
+1183,Mitsuha
+01:30:33,580 --> 01:30:35,160
+Writing this...
+
+1184,Mitsuha
+01:30:35,160 --> 01:30:36,790
+doesn't help!
+
+1185,Mitsuha
+01:30:36,790 --> 01:30:39,090
+I won't know your name...
+
+1186,Mitsuha
+01:30:39,090 --> 01:30:41,130
+[Crying]
+
+1187,Mitsuha
+01:30:52,080 --> 01:30:54,280
+Dad!
+
+1188,Mitsuha
+01:30:54,830 --> 01:30:56,900
+- Mitsuha.
+- There you are!
+
+1189,Toshiki
+01:30:56,900 --> 01:30:59,110
+Don't tell me you're back!
+
+1190,Toshiki
+01:30:59,110 --> 01:31:01,000
+Ah...
+
+1191,Taki
+01:31:03,000 --> 01:31:06,090
+-"It was almost like seeing
+something out of a dream."
+
+1192,Taki
+01:31:06,510 --> 01:31:08,340
+"Nothing more or less..."
+
+1193,Taki
+01:31:08,340 --> 01:31:10,700
+"than a breathtaking view."
+
+1194,Band
+01:31:10,700 --> 01:31:15,110
+Words like "tomorrow"
+or "future" or "fate",
+
+1195,Band
+01:31:15,110 --> 01:31:18,910
+no matter how far they extend their hands,
+
+1196,Band
+01:31:18,910 --> 01:31:22,720
+we breathe, we dream, we raise our love
+
+1197,Band
+01:31:22,720 --> 01:31:26,860
+in a timeless land
+that is far out of reach.
+
+1198,Band
+01:31:26,860 --> 01:31:30,530
+Even the second, hour hands of the clock.
+
+1199,Band
+01:31:30,530 --> 01:31:34,550
+They look at us sideways
+as they tick and tock.
+
+1200,Band
+01:31:34,550 --> 01:31:39,410
+How I hope to have
+forever to spend this life,
+
+1201,Band
+01:31:39,410 --> 01:31:41,830
+no- all future lives
+
+1202,Band
+01:31:41,830 --> 01:31:49,630
+right here in this world with you!
+
+1203,Taki
+01:32:42,390 --> 01:32:43,850
+Taki: Huh?
+
+1204,Taki
+01:32:44,310 --> 01:32:45,880
+Why am I here?
+
+1205,Taki
+01:32:47,170 --> 01:32:49,980
+What am I... doing?
+
+1206,Taki
+01:33:07,480 --> 01:33:08,570
+[Gasp]
+
+1207,Taki
+01:33:08,570 --> 01:33:09,680
+U-uh!
+
+1208,TrainAnnouncer
+01:33:14,310 --> 01:33:18,010
+Train Announcer: "The doors are closing.
+Please be careful."
+
+1209,Taki
+01:33:20,600 --> 01:33:23,400
+Taki: I'm always searching for something.
+
+1210,Taki
+01:33:23,400 --> 01:33:27,030
+This... feeling has consumed me...
+
+1211,Taki
+01:33:27,030 --> 01:33:28,990
+for some time.
+
+1212,Taki
+01:33:30,290 --> 01:33:32,350
+The reason I applied for this position-
+
+1213,Taki
+01:33:32,350 --> 01:33:33,890
+The landscapes people live in-
+
+1214,Taki
+01:33:33,890 --> 01:33:35,840
+To build a city's landscape-
+
+1215,Taki
+01:33:35,840 --> 01:33:38,800
+Even Tokyo. It might vanish too one day.
+
+1216,Taki
+01:33:38,800 --> 01:33:43,210
+And so, I wanna make landscapes
+that- how should I put this?
+
+1217,Taki
+01:33:43,210 --> 01:33:46,700
+That can continue to warm peoples' hearts.
+
+1218,Taki
+01:33:46,700 --> 01:33:48,340
+[Sigh]
+
+1219,Takagi
+01:33:48,340 --> 01:33:50,650
+Takagi: That bad? How many does that make it?
+
+1220,Taki+Tsukasa
+01:33:50,650 --> 01:33:53,400
+Taki: I've stopped counting.
+Tsukasa: Doesn't sound too promising.
+
+1221,Taki+Shinta
+01:33:53,400 --> 01:33:55,990
+- Who asked you?
+- That suit could be the problem.
+
+1222,Taki
+01:33:55,990 --> 01:33:57,760
+-It looks just like yours!
+
+1223,Taki+Shinta
+01:33:57,760 --> 01:34:01,170
+- Well, I have two offers.
+- I have eight myself.
+
+1224,None
+01:34:03,580 --> 01:34:07,400
+"LINE: You have a new message."
+
+1225,Taki
+01:34:06,290 --> 01:34:08,380
+Taki: Is what I'm searching for...
+
+1226,Taki
+01:34:08,380 --> 01:34:09,880
+someone?
+
+1227,Taki
+01:34:09,880 --> 01:34:11,370
+Or somewhere?
+
+1228,Taki
+01:34:12,110 --> 01:34:15,390
+Or am I just searching
+for the right job?
+
+1229,Taki
+01:34:15,390 --> 01:34:17,320
+I don't even really know.
+
+1230,Taki
+01:34:18,030 --> 01:34:19,220
+Oh!
+
+1231,Okudera+Taki
+01:34:19,220 --> 01:34:23,100
+- You're job hunting, huh?
+- I haven't had much luck, though.
+
+1232,Okudera+Taki
+01:34:23,100 --> 01:34:27,950
+- Hey, maybe it's the suit
+that's killing your chances.
+- Uh-does it really look that bad on me?
+
+1233,Taki
+01:34:32,250 --> 01:34:34,850
+-So, why the sudden call today?
+
+1234,Okudera
+01:34:34,850 --> 01:34:40,010
+-I was in the area for work and I figured
+it had been a while since I saw your face.
+
+1235,None
+01:34:39,430 --> 01:34:42,920
+"8 years since the comet disaster"
+
+1236,Okudera
+01:34:42,130 --> 01:34:46,070
+Okudera: Remember that one time when we
+went all the way to Itomori?
+
+1237,Okudera
+01:34:46,070 --> 01:34:49,350
+You were still in high school back
+then, so it was...
+
+1238,Okudera+Taki
+01:34:49,350 --> 01:34:52,580
+- Heh. Five years ago.
+- That long?
+
+1239,Okudera
+01:34:53,160 --> 01:34:54,530
+It seems like...
+
+1240,Okudera
+01:34:54,530 --> 01:34:57,130
+I've forgotten a lot.
+
+1241,Taki
+01:34:57,410 --> 01:34:59,950
+Taki: I don't... remember all that much,
+either.
+
+1242,Taki
+01:34:59,950 --> 01:35:01,700
+About back then.
+
+1243,Taki
+01:35:02,090 --> 01:35:04,200
+Maybe we argued.
+
+1244,Taki
+01:35:04,200 --> 01:35:07,460
+She and Tsukasa went
+back to Tokyo without me.
+
+1245,Taki
+01:35:07,980 --> 01:35:11,010
+I spent the night alone on some mountain.
+
+1246,Taki
+01:35:11,670 --> 01:35:13,980
+That's about all I remember.
+
+1247,Taki
+01:35:16,340 --> 01:35:23,330
+But, at one point in time, I found myself strangely
+drawn to the incident involving that comet.
+
+1248,Taki
+01:35:25,500 --> 01:35:29,000
+A fragment of the comet destroyed
+a town in that disaster,
+
+1249,None
+01:35:28,980 --> 01:35:33,470
+"Evacuation of residents to
+high school grounds confirmed."
+
+1250,Taki
+01:35:29,460 --> 01:35:31,000
+but, miraculously,
+
+1251,Taki
+01:35:31,000 --> 01:35:34,210
+most of the people living
+in the town were unhurt.
+
+1252,Taki
+01:35:34,670 --> 01:35:38,010
+The town happened to be holding
+an emergency drill that day,
+
+1253,None
+01:35:35,250 --> 01:35:37,260
+"No deaths, 104 wounded"
+
+1254,None
+01:35:37,260 --> 01:35:40,260
+"An unprecedented natural disaster"
+
+1255,Taki
+01:35:38,020 --> 01:35:41,380
+and most of its residents
+were outside the impact zone.
+
+1256,None
+01:35:40,250 --> 01:35:42,250
+"Residents safe"
+
+1257,None
+01:35:42,250 --> 01:35:43,910
+"Disaster Foretold?"
+
+1258,Taki
+01:35:42,610 --> 01:35:47,600
+The sheer luck and coincidence of it
+all sparked various conspiracy theories.
+
+1259,None
+01:35:46,490 --> 01:35:49,500
+"Mayor Miyamizu's hidden agenda"
+
+1260,Taki
+01:35:48,360 --> 01:35:51,130
+I read a lot articles about it back then.
+
+1261,None
+01:35:49,500 --> 01:35:51,960
+"Mysterious explosion at the substation"
+
+1262,Taki
+01:35:51,130 --> 01:35:52,990
+I was kind-of obsessed.
+
+1263,Taki
+01:35:53,640 --> 01:35:59,000
+But whatever the reason I had for my
+interest... is a mystery to me now.
+
+1264,Taki
+01:36:00,350 --> 01:36:03,000
+I didn't even know anybody in that town.
+
+1265,Okudera
+01:36:06,370 --> 01:36:09,100
+Thanks for today. This is far enough.
+
+1266,Okudera
+01:36:10,240 --> 01:36:12,080
+I do hope,
+
+1267,Okudera
+01:36:12,080 --> 01:36:13,980
+that at some point,
+
+1268,Okudera
+01:36:13,980 --> 01:36:16,980
+you'll find happiness, too.
+
+1269,Taki
+01:36:19,760 --> 01:36:22,690
+I feel like I'm always searching.
+
+1270,Taki
+01:36:22,690 --> 01:36:24,430
+For something.
+
+1271,Taki
+01:36:24,430 --> 01:36:26,020
+Someone.
+
+1272,None
+01:36:31,570 --> 01:36:34,030
+"Construction company job interview"
+
+1273,Saya
+01:36:37,090 --> 01:36:40,240
+I feel like I do wanna go
+to one more bridal fair.
+
+1274,Saya
+01:36:40,240 --> 01:36:41,640
+They're all the same!
+
+1275,Teshi+Saya
+01:36:41,640 --> 01:36:46,620
+- A Shinto weddin' sure sounds nice, too!
+- You said you wanted to
+be married in a chapel!
+
+1276,Teshi+Saya
+01:36:46,620 --> 01:36:48,710
+- Oh, that reminds me, Teshi!
+- Uh!
+
+1277,Saya
+01:36:48,690 --> 01:36:53,380
+Would ya please shave before the ceremony?
+I'm goin' on a diet for it, you know.
+
+1278,Teshi
+01:36:53,380 --> 01:36:55,500
+She says as she's eatin' a cake!
+
+1279,Teshi+Saya
+01:36:55,500 --> 01:36:58,710
+- I'll get serious tomorrow.
+- Uh...
+
+1280,None
+01:37:14,750 --> 01:37:16,140
+[Ding]
+
+1281,Taki
+01:37:16,140 --> 01:37:17,590
+[Gasp]
+
+1282,Taki
+01:37:33,560 --> 01:37:35,090
+[Sigh]
+
+1283,None
+01:37:41,900 --> 01:37:43,040
+"Itomori, the Town that Vanished"
+
+1284,None
+01:37:43,040 --> 01:37:45,420
+"October 4, 2013 - Itomori Vanished"
+
+1285,None
+01:37:45,420 --> 01:37:47,420
+"Kadoiri Bridge"
+
+1286,None
+01:37:47,420 --> 01:37:48,910
+"Itomori Elementary School"
+
+1287,None
+01:37:49,550 --> 01:37:51,920
+"Miyamizu Shrine"
+
+1288,Taki
+01:37:56,440 --> 01:37:59,650
+Taki: The landscape of a town
+that's no longer there.
+
+1289,Taki
+01:37:59,650 --> 01:38:03,940
+Why does looking at it make
+my chest feel so tight?
+
+1290,Band
+01:38:40,490 --> 01:38:43,020
+Now, just a little more,
+
+1291,Band
+01:38:43,020 --> 01:38:46,200
+only just a little more.
+
+1292,Band
+01:38:46,200 --> 01:38:52,310
+Let's stay here a little longer now.
+
+1293,Band
+01:38:52,310 --> 01:38:54,490
+Just a little more,
+
+1294,Band
+01:38:54,490 --> 01:38:57,730
+only just a little more.
+
+1295,Band
+01:38:57,730 --> 01:39:02,230
+Let's stick together
+just a little bit longer.
+
+1296,Band
+01:39:03,750 --> 01:39:05,980
+Just a little more,
+
+1297,Band
+01:39:05,980 --> 01:39:09,150
+only just a little more.
+
+1298,Band
+01:39:09,150 --> 01:39:14,340
+Let's stay here a little longer now.
+
+1299,Band
+01:39:14,870 --> 01:39:17,360
+Now just a little more,
+
+1300,Band
+01:39:17,360 --> 01:39:20,510
+only just a little more.
+
+1301,Band
+01:39:20,510 --> 01:39:23,930
+Let's stick together
+just a little bit longer.
+
+1302,Taki+Mitsuha
+01:39:23,930 --> 01:39:28,220
+Taki: I was always searching...
+Mitsuha: Searching for...
+
+1303,Mitsuha
+01:39:28,220 --> 01:39:29,370
+-someone!
+
+1304,Band
+01:39:29,370 --> 01:39:31,630
+Oh yes, we are time fliers,
+
+1305,Band
+01:39:31,630 --> 01:39:34,500
+scaling the walls of time. Climber
+
+1306,Band
+01:39:34,500 --> 01:39:39,210
+tired of playing
+hide-and-seek with time and
+
+1307,Band
+01:39:39,210 --> 01:39:41,330
+always comin' dead short.
+
+1308,Band
+01:39:41,330 --> 01:39:43,140
+I'll never let you go now,
+
+1309,Band
+01:39:43,140 --> 01:39:45,630
+promise I will never let you go now,
+
+1310,Band
+01:39:45,630 --> 01:39:48,340
+'cause my hand finally has reached yours!
+
+1311,Band
+01:39:48,340 --> 01:39:51,010
+Why should I have to?
+
+1312,Band
+01:39:52,420 --> 01:39:54,590
+Oh, you're sure quite a showy crier.
+
+1313,Band
+01:39:54,590 --> 01:39:55,950
+Wanna stop your tears,
+
+1314,Band
+01:39:55,950 --> 01:39:57,440
+see your eyes drier.
+
+1315,Band
+01:39:57,440 --> 01:40:00,660
+But when I went to wipe your tears dry,
+
+1316,Band
+01:40:00,660 --> 01:40:04,200
+you refused, but I saw them
+pouring down your face, I knew why.
+
+1317,Band
+01:40:04,200 --> 01:40:05,900
+Crying even when you're happy,
+
+1318,Band
+01:40:05,900 --> 01:40:08,530
+smiling even when you're feeling lonely.
+
+1319,Band
+01:40:08,530 --> 01:40:10,490
+It's because a part of you
+
+1320,Band
+01:40:10,490 --> 01:40:13,410
+has made it here before the rest has.
+
+1321,Taki
+01:40:27,090 --> 01:40:28,730
+Taki: Excuse me!
+
+1322,Taki
+01:40:28,730 --> 01:40:30,350
+Haven't we...?
+
+1323,Taki
+01:40:30,350 --> 01:40:31,250
+Have I...
+
+1324,Taki
+01:40:31,250 --> 01:40:33,970
+met you somewhere?
+
+1325,Mitsuha
+01:40:41,560 --> 01:40:43,690
+Mitsuha: I thought so, too!
+
+1326,Mitsuha+Taki
+01:40:47,690 --> 01:40:49,230
+- Can I ask you...
+- Can I ask you...
+
+1327,Mitsuha+Taki
+01:40:49,230 --> 01:40:50,680
+- your name?
+- your name?
+
+1328,Band
+01:40:51,270 --> 01:40:57,180
+The sorrowful gust of wind that
+blew right between you and me,
+
+1329,Band
+01:40:57,180 --> 01:41:02,920
+where did it find the loneliness
+it carried on the breeze?
+
+1330,Band
+01:41:02,920 --> 01:41:08,680
+Looking up at the sky after
+shedding a stream of tears,
+
+1331,Band
+01:41:08,680 --> 01:41:14,290
+I could see for miles of blue,
+it's never been so clear.
+
+1332,Band
+01:41:25,630 --> 01:41:31,430
+Speeches that my father gave me
+would always make me despair.
+
+1333,Band
+01:41:31,430 --> 01:41:37,050
+Somehow, I feel a warmth and comfort today.
+
+1334,Band
+01:41:37,050 --> 01:41:42,830
+Your ever kind heart, the way you smile,
+and even how you find your dreams.
+
+1335,Band
+01:41:42,830 --> 01:41:48,330
+I knew nothing, so honestly,
+I've always copied you.
+
+1336,Band
+01:41:48,330 --> 01:41:50,810
+Now, just a little more,
+
+1337,Band
+01:41:50,810 --> 01:41:54,070
+only just a little more.
+
+1338,Band
+01:41:54,070 --> 01:41:58,690
+Let's stay here a little longer now.
+
+1339,Band
+01:41:59,790 --> 01:42:02,310
+Now just a little more,
+
+1340,Band
+01:42:02,310 --> 01:42:05,510
+only just a little more.
+
+1341,Band
+01:42:05,510 --> 01:42:10,100
+Let's stick together
+just a little bit longer.
+
+1342,Band
+01:42:14,190 --> 01:42:16,510
+Oh yes, we are time fliers
+
+1343,Band
+01:42:16,510 --> 01:42:19,390
+scaling the walls of time. Climber
+
+1344,Band
+01:42:19,390 --> 01:42:24,080
+tired of playing hide-and-seek
+with time and
+
+1345,Band
+01:42:24,080 --> 01:42:26,180
+always comin' dead short.
+
+1346,Band
+01:42:26,180 --> 01:42:27,870
+Crying even when you're happy,
+
+1347,Band
+01:42:27,870 --> 01:42:30,500
+smiling even when you're feeling lonely.
+
+1348,Band
+01:42:30,500 --> 01:42:35,240
+It's because a part of you has
+made it here before the rest has.
+
+1349,Band
+01:42:57,100 --> 01:43:02,830
+I used to wish upon the stars,
+the toys that I once adored.
+
+1350,Band
+01:43:02,830 --> 01:43:08,780
+Forgotten now, are rollin'
+'round the corners of the floor.
+
+1351,Band
+01:43:08,780 --> 01:43:14,390
+Finally, my dream has counted
+up to a hundred today.
+
+1352,Band
+01:43:14,390 --> 01:43:20,210
+Someday, I'll trade them
+all for just the very one.
+
+1353,Band
+01:43:25,930 --> 01:43:31,650
+Girl that I have seen in school,
+that never have told "hello",
+
+1354,Band
+01:43:31,650 --> 01:43:37,270
+After class today, I waved and
+said, “See you tomorrow!”
+
+1355,Band
+01:43:37,270 --> 01:43:42,920
+It's not really that bad trying
+something new every once in a while,
+
+1356,Band
+01:43:42,920 --> 01:43:48,420
+especially if I can do
+it with you by my side.
+
+1357,Band
+01:43:48,420 --> 01:43:50,950
+Now just a little more,
+
+1358,Band
+01:43:50,950 --> 01:43:54,140
+only just a little more.
+
+1359,Band
+01:43:54,140 --> 01:43:59,020
+Let's stay here a little longer now.
+
+1360,Band
+01:44:00,190 --> 01:44:02,390
+Just a little more,
+
+1361,Band
+01:44:02,390 --> 01:44:05,610
+only just a little more.
+
+1362,Band
+01:44:05,610 --> 01:44:10,000
+Let's stick together
+just a little bit longer.
+
+1363,Band
+01:44:14,310 --> 01:44:17,750
+Oh yes, we are time fliers, so, and I...
+
+1364,Band
+01:44:17,750 --> 01:44:20,630
+I knew who you were way before...
+
+1365,Band
+01:44:20,630 --> 01:44:23,790
+way before I even knew my own name.
+
+1366,Band
+01:44:23,790 --> 01:44:30,270
+There's no clue, but I'm sure. I swear!
+
+1367,Band
+01:44:32,090 --> 01:44:34,910
+Even if you're not around
+in this wide world,
+
+1368,Band
+01:44:34,910 --> 01:44:37,740
+of course it surely would
+have some kind of meaning.
+
+1369,Band
+01:44:37,740 --> 01:44:40,650
+But if when you're not
+around in this crazy world,
+
+1370,Band
+01:44:40,650 --> 01:44:43,710
+would be like the month of
+August without summer break.
+
+1371,Band
+01:44:43,710 --> 01:44:46,360
+And if you're not around
+in this great world,
+
+1372,Band
+01:44:46,360 --> 01:44:49,610
+would be like Santa Claus without any glee.
+
+1373,Band
+01:44:49,610 --> 01:44:57,620
+If you're not around in this wide world!
+
+1374,Band
+01:45:23,010 --> 01:45:25,190
+Oh yes, we are time fliers
+
+1375,Band
+01:45:25,190 --> 01:45:28,130
+scaling the walls of time. Climber
+
+1376,Band
+01:45:28,130 --> 01:45:32,820
+tired of playing hide-and-seek
+with time and
+
+1377,Band
+01:45:32,820 --> 01:45:34,910
+always comin' dead short.
+
+1378,Band
+01:45:34,910 --> 01:45:36,690
+No, never mind that!
+
+1379,Band
+01:45:36,690 --> 01:45:39,250
+No, never mind what I said now,
+
+1380,Band
+01:45:39,250 --> 01:45:42,300
+'cause I'm on my way to you!
+
+1381,Band
+01:45:43,880 --> 01:45:46,070
+Oh, we are time fliers,
+
+1382,Band
+01:45:46,070 --> 01:45:48,920
+dashing up the steps of time now!
+
+1383,Band
+01:45:48,920 --> 01:45:53,590
+No more playing hide-and-seek
+with you and time
+
+1384,Band
+01:45:53,590 --> 01:45:55,670
+and always comin' dead short!
+
+1385,Band
+01:45:55,670 --> 01:45:57,500
+You're quite a showy crier!
+
+1386,Band
+01:45:57,500 --> 01:45:58,850
+Wanna stop your tears,
+
+1387,Band
+01:45:58,850 --> 01:46:00,350
+see your eyes drier!
+
+1388,Band
+01:46:00,350 --> 01:46:03,570
+But when I went to wipe your tears dry,
+
+1389,Band
+01:46:03,570 --> 01:46:07,130
+you refused but I saw them pouring
+down your face, I knew why!
+
+1390,Band
+01:46:07,130 --> 01:46:08,820
+Crying even when I'm happy,
+
+1391,Band
+01:46:08,820 --> 01:46:11,440
+smiling even when I'm feeling lonely!
+
+1392,Band
+01:46:11,440 --> 01:46:13,430
+It's because the heart of mine
+
+1393,Band
+01:46:13,430 --> 01:46:17,170
+has made it here before my body.
