@@ -10,35 +10,8 @@ from layers import *
 from plots import plot_attention
 
 def train_model(config, **kwargs):
-
-    transforms = None
-    if cfg['spec_augment']:
-        transforms = spec_augment
-    
-    train_dataset = ASRDataset(train_path, train_transcripts_path, transforms=transforms)
-    val_dataset = ASRDataset(val_path, val_transcripts_path)
-    if cfg['minival']:
-        val_dataset = torch.utils.data.Subset(val_dataset, [x for x in range(cfg['threshold'])])
-
-    if cfg['DEBUG']:
-        print(f"debug mode, using subsets of size {cfg['threshold']}")
-        train_dataset = torch.utils.data.Subset(train_dataset, [x for x in range(cfg['threshold'])])
-        val_dataset = torch.utils.data.Subset(train_dataset, [x for x in range(cfg['threshold'])])
-    
-    train_loader = DataLoader(train_dataset
-                            , batch_size=config['batch_size']
-                            , shuffle=cfg['train_shuffle']
-                            , num_workers=cfg['num_workers']
-                            , pin_memory=cfg['pin_memory']
-                            , collate_fn=collate)
-    val_loader = DataLoader(val_dataset
-                        , batch_size=cfg['val_batch_size']
-                        , shuffle=False
-                        , num_workers=cfg['val_workers']
-                        , pin_memory=False
-                        , collate_fn=collate)
-
-    # train_loader, val_loader = split_into_val_train()
+                        
+    train_loader, val_loader = split_into_val_train(config)
 
     model = Seq2Seq(input_dim=cfg['input_dim']
                     , vocab_size=len(LETTER_LIST)
