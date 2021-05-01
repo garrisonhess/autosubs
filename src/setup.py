@@ -32,8 +32,8 @@ cfg_path = "./config.yaml"
 with open(cfg_path) as file:
     cfg = yaml.load(file, Loader=Loader)
 
-knnw_audio_path = os.path.abspath(cfg['knnw_audio_path'])
-knnw_subtitle_path = os.path.abspath(cfg['knnw_subtitle_path'])
+knnw_audio_path = os.path.expanduser(cfg['knnw_audio_path'])
+knnw_subtitle_path = os.path.expanduser(cfg['knnw_subtitle_path'])
 train_path = os.path.expanduser(cfg['train_path'])
 train_transcripts_path = os.path.expanduser(cfg['train_transcripts_path'])
 val_path = os.path.expanduser(cfg['val_path'])
@@ -50,3 +50,8 @@ plot_path = os.path.expanduser(cfg['plot_path'])
 decoder_ckpt_dir = os.path.expanduser(cfg['decoder_ckpt_dir'])
 decoder_ckpt_path = os.path.expanduser(cfg['decoder_ckpt_path'])
 full_ckpt_path = os.path.expanduser(cfg['full_ckpt_path'])
+
+print("knnw_audio_path", knnw_audio_path)
+print("knnw_subtitle_path", knnw_subtitle_path)
+print("train_path", train_path)
+print("train_transcripts_path", train_transcripts_path)

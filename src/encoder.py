@@ -10,7 +10,7 @@ class Encoder(nn.Module):
                 , arch):
         super(Encoder, self).__init__()
         layers = []
-        curr_feat_dim = 40
+        curr_feat_dim = cfg["input_dim"]
         prev_layer_type = None
 
         for i, layer_type in enumerate(arch):
