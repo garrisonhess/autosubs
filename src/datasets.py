@@ -1,5 +1,6 @@
 from setup import *
 from preprocess import *
+import re
 
 def spec_augment(X, max_freq_mask=14, max_time_mask=120, nfreq_masks=1, ntime_masks=1, max_time_pct=0.2):
 
@@ -32,7 +33,7 @@ class ASRDataset(Dataset):
         self.Y = None
         if Y_path != "":
             raw_train_transcript = np.load(Y_path, allow_pickle=True, encoding='bytes')
-            self.Y = np.array(transform_letter_to_index(raw_train_transcript, debug=False), dtype=object)
+            self.Y = np.array(transform_letter_to_index(raw_train_transcript, asr_data=True), dtype=object)
 
     def __len__(self):
         return self.X.shape[0]
@@ -82,7 +83,7 @@ class ToyDataset(Dataset):
         # sort the y's correspondingly
         if Y_path != "":
             raw_train_transcript = np.load(Y_path, allow_pickle=True, encoding='bytes')
-            self.Y = np.array(transform_letter_to_index(raw_train_transcript, debug=True), dtype=object)
+            self.Y = np.array(transform_letter_to_index(raw_train_transcript, asr_data=False), dtype=object)
             self.Y = self.Y[sorted_idxs]
 
 
@@ -140,25 +141,22 @@ def collate_test(batch):
 
     return inputs, input_lengths
 
-import pandas
-import numpy
-import torch
-
 class KnnwAudioDataset(torch.utils.data.Dataset):
     
     def __init__(self, 
                  audio_path=knnw_audio_path,
                  subtitle_lookup_path=knnw_subtitle_path,
                  total_frames=1370582, 
-                 total_duration=6396010):
+                 total_duration=6396010,
+                 threshold = None):
         
         self.duration_per_frame = total_duration / total_frames
         
-        self.audio = numpy.load(audio_path)
+        self.audio = np.load(audio_path)
         
-        self.subtitle_lookup = pandas.read_table(subtitle_lookup_path, 
+        self.subtitle_lookup = pd.read_table(subtitle_lookup_path, 
                                                  sep = ";", header=0)
-        
+
         self.length = len(self.subtitle_lookup)
         
     def __len__(self):
@@ -180,16 +178,15 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         
         audio_range = self.get_range(start_time, stop_time)
         
-        audio_item = self.audio[:,audio_range]
+        audio_item = torch.tensor(self.audio[:,audio_range], dtype=torch.float32)
+        audio_item = audio_item.T
         audio_item_length = int(audio_item.shape[0])
-        
         subtitle_item = self.subtitle_lookup.iloc[i, 3]
         subtitle_item = self.get_tokenization(subtitle_item)
-
         subtitle_item = self.remove_chars(subtitle_item)
-        subtitle_item = np.array(transform_letter_to_index([subtitle_item]))[0]
-        
-        return audio_item, subtitle_item, audio_item_length
+        subtitle_item = np.array(transform_letter_to_index([subtitle_item]))
+        subtitle_item = torch.tensor(subtitle_item[0], dtype=torch.long)
+        return audio_item,audio_item_length, subtitle_item, subtitle_item.shape[0]
         
     def get_index(self, time, start_flag):
         """gets index from timestamp
@@ -202,10 +199,10 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
             [type]: [description]
         """
         if start_flag == True:
-            return numpy.floor(time/self.duration_per_frame)
+            return np.floor(time/self.duration_per_frame)
         
         else:
-            return numpy.ceil(time/self.duration_per_frame)
+            return np.ceil(time/self.duration_per_frame)
         
     def get_range(self, start_time, end_time):
         """get_range
