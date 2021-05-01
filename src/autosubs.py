@@ -58,8 +58,25 @@ def pad_collate_fn(data, mode='train'):
     
     return audio, subtitles, audio_lengths
 
+def sub_file_edit():
+    sub_file = open(cfg['knnw_subtitle_path'], 'r')
+    sub_file_edit = open(cfg['knnw_subtitle_edit_path'], 'w')
+    lines = sub_file.readlines()
+    sub_file_edit.write(lines[0])
+
+    num = 1
+    for line in lines[2:]:
+        try:
+            line.index('""')
+        except ValueError: 
+            s = line[line.index(';'):]
+            s = str(num) + s
+            sub_file_edit.write(s)
+        
+        num += 1
+
 def create_train_only_data():
-    train_dataset = KnnwAudioDataset(cfg['train_path'], cfg['train_labels'], KNNW_TOTAL_FRAMES, KNNW_TOTAL_DURATION)
+    train_dataset = KnnwAudioDataset(cfg['knnw_audio_path'], cfg['knnw_subtitle_edit_path'], KNNW_TOTAL_FRAMES, KNNW_TOTAL_DURATION)
     return train_dataset
 
 def split_into_val_train():

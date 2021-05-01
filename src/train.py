@@ -1,6 +1,7 @@
 from setup import *
 from preprocess import *
 from datasets import *
+from autosubs import *
 from attention import Attention
 from seq2seq import Seq2Seq
 from decoder import Decoder
@@ -36,6 +37,8 @@ def train_model(config, **kwargs):
                         , num_workers=cfg['val_workers']
                         , pin_memory=False
                         , collate_fn=collate)
+
+    # train_loader, val_loader = split_into_val_train()
 
     model = Seq2Seq(input_dim=cfg['input_dim']
                     , vocab_size=len(LETTER_LIST)

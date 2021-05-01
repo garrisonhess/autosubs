@@ -32,6 +32,8 @@ cfg_path = "./config.yaml"
 with open(cfg_path) as file:
     cfg = yaml.load(file, Loader=Loader)
 
+knnw_audio_path = os.path.abspath(cfg['knnw_audio_path'])
+knnw_subtitle_path = os.path.abspath(cfg['knnw_subtitle_path'])
 train_path = os.path.expanduser(cfg['train_path'])
 train_transcripts_path = os.path.expanduser(cfg['train_transcripts_path'])
 val_path = os.path.expanduser(cfg['val_path'])
