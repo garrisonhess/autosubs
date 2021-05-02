@@ -25,8 +25,9 @@ import re
 KNNW_TOTAL_FRAMES = 1370582
 KNNW_TOTAL_DURATION = 6396010
 
-random.seed(123123)
-torch.manual_seed(123123)
+random.seed(0)
+torch.manual_seed(0)
+np.random.seed(0)
 device = torch.device("cuda:0")
 
 start_time = time.strftime("%Y-%m-%d-%H-%M%S")
