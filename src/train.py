@@ -8,7 +8,7 @@ from layers import *
 from plots import plot_attention
 
 def train_model(config, **kwargs):
-                        
+
     dataset = KnnwAudioDataset(knnw_audio_path
                             , knnw_subtitle_path
                             , KNNW_TOTAL_FRAMES
@@ -34,7 +34,7 @@ def train_model(config, **kwargs):
                             , batch_size=cfg['val_batch_size']
                             , num_workers=cfg['val_workers']
                             , pin_memory=cfg['pin_memory']
-                            , collate_fn=lambda x: pad_collate_fn(x, 'valid'))
+                            , collate_fn=pad_collate_fn)
 
     model = Seq2Seq(input_dim=cfg['input_dim']
                     , vocab_size=len(LETTER_LIST)
@@ -162,10 +162,6 @@ def train(model, mode, warmup_epochs, config, train_loader, optimizer, criterion
         assert(len(input_lengths) == len(target_lengths))
         inputs = inputs.to(device, non_blocking=True)
         targets = targets.to(device, non_blocking=True)
-        input_lengths, sorted_idxs = input_lengths.sort(dim=-1)
-        inputs = inputs[sorted_idxs]
-        targets = targets[sorted_idxs]
-        target_lengths = target_lengths[sorted_idxs]
         batch_size = inputs.size(0)
         max_seq_len = inputs.size(1)
         max_target_len = targets.size(1)
@@ -254,10 +250,6 @@ def eval(model, val_loader, criterion, epoch, device, peek=False, warmup=False):
         assert(len(input_lengths) == len(target_lengths))
         inputs = inputs.to(device, non_blocking=True)
         targets = targets.to(device, non_blocking=True)
-        input_lengths, sorted_idxs = input_lengths.sort(dim=-1)
-        inputs = inputs[sorted_idxs]
-        targets = targets[sorted_idxs]
-        target_lengths = target_lengths[sorted_idxs]
         batch_size = inputs.size(0)
         max_seq_len = inputs.size(1)
         max_target_len = targets.size(1)
@@ -295,6 +287,7 @@ def eval(model, val_loader, criterion, epoch, device, peek=False, warmup=False):
         for out_path, targ_path in zip(output_paths, target_paths):
             dist += Levenshtein.distance(out_path, targ_path)
 
+        assert(len(output_paths) == len(target_paths))
         if ctr < 3:
             for i in range(min(10, len(output_paths))):
                 print(f"TARGET{i}: {target_paths[i]}")

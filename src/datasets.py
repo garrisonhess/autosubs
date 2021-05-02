@@ -23,7 +23,7 @@ def spec_augment(X, max_freq_mask=57, max_time_mask=80, nfreq_masks=1, ntime_mas
     return X
 
 
-def pad_collate_fn(batch, mode='train'):
+def pad_collate_fn(batch):
     # data comes in as (batch, seq_len, feature_len)
     audio, audio_lengths, subtitles, subtitle_lengths = list(zip(*batch))
     audio_lengths = torch.tensor(audio_lengths, dtype=torch.long)
