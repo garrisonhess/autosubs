@@ -32,8 +32,6 @@ def transform_letter_to_index(sentence, asr_data=False):
             decoded_word = word
         for char in decoded_word:
             letters.append(letter2index[char])
-        # letters.append(letter2index[' '])
-    # letters.pop()
     letters.append(letter2index['<EOS>'])
     return letters
 

@@ -1,9 +1,6 @@
 from setup import *
 from train import *
 
-
-
-
 search_space = {
     "num_epochs": cfg['epochs'],
     "lr": tune.grid_search(cfg['lr']),
@@ -11,14 +8,12 @@ search_space = {
     "gamma": tune.grid_search(cfg['gamma']),
     "batch_size": tune.grid_search(cfg['batch_size']),
     "lr_step": tune.grid_search(cfg['lr_step']),
-    "conv_channels": tune.grid_search(cfg["conv_channels"]),
     "enc_dropout": tune.grid_search(cfg["enc_dropout"]),
     "enc_h": tune.grid_search(cfg["enc_h"]),
     "dec_h": tune.grid_search(cfg["dec_h"]),
     "embed_dim": tune.grid_search(cfg["embed_dim"]),
     "attn_dim": tune.grid_search(cfg["attn_dim"]),
     "dec_dropout": tune.grid_search(cfg["dec_dropout"]),
-    "lock_drop": tune.grid_search(cfg["lock_drop"]),
     "use_multihead": tune.grid_search(cfg["use_multihead"]),
     "nheads": tune.grid_search(cfg["nheads"]),
     "encoder_arch": tune.grid_search(cfg["encoder_arch"]),

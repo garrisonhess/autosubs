@@ -4,13 +4,6 @@ from preprocess import *
 from layers import *
 
 class Decoder(nn.Module):
-    '''
-    As mentioned in a previous recitation, each forward call of decoder deals with just one time step.
-    Thus we use LSTMCell instead of LSTM here.
-    The output from the seond LSTMCell can be used as query for calculating attention.
-    In place of value that we get from the attention, this can be replace by context we get from the attention.
-    Methods like Gumble noise and teacher forcing can also be incorporated for improving the performance.
-    '''
     def __init__(self
                 , vocab_size
                 , decoder_hidden_dim
@@ -40,13 +33,9 @@ class Decoder(nn.Module):
         
         self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
         self.fc = nn.Linear(2 * key_value_size, vocab_size, bias=True)
-        if cfg['weight_tying']:
-            self.embedding.weight = self.fc.weight
+        self.embedding.weight = self.fc.weight
         self.dropout1 = nn.Dropout(p=dec_dropout_prob)
         self.dropout2 = nn.Dropout(p=dec_dropout_prob)
-        self.norm1 = nn.LayerNorm(decoder_hidden_dim) if cfg['dec_ln'] else nn.Identity()
-        self.norm2 = nn.LayerNorm(key_value_size) if cfg['dec_ln'] else nn.Identity()
-
 
 
     def forward(self, key, value, encoded_seq_lens, device, teacher_forcing, targets=None, mode='train'):
@@ -99,16 +88,13 @@ class Decoder(nn.Module):
             # inputs: input, (h_0, c_0)
             if lstm1_hidden is not None:
                 lstm1_hidden, lstm1_cell = self.lstm1(y_context, (lstm1_hidden, lstm1_cell))
-                lstm1_hidden = self.norm1(lstm1_hidden)
                 lstm1_hidden = self.dropout1(lstm1_hidden)
                 lstm2_hidden, lstm2_cell = self.lstm2(lstm1_hidden, (lstm2_hidden, lstm2_cell))
             else:
                 lstm1_hidden, lstm1_cell = self.lstm1(y_context)
-                lstm1_hidden = self.norm1(lstm1_hidden)
                 lstm1_hidden = self.dropout1(lstm1_hidden)
                 lstm2_hidden, lstm2_cell = self.lstm2(lstm1_hidden)
 
-            lstm2_hidden = self.norm2(lstm2_hidden)
             lstm2_hidden = self.dropout2(lstm2_hidden)
 
             # multihead attention

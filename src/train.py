@@ -1,8 +1,6 @@
 from setup import *
 from preprocess import *
 from datasets import *
-from autosubs import *
-from attention import Attention
 from seq2seq import Seq2Seq
 from decoder import Decoder
 from encoder import Encoder
@@ -11,7 +9,32 @@ from plots import plot_attention
 
 def train_model(config, **kwargs):
                         
-    train_loader, val_loader = split_into_val_train(config)
+    dataset = KnnwAudioDataset(knnw_audio_path
+                            , knnw_subtitle_path
+                            , KNNW_TOTAL_FRAMES
+                            , KNNW_TOTAL_DURATION
+                            , spec_aug=cfg['spec_augment']
+                            , freq=cfg['freq_mask']
+                            , time=cfg['time_mask']
+                            )
+
+    split_idx = int(cfg['train_test_split']*len(dataset))
+    train_dataset = Subset(dataset, [idx for idx in range(split_idx)])
+    val_dataset = Subset(dataset, [idx for idx in range(split_idx, len(dataset))])
+
+    if cfg['DEBUG']:
+        train_dataset = val_dataset
+
+    train_loader = DataLoader(dataset=train_dataset
+                            , batch_size=config['batch_size']
+                            , num_workers=cfg['num_workers']
+                            , pin_memory=cfg['pin_memory']
+                            , collate_fn=pad_collate_fn)
+    val_loader = DataLoader(dataset=val_dataset
+                            , batch_size=cfg['val_batch_size']
+                            , num_workers=cfg['val_workers']
+                            , pin_memory=cfg['pin_memory']
+                            , collate_fn=lambda x: pad_collate_fn(x, 'valid'))
 
     model = Seq2Seq(input_dim=cfg['input_dim']
                     , vocab_size=len(LETTER_LIST)
@@ -28,10 +51,7 @@ def train_model(config, **kwargs):
     print(model)
 
     # handle transfer learning
-    if cfg['pretrained_decoder'] and cfg['pretrained_full']:
-        print("Both pretrained_decoder and pretrained_full are set.")
-        exit()
-    elif cfg['pretrained_decoder']:
+    if cfg['transfer_decoder']:
         print("Starting with decoder pretrained weights")
         checkpoint = torch.load(decoder_ckpt_path)
         decoder_keys = []
@@ -42,10 +62,19 @@ def train_model(config, **kwargs):
         for key in decoder_keys:
             decoder_state[key] = checkpoint[key]
         model.load_state_dict(decoder_state, strict=False)
-    elif cfg['pretrained_full']:
-        print("Starting with full pretrained weights")
+    elif cfg['transfer_full']:
+        print("Transfer Learning from WSJ to KNNW")
         checkpoint = torch.load(full_ckpt_path)
-        model.load_state_dict(checkpoint)
+        transfer_keys = []
+        for key in checkpoint.keys():
+            if not key.startswith("encoder.encoder.0"):
+                transfer_keys.append(key)
+        
+        transfer_state = dict()
+        for key in transfer_keys:
+            transfer_state[key] = checkpoint[key]
+        
+        model.load_state_dict(transfer_state, strict=False)
     
     params = model.parameters()
     criterion = nn.CrossEntropyLoss(reduction='none')
@@ -124,13 +153,8 @@ def train(model, mode, warmup_epochs, config, train_loader, optimizer, criterion
     start_time = time.time()
     epoch_attentions = []
 
-    if cfg['DEBUG'] and cfg['TOY_DATA']:
-        teacher_forcing = 0.0
-    else:
-        if epoch % cfg['tf_drop_every'] == 0:
-            teacher_forcing = max(teacher_forcing - cfg['tf_drop'], cfg['min_tf'])
-
-
+    if epoch % cfg['tf_drop_every'] == 0:
+        teacher_forcing = max(teacher_forcing - cfg['tf_drop'], cfg['min_tf'])
     print(f"mode: {mode}, epoch: {epoch}, teacher forcing: {teacher_forcing}")
 
     for inputs, targets, input_lengths, target_lengths in train_loader:
@@ -149,7 +173,6 @@ def train(model, mode, warmup_epochs, config, train_loader, optimizer, criterion
         assert(max_target_len == max(target_lengths))
 
         optimizer.zero_grad()
-
 
         # outputs come out as (batch_size, max_target_length, classes)
         if mode == 'warmup':
@@ -273,10 +296,9 @@ def eval(model, val_loader, criterion, epoch, device, peek=False, warmup=False):
             dist += Levenshtein.distance(out_path, targ_path)
 
         if ctr < 3:
-            print(f"TARGET1: {target_paths[10]}, TARGET2: {target_paths[20]}")
-            print(f"BEAM1: {output_paths[10]}, BEAM2: {output_paths[20]}")
-            if peek:
-                print(f"only running 1 validation batch")
+            for i in range(min(10, len(output_paths))):
+                print(f"TARGET{i}: {target_paths[i]}")
+                print(f"BEAM{i}: {output_paths[i]}")
         
         ctr += 1
 

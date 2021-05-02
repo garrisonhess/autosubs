@@ -1,3 +1,13 @@
+plots
+full_ckpts
+checkpoints
+decoder_ckpts
+ray_logs
+*.pkl
+stdout
+stderr
+*.summer
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

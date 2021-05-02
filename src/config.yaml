@@ -3,8 +3,6 @@ dataset: "KNNW" # or WSJ
 
 #### Configuration
 DEBUG: False
-VAL: False
-TOY_DATA: False
 threshold: 200 
 amp: False     # AMP helps w/ memory but causes gradient explosions
 experiment_name: exp
@@ -18,7 +16,7 @@ input_dim: 129
 update_freq: 24
 channels_last: False
 val_workers: 4
-val_batch_size: 128
+val_batch_size: 256
 min_tf: 0.5
 grad_clip: 2.0
 
@@ -27,8 +25,8 @@ experiment_name: exp
 verbosity: 3
 
 # ASHA
-epochs: 200
-grace_period: 200
+epochs: 5000
+grace_period: 5000
 reduction_factor: 2
 brackets: 1
 num_samples: 1
@@ -38,47 +36,38 @@ enc_h: [256]
 dec_h: [512]
 embed_dim: [256]
 attn_dim: [128]
-conv_channels: [0]
-enc_dropout: [0.3]
-dec_dropout: [0.3]
+enc_dropout: [0.35]
+dec_dropout: [0.35]
 use_multihead: [False]
 nheads: [1]
-lock_drop: [False]
 spec_augment: True
-proj_size: 0
-enc_ln: False
-dec_ln: False
-weight_tying: True
+freq_mask: 57
+time_mask: 37
 encoder_arch: 
-        - [lstm, lstm, plstm, plstm, plstm]
-minival: True
+        - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
 
 # hyperparameters
 lr: [0.001]
 weight_decay: [0.000005]
 gamma: [0.5]
-batch_size: [96]
-lr_step: [70]
+batch_size: [192]
+lr_step: [300]
 smooth_temp: 0.0
+train_test_split: 0.9
 
 
 # transfer learning configuration
 warmup_epochs: 0
-pretrained_decoder: False
-pretrained_full: False #True
+transfer_decoder: False
+transfer_full: True
 warmup_zero_context: True
 decoder_ckpt_path: ~/autosubs/decoder_ckpts/decoder-2021-04-28-23-0617-epoch20-dist376-inner_0f2ed_00000.pth
-full_ckpt_path: ~/autosubs/full_ckpts/full-2021-04-29-11-5452-epoch33-dist105-inner_4eeab_00000.pth
-
-validation_split: 0.1
-shuffle_dataset_split: True
-random_seed_split: 42
+full_ckpt_path: ~/autosubs/full_ckpts/full-2021-04-30-11-5614-epoch120-dist8-inner_85fa3_00000.pth
 
 # schedules
 tf_init: 0.90
-tf_drop_every: 50
-tf_drop: 0.1
-
+tf_drop_every: 200
+tf_drop: 0.
 
 
 # PATHS
