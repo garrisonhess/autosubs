@@ -133,7 +133,7 @@ def train_model(config, **kwargs):
             model_type = 'decoder' if mode == 'warmup' else 'full'
 
             # only checkpoint after N minutes
-            N = 1
+            N = 10
             if not cfg['DEBUG'] and time.time() > last_ckpt_time + 60*N:
                 torch.save(model.state_dict(),
                            f"{checkpoints_path}/{model_type}-{curr_time}-epoch{epoch}-dist{int(eval_lev_dist)}-{tune.get_trial_name()}.pth")
