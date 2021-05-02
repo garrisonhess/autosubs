@@ -6,6 +6,12 @@ from decoder import Decoder
 from encoder import Encoder
 from layers import *
 from plots import plot_attention
+from ctcdecode import CTCBeamDecoder
+
+def beam_to_string(path_tokens, letter_list, seq_len):
+    return ''.join([letter_list[x] for x in path_tokens[:seq_len]])
+
+
 
 def train_model(config, **kwargs):
 
@@ -27,7 +33,7 @@ def train_model(config, **kwargs):
     train_idxs, val_idxs = idxs[:split_idx], idxs[split_idx:]
     train_dataset = Subset(dataset, train_idxs)
     val_dataset = Subset(dataset, val_idxs)
-    
+
     if cfg['DEBUG']:
         train_dataset = val_dataset
 
@@ -131,13 +137,13 @@ def train_model(config, **kwargs):
                                                     , teacher_forcing
                                                     , scaler=None)
         
-        eval_lev_dist = eval(model, val_loader, criterion, epoch, device)
+        eval_gr_dist, eval_beam_dist = eval(model, val_loader, criterion, epoch, device)
 
         # Update Ray Tune
-        tune.report(train_loss=train_loss, eval_lev_dist=eval_lev_dist)
+        tune.report(train_loss=train_loss, eval_gr_dist=eval_gr_dist, eval_beam_dist=eval_beam_dist)
 
-        if eval_lev_dist <= best_lev_dist:
-            best_lev_dist = eval_lev_dist
+        if eval_beam_dist <= best_lev_dist:
+            best_lev_dist = eval_beam_dist
             best_model = copy.deepcopy(model.state_dict())
             curr_time = time.strftime("%Y-%m-%d-%H-%M%S")
             model_type = 'full'
@@ -182,7 +188,7 @@ def train(model, mode, config, train_loader, optimizer, criterion, lr_scheduler,
 
         optimizer.zero_grad()
 
-        outputs, batch_attentions = model(inputs=inputs
+        outputs, batch_attentions, _ = model(inputs=inputs
                                         , input_lengths=input_lengths
                                         , teacher_forcing=teacher_forcing
                                         , device=device
@@ -235,8 +241,21 @@ def eval(model, val_loader, criterion, epoch, device):
     torch.set_grad_enabled(False)
     running_loss = 0.
     running_lev_dist = 0.
+    running_beam_dist = 0.
     ctr = 0
     mode = 'val'
+    decoder = CTCBeamDecoder(
+        LETTER_LIST,
+        model_path=None,
+        alpha=0,
+        beta=0,
+        cutoff_top_n=40,
+        cutoff_prob=1.0,
+        beam_width=20,
+        num_processes=8,
+        blank_id=letter2index["<EOS>"],
+        log_probs_input=True
+    )
 
     for inputs, targets, input_lengths, target_lengths in val_loader:
         assert(targets.size(0) == len(input_lengths))
@@ -246,23 +265,37 @@ def eval(model, val_loader, criterion, epoch, device):
         batch_size = inputs.size(0)
         max_seq_len = inputs.size(1)
         max_target_len = targets.size(1)
-
         assert(max_seq_len == max(input_lengths))
         assert(max_target_len == max(target_lengths))
 
         # outputs come out as (batch_size, max_target_length, classes)
-        outputs, _ = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
+        outputs, _, encoded_seq_lens = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
+
+        # beam search
+        beam_results, beam_scores, timesteps, out_seq_len = decoder.decode(outputs, seq_lens=encoded_seq_lens)
+        beam_output_paths = []
+
+        for i, _ in enumerate(beam_results):
+            result = beam_to_string(beam_results[i][0], LETTER_LIST, out_seq_len[i][0])
+            beam_output_paths.append(result)
+
+        #  greedy search
         output_paths = []
         for batch_idx, output in enumerate(outputs):
             seq = ''
             for seq_idx, char_probs in enumerate(output):
                 char_idx = int(torch.argmax(char_probs))
                 next_letter = index2letter[char_idx]
-                seq += next_letter
+
+                if next_letter == '<PAD>':
+                    print("FOUND PAD.... EXIT")
+                    exit()
                 if next_letter == '<EOS>' or next_letter == '<PAD>':
                     break
+                seq += next_letter
             output_paths.append(seq)
         
+
         # build target string
         target_paths = []
         for batch_idx, target in enumerate(targets):
@@ -271,7 +304,10 @@ def eval(model, val_loader, criterion, epoch, device):
             curr_target = target[:curr_target_len]
 
             for target_char_idx in curr_target:
-                target_path += index2letter[int(target_char_idx)]
+                next_letter = index2letter[int(target_char_idx)]
+                if next_letter == '<EOS>' or next_letter == '<PAD>':
+                    break
+                target_path += next_letter
             
             target_paths.append(target_path)
         
@@ -280,19 +316,27 @@ def eval(model, val_loader, criterion, epoch, device):
         for out_path, targ_path in zip(output_paths, target_paths):
             dist += Levenshtein.distance(out_path, targ_path)
 
+        # accumulate levenshtein distance between each output and target
+        beam_dist = 0.0
+        for beam_path, targ_path in zip(beam_output_paths, target_paths):
+            beam_dist += Levenshtein.distance(beam_path, targ_path)
+
         assert(len(output_paths) == len(target_paths))
         if ctr < 3:
             for i in range(min(10, len(output_paths))):
-                print(f"TARGET{i}: {target_paths[i]}")
-                print(f"BEAM{i}: {output_paths[i]}")
+                print(f"TARGET {i}: {target_paths[i]}")
+                print(f"GREEDY {i}: {output_paths[i]}")
+                print(f"BEAM {i}: {beam_output_paths[i]}")
         
         ctr += 1
 
         # update statistics
         running_lev_dist += dist
+        running_beam_dist += beam_dist
 
     # report statistics
     lev_dist = running_lev_dist / len(val_loader.dataset)
+    beam_lev_dist = running_beam_dist / len(val_loader.dataset)
 
-    return lev_dist
+    return lev_dist, beam_lev_dist
 

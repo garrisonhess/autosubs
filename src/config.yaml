@@ -66,7 +66,7 @@ freeze_encoder: False
 freeze_decoder: False
 warmup_zero_context: True
 decoder_ckpt_path: ~/autosubs/decoder_ckpts/decoder-2021-04-28-23-0617-epoch20-dist376-inner_0f2ed_00000.pth
-full_ckpt_path: ~/autosubs/full_ckpts/full-2021-05-02-14-2944-epoch2699-dist15-inner_70482_00000.pth
+full_ckpt_path: ~/autosubs/full_ckpts/final-kaggle-8pt86.pth
 
 # schedules
 tf_init: 0.90
