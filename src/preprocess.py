@@ -13,7 +13,7 @@ def create_dictionaries(letter_list):
 
 letter2index, index2letter = create_dictionaries(LETTER_LIST)
 
-def transform_letter_to_index(transcript, asr_data=False):
+def transform_letter_to_index(sentence, asr_data=False):
     '''
     Transforms text input to numerical input by converting each letter 
     to its corresponding index from letter_list
@@ -24,20 +24,17 @@ def transform_letter_to_index(transcript, asr_data=False):
     Return:
         transcripts: Converted index-format transcripts. This would be a list with a length of N
     ''' 
-    letter_to_index_list = []
-    for sentence in transcript:
-        letters = [letter2index['<SOS>']]
-        for word in sentence:
-            if asr_data:
-                decoded_word = word.decode('utf-8')
-            else:
-                decoded_word = word
-            for char in decoded_word:
-                letters.append(letter2index[char])
-            letters.append(letter2index[' '])
-        letters.pop()
-        letters.append(letter2index['<EOS>'])
-        letter_to_index_list.append(letters)
-    return letter_to_index_list
+    letters = [letter2index['<SOS>']]
+    for word in sentence:
+        if asr_data:
+            decoded_word = word.decode('utf-8')
+        else:
+            decoded_word = word
+        for char in decoded_word:
+            letters.append(letter2index[char])
+        # letters.append(letter2index[' '])
+    # letters.pop()
+    letters.append(letter2index['<EOS>'])
+    return letters
 
 

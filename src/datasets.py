@@ -184,9 +184,9 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         subtitle_item = self.subtitle_lookup.iloc[i, 3]
         subtitle_item = self.get_tokenization(subtitle_item)
         subtitle_item = self.remove_chars(subtitle_item)
-        subtitle_item = np.array(transform_letter_to_index([subtitle_item]))
-        subtitle_item = torch.tensor(subtitle_item[0], dtype=torch.long)
-        return audio_item,audio_item_length, subtitle_item, subtitle_item.shape[0]
+        subtitle_item = transform_letter_to_index(subtitle_item)
+        subtitle_item = torch.tensor(subtitle_item, dtype=torch.long)
+        return audio_item,audio_item_length, subtitle_item, len(subtitle_item)
         
     def get_index(self, time, start_flag):
         """gets index from timestamp
