@@ -47,11 +47,11 @@ encoder_arch:
         - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
 
 # hyperparameters
-lr: [0.001]
+lr: [0.0005]
 weight_decay: [0.000005]
-gamma: [0.5]
+gamma: [0.75]
 batch_size: [192]
-lr_step: [300]
+lr_step: [150]
 smooth_temp: 0.0
 train_test_split: 0.9
 random_sampling: True
