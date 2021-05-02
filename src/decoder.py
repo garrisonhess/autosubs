@@ -65,7 +65,7 @@ class Decoder(nn.Module):
             max_target_len = targets.size(1)
             embeddings = self.embedding(targets)
         else:
-            max_target_len = 600
+            max_target_len = 130
         
         # prepare variables for decoding loop
         mask = torch.arange(max_encoded_seq_len).unsqueeze(0).to(device) >= encoded_seq_lens.unsqueeze(1).to(device, non_blocking=True)

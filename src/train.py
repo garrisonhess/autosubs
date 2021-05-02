@@ -238,6 +238,7 @@ def eval(model, val_loader, criterion, epoch, device, peek=False, warmup=False):
         batch_size = inputs.size(0)
         max_seq_len = inputs.size(1)
         max_target_len = targets.size(1)
+
         assert(max_seq_len == max(input_lengths))
         assert(max_target_len == max(target_lengths))
 
