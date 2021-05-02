@@ -19,8 +19,14 @@ def train_model(config, **kwargs):
                             )
 
     split_idx = int(cfg['train_test_split']*len(dataset))
-    train_dataset = Subset(dataset, [idx for idx in range(split_idx)])
-    val_dataset = Subset(dataset, [idx for idx in range(split_idx, len(dataset))])
+    idxs = np.arange(len(dataset))
+    
+    if cfg['random_sampling']:
+        np.random.shuffle(idxs)
+    
+    train_idxs, val_idxs = idxs[:split_idx], idxs[split_idx:]
+    train_dataset = Subset(dataset, train_idxs)
+    val_dataset = Subset(dataset, val_idxs)
 
     if cfg['DEBUG']:
         train_dataset = val_dataset

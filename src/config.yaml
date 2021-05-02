@@ -54,7 +54,7 @@ batch_size: [192]
 lr_step: [300]
 smooth_temp: 0.0
 train_test_split: 0.9
-
+random_sampling: True
 
 # transfer learning configuration
 warmup_epochs: 0
@@ -67,7 +67,7 @@ full_ckpt_path: ~/autosubs/full_ckpts/full-2021-04-30-11-5614-epoch120-dist8-inn
 # schedules
 tf_init: 0.90
 tf_drop_every: 200
-tf_drop: 0.
+tf_drop: 0.1
 
 
 # PATHS
@@ -85,7 +85,6 @@ debug_train_transcripts_path: ~/autosubs/data/debug/train_transcripts.npy
 debug_val_path: ~/autosubs/data/debug/dev.npy
 debug_val_transcripts_path: ~/autosubs/data/debug/dev_transcripts.npy
 plot_path: ~/autosubs/plots/
-
 knnw_audio_path: ~/autosubs/data/knnw_en.log_spectrogram.npy
 knnw_subtitle_path: ~/autosubs/data/knnw_en_sub_edit.csv
 knnw_subtitle_edit_path: ~/autosubs/data/knnw_en_sub_edit.csv
