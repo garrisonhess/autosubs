@@ -29,11 +29,13 @@ def train_model(config, **kwargs):
                             , batch_size=config['batch_size']
                             , num_workers=cfg['num_workers']
                             , pin_memory=cfg['pin_memory']
+                            , shuffle=cfg['train_shuffle']
                             , collate_fn=pad_collate_fn)
     val_loader = DataLoader(dataset=val_dataset
                             , batch_size=cfg['val_batch_size']
                             , num_workers=cfg['val_workers']
                             , pin_memory=cfg['pin_memory']
+                            , shuffle=False
                             , collate_fn=pad_collate_fn)
 
     model = Seq2Seq(input_dim=cfg['input_dim']
