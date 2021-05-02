@@ -20,7 +20,6 @@ from torch.nn.functional import log_softmax, gumbel_softmax
 import seaborn as sns
 from torch.utils.data import Dataset, DataLoader, Subset
 from torch.nn.utils.rnn import *
-import torchaudio
 import re
 
 KNNW_TOTAL_FRAMES = 1370582
