@@ -69,6 +69,7 @@ def knnw_process_string(text):
     if text == '':
         text = null
     
-    text = text.lstrip(text.rstrip())
+    text = text.strip()
+
     return text
 

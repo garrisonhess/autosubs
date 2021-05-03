@@ -6,6 +6,7 @@ length = len(subtitle_lookup)
 for i in range(length):
     subtitle_item = subtitle_lookup.iloc[i, 3]
     subtitle_lookup.iloc[i, 3] = '"' + knnw_process_string(subtitle_item) + '"'
+
 newpath = "../data/processed"    
 subtitle_lookup.to_csv(newpath + ".csv", index=False, sep=";", quoting=csv.QUOTE_NONE)
 subtitle_lookup.to_csv(newpath + "_comma.csv", index=False, quoting=csv.QUOTE_NONE)
