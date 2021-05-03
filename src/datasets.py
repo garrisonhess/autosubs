@@ -73,7 +73,7 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         audio_item_length = int(audio_item.shape[0])
 
         # apply SpecAugment if specified
-        if self.spec_aug:
+        if self.spec_aug == True:
             audio_item = spec_augment(audio_item
                                     , max_freq_mask=self.freq
                                     , max_time_mask=self.time
