@@ -65,46 +65,52 @@ def train_model(config, **kwargs):
     print(model)
 
     # handle transfer learning
-    if cfg['transfer_decoder']:
-        print("Starting with decoder pretrained weights")
-        checkpoint = torch.load(decoder_ckpt_path)
-        decoder_keys = []
-        for key in checkpoint.keys():
-            if key.startswith('decoder'):
-                decoder_keys.append(key)
-        decoder_state = dict()
-        for key in decoder_keys:
-            decoder_state[key] = checkpoint[key]
-        model.load_state_dict(decoder_state, strict=False)
-    elif cfg['transfer_full']:
-        print("Transfer Learning from WSJ to KNNW")
-        checkpoint = torch.load(full_ckpt_path)
-        transfer_keys = []
-        for key in checkpoint.keys():
-            if not key.startswith("encoder.encoder.0"):
-                transfer_keys.append(key)
+
+    if cfg['transfer_knnw']:
+        print("Transfer Learning from KNNW to KNNW")
+        knnw_ckpt = torch.load(knnw_ckpt_path)
+        model.load_state_dict(knnw_ckpt, strict=True)
+    elif cfg['transfer_wsj']:
+        if cfg['transfer_decoder']:
+            print("Starting with decoder pretrained weights")
+            checkpoint = torch.load(decoder_ckpt_path)
+            decoder_keys = []
+            for key in checkpoint.keys():
+                if key.startswith('decoder'):
+                    decoder_keys.append(key)
+            decoder_state = dict()
+            for key in decoder_keys:
+                decoder_state[key] = checkpoint[key]
+            model.load_state_dict(decoder_state, strict=False)
+        elif cfg['transfer_full']:
+            print("Transfer Learning from WSJ to KNNW")
+            checkpoint = torch.load(wsj_ckpt_path)
+            transfer_keys = []
+            for key in checkpoint.keys():
+                if not key.startswith("encoder.encoder.0"):
+                    transfer_keys.append(key)
+            
+            transfer_state = dict()
+            for key in transfer_keys:
+                transfer_state[key] = checkpoint[key]
+            
+            model.load_state_dict(transfer_state, strict=False)
         
-        transfer_state = dict()
-        for key in transfer_keys:
-            transfer_state[key] = checkpoint[key]
-        
-        model.load_state_dict(transfer_state, strict=False)
-    
-    # freeze proper subnetworks for transfer learning specification
-    if cfg['freeze_decoder']:
-        for i, dec_child in enumerate(model.decoder.children()):
-            print(f"Freezing: {i, dec_child}")
-            dec_child.requires_grad = False
-    if cfg['freeze_encoder']:
-        for i, enc_child in enumerate(model.encoder.children()):
-            if i == 0:
-                for layer_idx, lstm_layer in enumerate(enc_child.children()):
-                    if layer_idx > 0:
-                        print(f"Freezing: {layer_idx, lstm_layer}")
-                        lstm_layer.requires_grad = False
-            else:
-                print(f"Freezing: {i, enc_child}")
-                enc_child.requires_grad = False
+        # freeze proper subnetworks for transfer learning specification
+        if cfg['freeze_decoder']:
+            for i, dec_child in enumerate(model.decoder.children()):
+                print(f"Freezing: {i, dec_child}")
+                dec_child.requires_grad = False
+        if cfg['freeze_encoder']:
+            for i, enc_child in enumerate(model.encoder.children()):
+                if i == 0:
+                    for layer_idx, lstm_layer in enumerate(enc_child.children()):
+                        if layer_idx > 0:
+                            print(f"Freezing: {layer_idx, lstm_layer}")
+                            lstm_layer.requires_grad = False
+                else:
+                    print(f"Freezing: {i, enc_child}")
+                    enc_child.requires_grad = False
 
     params = model.parameters()
     criterion = nn.CrossEntropyLoss(reduction='none')
@@ -117,7 +123,6 @@ def train_model(config, **kwargs):
     best_lev_dist = 1000000000
     last_ckpt_time = 0.0
     best_model = copy.deepcopy(model.state_dict())
-    eval_lev_dist = 1000.
     teacher_forcing = cfg['tf_init']
     mode = 'train'
 
@@ -142,17 +147,17 @@ def train_model(config, **kwargs):
         # Update Ray Tune
         tune.report(train_loss=train_loss, eval_gr_dist=eval_gr_dist, eval_beam_dist=eval_beam_dist)
 
-        if eval_beam_dist <= best_lev_dist:
-            best_lev_dist = eval_beam_dist
+        if min(eval_beam_dist, eval_gr_dist) <= best_lev_dist:
+            best_lev_dist = min(eval_gr_dist, eval_beam_dist)
             best_model = copy.deepcopy(model.state_dict())
             curr_time = time.strftime("%Y-%m-%d-%H-%M%S")
-            model_type = 'full'
+            model_type = 'knnw'
 
             # only checkpoint after N minutes
             N = 10
             if not cfg['DEBUG'] and time.time() > last_ckpt_time + 60*N:
                 torch.save(model.state_dict(),
-                           f"{checkpoints_path}/{model_type}-{curr_time}-epoch{epoch}-dist{int(eval_lev_dist)}-{tune.get_trial_name()}.pth")
+                           f"{checkpoints_path}/{model_type}-{curr_time}-epoch{epoch}-dist{int(best_lev_dist)}-{tune.get_trial_name()}.pth")
 
 
 def train(model, mode, config, train_loader, optimizer, criterion, lr_scheduler, epoch, device, update_freq, amp, debug, teacher_forcing, scaler):
@@ -249,7 +254,7 @@ def eval(model, val_loader, criterion, epoch, device):
         beta=0,
         cutoff_top_n=40,
         cutoff_prob=1.0,
-        beam_width=20,
+        beam_width=1,
         num_processes=8,
         blank_id=letter2index["<EOS>"],
         log_probs_input=True
@@ -270,7 +275,12 @@ def eval(model, val_loader, criterion, epoch, device):
         outputs, _, encoded_seq_lens = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
 
         # outputs[outputs == 4] = 16
-
+        # print(f"inputs.size: {inputs.size()}")
+        # print(f"input_lengths: {input_lengths}")
+        # print(f"outputs: {outputs.size()}")
+        # print(outputs)
+        # print(f"encoded sequence lengths: {encoded_seq_lens}")
+        # exit()
         # beam search
         beam_results, beam_scores, timesteps, out_seq_len = decoder.decode(outputs, seq_lens=encoded_seq_lens)
         beam_output_paths = []
@@ -278,9 +288,7 @@ def eval(model, val_loader, criterion, epoch, device):
         for i, _ in enumerate(beam_results):
             result = beam_to_string(beam_results[i][0], LETTER_LIST, out_seq_len[i][0])
             beam_output_paths.append(result)
-
-
-
+        
 
         #  greedy search
         output_paths = []
