@@ -118,6 +118,18 @@ def train_model(config, **kwargs):
     model = model.to(device=device)
     lr_scheduler = StepLR(optimizer=optimizer, step_size=config['lr_step'], gamma=config['gamma'])
 
+    decoder = CTCBeamDecoder(
+        LETTER_LIST,
+        model_path=kenlm_path,
+        alpha=0.05,
+        beta=0.01,
+        cutoff_top_n=40,
+        cutoff_prob=1.0,
+        beam_width=100,
+        num_processes=8,
+        blank_id=letter2index["<EOS>"],
+        log_probs_input=True
+    )
 
     # Training Variables
     best_lev_dist = 1000000000
@@ -142,7 +154,7 @@ def train_model(config, **kwargs):
                                                     , teacher_forcing
                                                     , scaler=None)
         
-        eval_gr_dist, eval_beam_dist = eval(model, val_loader, criterion, epoch, device)
+        eval_gr_dist, eval_beam_dist = eval(model, val_loader, criterion, epoch, device, decoder)
 
         # Update Ray Tune
         tune.report(train_loss=train_loss, eval_gr_dist=eval_gr_dist, eval_beam_dist=eval_beam_dist)
@@ -238,7 +250,7 @@ def train(model, mode, config, train_loader, optimizer, criterion, lr_scheduler,
     return model, train_loss, teacher_forcing
 
 
-def eval(model, val_loader, criterion, epoch, device):
+def eval(model, val_loader, criterion, epoch, device, decoder):
 
     model.eval()
     torch.set_grad_enabled(False)
@@ -247,18 +259,6 @@ def eval(model, val_loader, criterion, epoch, device):
     running_beam_dist = 0.
     ctr = 0
     mode = 'val'
-    decoder = CTCBeamDecoder(
-        LETTER_LIST,
-        model_path=None,
-        alpha=0,
-        beta=0,
-        cutoff_top_n=40,
-        cutoff_prob=1.0,
-        beam_width=1,
-        num_processes=8,
-        blank_id=letter2index["<EOS>"],
-        log_probs_input=True
-    )
 
     for inputs, targets, input_lengths, target_lengths in val_loader:
         assert(targets.size(0) == len(input_lengths))

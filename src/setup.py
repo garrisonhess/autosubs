@@ -57,6 +57,7 @@ decoder_ckpt_dir = os.path.expanduser(cfg['decoder_ckpt_dir'])
 decoder_ckpt_path = os.path.expanduser(cfg['decoder_ckpt_path'])
 wsj_ckpt_path = os.path.expanduser(cfg['wsj_ckpt_path'])
 knnw_ckpt_path = os.path.expanduser(cfg['knnw_ckpt_path'])
+kenlm_path = os.path.expanduser(cfg['kenlm_path'])
 
 print("knnw_audio_path", knnw_audio_path)
 print("knnw_subtitle_path", knnw_subtitle_path)

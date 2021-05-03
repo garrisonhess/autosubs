@@ -42,7 +42,17 @@ def knnw_process_string(text):
 
     null = 'null'
     text = re.sub(r'.*""', null, text)
+
+
+    text = text.replace('niiiice', 'nice')
+    text = text.replace('shyyy', 'shy')
+    text = text.replace('wha ', 'what ')
+    text = text.replace('t hahahahaha', 'hahahahaha')
+    text = text.replace('scuse', 'excuse')
+    text = text.replace('yknow', 'know')
+    text = text.replace('ms okudera', 'miss okudera')
     text = text.replace('.', '')
+    text = text.replace("'", "")
     text = text.replace('?', '')
     text = text.replace('!', '')
     text = text.replace(',', '')
@@ -68,6 +78,7 @@ def knnw_process_string(text):
     text = re.sub(r'\[.*\] *', ' ', text)
     if text == '':
         text = null
+    text = text.replace('n n no u uh', 'uh')
     
     text = text.strip()
 

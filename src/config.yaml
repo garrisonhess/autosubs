@@ -96,4 +96,4 @@ plot_path: ~/autosubs/plots/
 knnw_audio_path: ~/autosubs/data/knnw_en.log_spectrogram.npy
 knnw_subtitle_path: ~/autosubs/data/knnw_en_sub_edit.csv
 knnw_subtitle_edit_path: ~/autosubs/data/knnw_en_sub_edit.csv
-
+kenlm_path: "~/autosubs/data/kenlm_knnw.arpa"

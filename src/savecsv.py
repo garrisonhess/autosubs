@@ -15,7 +15,7 @@ subtitle_lookup.to_csv(newpath + "_comma.csv", index=False, quoting=csv.QUOTE_NO
 kenlm_data = subtitle_lookup
 sentences = []
 for sentence in kenlm_data['Text']:
-    clean_sentence = sentence.replace('"', '') + " "
+    clean_sentence = sentence.replace('"', '') + " \n"
     print(clean_sentence)
     sentences.append(clean_sentence)
 
