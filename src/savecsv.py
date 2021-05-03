@@ -23,6 +23,7 @@ def remove_chars(text):
     text = text.replace('1994', 'nineteen ninety four')
     text = text.replace('9', 'nine')
     text = text.replace('500', 'five hundred')
+    text = text.replace('.', '')
     text = re.sub(r'\(.*\)', '', text)
     text = re.sub(r'[\w ]+: ', ' ', text)
     text = re.sub(r' +', ' ', text)
