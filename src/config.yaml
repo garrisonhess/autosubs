@@ -36,8 +36,8 @@ enc_h: [256]
 dec_h: [512]
 embed_dim: [256]
 attn_dim: [128]
-enc_dropout: [0.5]
-dec_dropout: [0.5]
+enc_dropout: [0.35]
+dec_dropout: [0.35]
 use_multihead: [False]
 nheads: [1]
 spec_augment: True
@@ -48,7 +48,7 @@ encoder_arch:
 
 # hyperparameters
 lr: [0.0005]
-weight_decay: [0.000005]
+weight_decay: [0.00001]
 gamma: [0.75]
 batch_size: [192]
 lr_step: [150]

@@ -84,7 +84,7 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         
         # process subtitles
         subtitle_item = self.subtitle_lookup.iloc[i, 3]
-        subtitle_item = self.remove_chars(subtitle_item)
+        subtitle_item = knnw_process_string(subtitle_item)
         subtitle_item = transform_letter_to_index(subtitle_item)
         subtitle_item = torch.tensor(subtitle_item, dtype=torch.long)
 
@@ -114,39 +114,6 @@ class KnnwAudioDataset(torch.utils.data.Dataset):
         start_index = self.get_index(start_time, start_flag=True)
         stop_index = self.get_index(end_time, start_flag=False)
         return range(int(start_index), int(stop_index))
-    
-    def remove_chars(self, text):
-        text = text.lower()
-
-        null = 'null'
-        text = re.sub(r'.*""', null, text)
-        text = text.replace('?', '')
-        text = text.replace('!', '')
-        text = text.replace(',', '')
-        text = text.replace('-', ' ')
-        text = text.replace('"', '')
-        text = text.replace("“", '')
-        text = text.replace("”", '')
-        text = text.replace('...', '')
-        text = text.replace('é', 'e')
-        text = text.replace('21', 'twenty one')
-        text = text.replace('1200', 'twelve hundred')
-        text = text.replace('20th', 'twentieth')
-        text = text.replace('7:40', 'seven fourty')
-        text = text.replace('8:42', 'eight fourty two')
-        text = text.replace('1994', 'nineteen ninety four')
-        text = text.replace('9', 'nine')
-        text = text.replace('500', 'five hundred')
-        text = re.sub(r'\(.*\)', '', text)
-        text = re.sub(r'[\w ]+: ', ' ', text)
-        text = re.sub(r' +', ' ', text)
-        if text[0] == ' ':
-            text = text[1:]
-        text = re.sub(r'\[.*\] *', ' ', text)
-        if text == '':
-            text = null
-        return text
-
 
 
 def sub_file_edit():

@@ -233,8 +233,6 @@ def train(model, mode, config, train_loader, optimizer, criterion, lr_scheduler,
     return model, train_loss, teacher_forcing
 
 
-
-
 def eval(model, val_loader, criterion, epoch, device):
 
     model.eval()
@@ -271,6 +269,8 @@ def eval(model, val_loader, criterion, epoch, device):
         # outputs come out as (batch_size, max_target_length, classes)
         outputs, _, encoded_seq_lens = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
 
+        # outputs[outputs == 4] = 16
+
         # beam search
         beam_results, beam_scores, timesteps, out_seq_len = decoder.decode(outputs, seq_lens=encoded_seq_lens)
         beam_output_paths = []
@@ -278,6 +278,9 @@ def eval(model, val_loader, criterion, epoch, device):
         for i, _ in enumerate(beam_results):
             result = beam_to_string(beam_results[i][0], LETTER_LIST, out_seq_len[i][0])
             beam_output_paths.append(result)
+
+
+
 
         #  greedy search
         output_paths = []
