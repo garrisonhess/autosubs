@@ -1,3 +1,5 @@
+from pydub import AudioSegment
+import os
 from setup import *
 
 LETTER_LIST = ['<PAD>', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', \
@@ -37,6 +39,42 @@ def transform_letter_to_index(sentence, asr_data=False):
     return letters
 
 
+def preprocess_wav(audio_path, subtitle_lookup_path, save_dir):
+    '''
+    Split wav file into small wav files
+
+    Args:
+        audio_path: path to knnw wav file
+        subtitle_lookup_path: path to knnw_en_sub_wav2vec.csv
+        save_dir: directory to save all output wav files
+    
+    Return:
+        nothing
+    '''
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+    else:
+        print(save_dir + " alreay exists!")
+        return
+
+    audio = AudioSegment.from_file(audio_path, format="wav")
+    total_duration = len(audio)
+    subtitle_lookup = pd.read_csv(subtitle_lookup_path)
+    for i in range(len(subtitle_lookup)):
+        start_time = subtitle_lookup.iloc[i, 1]
+        stop_time = subtitle_lookup.iloc[i, 2]
+
+        audio_item = audio[start_time: stop_time]
+        audio_item.export(save_dir + str(subtitle_lookup.iloc[i, 0]) + ".wav", format="wav")
+
+
+def preprocess_csv_wav2vec(input_path, output_path):
+    df =  pd.read_table(input_path, sep = ";", header=0)
+    df.to_csv(output_path, index=False)
+
+    
+    
+    
 def knnw_process_string(text):
     text = text.lower()
 

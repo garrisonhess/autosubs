@@ -1,3 +1,7 @@
+from transformers import  Wav2Vec2Processor, Wav2Vec2ForCTC
+from datasets import load_dataset
+import librosa
+
 from setup import *
 from preprocess import *
 
@@ -216,3 +220,109 @@ def collate_test(batch):
     inputs = pad_sequence(inputs, batch_first=True)
 
     return inputs, input_lengths
+
+
+class Wav2vec2ExtractorDataset(Dataset):
+    '''dataset that extract features from raw wav audio based on Wav2vec2 pretrained feature extracor'''
+
+    def __init__(self, subtitle_lookup_path, wav_dir, pretrained_chpt="facebook/wav2vec2-base-960h", num_proc=4, preprocess_batch_size=8):
+        """
+        Args:
+            subtitle_lookup_path (NOTE this file must be compatible with pd.read_csv())
+            wav_dir: directory of wav files e.g. './wav_data/'
+            pretrained_chpt: pretrained checkpoints to load
+            num_proc: number of processes allowed when doing dataset preprocessing
+            preprocess_batch_size: this is ONLY used inside this dataset to preprocess wav files faster
+        Returns:
+            
+        """
+        self.subtitle_lookup_path = subtitle_lookup_path
+        self.wav_dir = wav_dir
+        self.num_proc = num_proc
+        self.preprocess_batch_size = preprocess_batch_size
+
+        self.processor = Wav2Vec2Processor.from_pretrained(pretrained_chpt)
+        self.feature_extractor = Wav2Vec2ForCTC.from_pretrained(pretrained_chpt).wav2vec2.feature_extractor
+
+        self.knnw_prepared = self.setup_dataset()
+
+    def __len__(self):
+        return len(self.subtitle_lookup)
+
+    def __getitem__(self, index):
+        x = self.processor(
+            self.knnw_prepared['data'][index]["input_values"], 
+            sampling_rate=16000, 
+            return_tensors="pt").input_values
+        
+        subtitle_item = torch.tensor(self.knnw_prepared['data'][index]["labels"], dtype=torch.long)
+        subtitle_item_length = len(subtitle_item)
+
+        audio_item = self.feature_extractor(x).squeeze().T  # shape (seq_len, 512)
+        audio_item_length = audio_item.shape[1]
+
+        return audio_item, audio_item_length, subtitle_item, subtitle_item_length
+    
+    def setup_dataset(self):
+        def remove_chars(batch):
+            batch['Text'] = batch['Text'].lower()
+            null = 'null'
+            batch['Text'] = re.sub(r'.*""', null, batch['Text'])
+            batch['Text'] = batch['Text'].replace('?', '')
+            batch['Text'] = batch['Text'].replace('!', '')
+            batch['Text'] = batch['Text'].replace(',', '')
+            batch['Text'] = batch['Text'].replace('-', ' ')
+            batch['Text'] = batch['Text'].replace('"', '')
+            batch['Text'] = batch['Text'].replace("“", '')
+            batch['Text'] = batch['Text'].replace("”", '')
+            batch['Text'] = batch['Text'].replace('...', '')
+            batch['Text'] = batch['Text'].replace('é', 'e')
+            batch['Text'] = batch['Text'].replace('21', 'twenty one')
+            batch['Text'] = batch['Text'].replace('1200', 'twelve hundred')
+            batch['Text'] = batch['Text'].replace('20th', 'twentieth')
+            batch['Text'] = batch['Text'].replace('7:40', 'seven fourty')
+            batch['Text'] = batch['Text'].replace('8:42', 'eight fourty two')
+            batch['Text'] = batch['Text'].replace('1994', 'nineteen ninety four')
+            batch['Text'] = batch['Text'].replace('9', 'nine')
+            batch['Text'] = batch['Text'].replace('500', 'five hundred')
+            batch['Text'] = re.sub(r'\(.*\)', '', batch['Text'])
+            batch['Text'] = re.sub(r'[\w ]+: ', ' ', batch['Text'])
+            batch['Text'] = re.sub(r' +', ' ', batch['Text'])
+            if batch['Text'][0] == ' ':
+                batch['Text'] = batch['Text'][1:]
+            batch['Text'] = re.sub(r'\[.*\] *', ' ', batch['Text'])
+            if batch['Text'] == '':
+                batch['Text'] = null
+            
+            return batch
+
+        def speech_file_to_array_fn(batch):
+            speech_array, sr = librosa.load(self.wav_dir + str(batch['Number']) + ".wav", sr=16000)
+            batch["speech"] = speech_array
+            batch["sampling_rate"] = sr
+            batch["target_text"] = transform_letter_to_index(batch["Text"])
+            return batch
+
+        def prepare_dataset(batch):
+            # check that all files have the correct sampling rate
+            assert (
+                len(set(batch["sampling_rate"])) == 1
+            ), f"Make sure all inputs have the same sampling rate of {self.processor.feature_extractor.sampling_rate}."
+
+            batch["input_values"] = self.processor(batch["speech"], sampling_rate=batch["sampling_rate"][0]).input_values
+            with processor.as_target_processor():
+                batch["labels"] = batch["target_text"]
+
+            return batch
+
+        knnw = load_dataset('csv', data_files={'data': self.subtitle_lookup_path})
+        knnw = knnw.map(remove_chars)
+        knnw = knnw.map(speech_file_to_array_fn, remove_columns=knnw.column_names["data"], num_proc=self.num_proc)
+        knnw = knnw.map(prepare_dataset,
+                        remove_columns=knnw.column_names["data"],
+                        batch_size=self.preprocess_batch_size,
+                        num_proc=self.num_proc,
+                        batched=True)
+
+        return knnw
+        

@@ -1,0 +1,5 @@
+pip install transformers==4.4.0
+pip install pydub
+# apt install ffmpeg  # for google colab
+pip install datasets
+pip install python-Levenshtein
