@@ -48,7 +48,7 @@ encoder_arch:
 
 # hyperparameters
 lr: [0.0005]
-weight_decay: [0.000005]
+weight_decay: [0.00001]
 gamma: [0.75]
 batch_size: [192]
 lr_step: [150]
@@ -56,13 +56,17 @@ smooth_temp: 0.0
 train_test_split: 0.9
 random_sampling: True
 
+
+
 # transfer learning configuration
 warmup_epochs: 0
 transfer_decoder: False
 transfer_full: True
+freeze_encoder: False
+freeze_decoder: False
 warmup_zero_context: True
 decoder_ckpt_path: ~/autosubs/decoder_ckpts/decoder-2021-04-28-23-0617-epoch20-dist376-inner_0f2ed_00000.pth
-full_ckpt_path: ~/autosubs/full_ckpts/full-2021-04-30-11-5614-epoch120-dist8-inner_85fa3_00000.pth
+full_ckpt_path: ~/autosubs/full_ckpts/final-kaggle-8pt86.pth
 
 # schedules
 tf_init: 0.90

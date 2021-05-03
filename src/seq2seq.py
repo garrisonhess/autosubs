@@ -44,4 +44,4 @@ class Seq2Seq(nn.Module):
                                             , device=device
                                             , targets=targets
                                             , mode=mode)
-        return predictions, attention
+        return predictions, attention, encoded_seq_lens

@@ -32,5 +32,16 @@ scheduler = tune.schedulers.ASHAScheduler(
 
 
 
-result = tune.run(run_or_experiment=tune.with_parameters(train_model, **cfg), name=cfg['experiment_name'], num_samples=cfg['num_samples'], resources_per_trial={
-                  'gpu': 1}, config=search_space, metric="eval_lev_dist", mode="min", scheduler=scheduler, checkpoint_at_end=False, search_alg=None, verbose=cfg['verbosity'], local_dir=cfg['ray_results_dir'], log_to_file=True)
+result = tune.run(run_or_experiment=tune.with_parameters(train_model, **cfg)
+                , name=cfg['experiment_name']
+                , num_samples=cfg['num_samples']
+                , resources_per_trial={'gpu': 1}
+                , config=search_space
+                , metric="eval_beam_dist"
+                , mode="min"
+                , scheduler=scheduler
+                , checkpoint_at_end=False
+                , search_alg=None
+                , verbose=cfg['verbosity']
+                , local_dir=cfg['ray_results_dir']
+                , log_to_file=True)
