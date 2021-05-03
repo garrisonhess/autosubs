@@ -1,7 +1,5 @@
 from transformers import  Wav2Vec2Processor, Wav2Vec2ForCTC
-from datasets import load_dataset
 import librosa
-
 from setup import *
 from preprocess import *
 
