@@ -41,17 +41,17 @@ dec_dropout: [0.4]
 use_multihead: [False]
 nheads: [1]
 spec_augment: True
-freq_mask: 47
-time_mask: 120
+freq_mask: 7
+time_mask: 7
 encoder_arch: 
         - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
 
 # hyperparameters
-lr: [0.001]
+lr: [0.0005]
 weight_decay: [0.000005]
 gamma: [0.75]
 batch_size: [192]
-lr_step: [100]
+lr_step: [75]
 smooth_temp: 0.0
 train_test_split: 0.9
 random_sampling: True
@@ -62,21 +62,21 @@ random_sampling: True
 warmup_epochs: 0
 transfer_decoder: False
 transfer_full: True
-transfer_knnw: False
-transfer_wsj: True
+transfer_knnw: True #False
+transfer_wsj: False #True
 freeze_encoder: False
 freeze_decoder: False
 warmup_zero_context: True
 decoder_ckpt_path: ~/autosubs/decoder_ckpts/decoder-2021-04-28-23-0617-epoch20-dist376-inner_0f2ed_00000.pth
-knnw_ckpt_path: ~/autosubs/full_ckpts/knnw-2021-05-02-19-5207-epoch365-dist20-inner_fb4e3_00000.pth
+knnw_ckpt_path: ~/autosubs/full_ckpts/knnw-2021-05-02-23-3257-epoch62-dist26-inner_d0946_00000.pth
 wsj_ckpt_path: ~/autosubs/full_ckpts/final-kaggle-8pt86.pth
 
 
 
 # schedules
 tf_init: 0.90
-tf_drop_every: 200
-tf_drop: 0.1
+tf_drop_every: 25
+tf_drop: 0.05
 
 
 # PATHS

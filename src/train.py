@@ -15,7 +15,7 @@ def beam_to_string(path_tokens, letter_list, seq_len):
 
 def train_model(config, **kwargs):
 
-    dataset = KnnwAudioDataset(knnw_audio_path
+    train_dataset = KnnwAudioDataset(knnw_audio_path
                             , knnw_subtitle_path
                             , KNNW_TOTAL_FRAMES
                             , KNNW_TOTAL_DURATION
@@ -24,15 +24,22 @@ def train_model(config, **kwargs):
                             , time=cfg['time_mask']
                             )
 
-    split_idx = int(cfg['train_test_split']*len(dataset))
-    idxs = np.arange(len(dataset))
+    val_dataset = KnnwAudioDataset(knnw_audio_path
+                            , knnw_subtitle_path
+                            , KNNW_TOTAL_FRAMES
+                            , KNNW_TOTAL_DURATION
+                            , spec_aug=False
+                            )
+
+    split_idx = int(cfg['train_test_split']*len(train_dataset))
+    idxs = np.arange(len(train_dataset))
     
     if cfg['random_sampling']:
         np.random.shuffle(idxs)
     
     train_idxs, val_idxs = idxs[:split_idx], idxs[split_idx:]
-    train_dataset = Subset(dataset, train_idxs)
-    val_dataset = Subset(dataset, val_idxs)
+    train_dataset = Subset(train_dataset, train_idxs)
+    val_dataset = Subset(val_dataset, val_idxs)
 
     if cfg['DEBUG']:
         train_dataset = val_dataset
