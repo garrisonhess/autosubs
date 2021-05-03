@@ -36,22 +36,22 @@ enc_h: [256]
 dec_h: [512]
 embed_dim: [256]
 attn_dim: [128]
-enc_dropout: [0.35]
-dec_dropout: [0.35]
+enc_dropout: [0.4]
+dec_dropout: [0.4]
 use_multihead: [False]
 nheads: [1]
 spec_augment: True
-freq_mask: 57
-time_mask: 37
+freq_mask: 47
+time_mask: 120
 encoder_arch: 
         - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
 
 # hyperparameters
-lr: [0.0005]
-weight_decay: [0.00001]
+lr: [0.001]
+weight_decay: [0.000005]
 gamma: [0.75]
 batch_size: [192]
-lr_step: [150]
+lr_step: [100]
 smooth_temp: 0.0
 train_test_split: 0.9
 random_sampling: True
@@ -62,7 +62,8 @@ random_sampling: True
 warmup_epochs: 0
 transfer_decoder: False
 transfer_full: True
-transfer_knnw: True
+transfer_knnw: False
+transfer_wsj: True
 freeze_encoder: False
 freeze_decoder: False
 warmup_zero_context: True
