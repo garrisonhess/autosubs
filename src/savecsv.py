@@ -15,7 +15,9 @@ subtitle_lookup.to_csv(newpath + "_comma.csv", index=False, quoting=csv.QUOTE_NO
 kenlm_data = subtitle_lookup
 sentences = []
 for sentence in kenlm_data['Text']:
-    sentences.append(sentence.replace('"', '') + " ")
+    clean_sentence = sentence.replace('"', '') + " "
+    print(clean_sentence)
+    sentences.append(clean_sentence)
 
 corpus_path = os.path.expanduser('~/autosubs/data/kenlm_knnw.txt')
 with open(corpus_path, "w") as outfile:
