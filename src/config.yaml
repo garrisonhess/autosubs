@@ -12,7 +12,7 @@ train_shuffle: True
 val_shuffle: False
 device: "cuda:0"
 run_inference: False
-input_dim: 129
+input_dim: 512
 update_freq: 24
 channels_last: False
 val_workers: 1
@@ -61,8 +61,8 @@ random_sampling: True
 # transfer learning configuration
 warmup_epochs: 0
 transfer_decoder: False
-transfer_full: True
-transfer_knnw: True #False
+transfer_full: False
+transfer_knnw: False #False
 transfer_wsj: False #True
 freeze_encoder: False
 freeze_decoder: False
@@ -97,4 +97,8 @@ plot_path: ~/autosubs/plots/
 knnw_audio_path: ~/autosubs/data/knnw_en.log_spectrogram.npy
 knnw_subtitle_path: ~/autosubs/data/knnw_en_sub_edit.csv
 knnw_subtitle_edit_path: ~/autosubs/data/knnw_en_sub_edit.csv
+knnw_subtitle_processed_path: ~/autosubs/data/processed.csv
+knnw_subtitle_wav2vec_processed_path: ~/autosubs/data/processed_comma.csv
+wav_folder: ~/autosubs/wav/
+vec2wav_npy: ~/autosubs/data/wav2vec.npy
 kenlm_path: "~/autosubs/data/kenlm_knnw.arpa"
