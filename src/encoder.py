@@ -10,7 +10,7 @@ class Encoder(nn.Module):
                 , arch):
         super(Encoder, self).__init__()
         layers = []
-        curr_feat_dim = cfg["input_dim"]
+        curr_feat_dim = input_dim
 
         for i, layer_type in enumerate(arch):
             next_layer = GLSTM(input_size=curr_feat_dim

@@ -15,23 +15,32 @@ def beam_to_string(path_tokens, letter_list, seq_len):
 
 def train_model(config, **kwargs):
 
-    # train_dataset =  KnnwAudioDataset(knnw_audio_path
-    #                         , knnw_subtitle_path
-    #                         , KNNW_TOTAL_FRAMES
-    #                         , KNNW_TOTAL_DURATION
-    #                         , spec_aug=cfg['spec_augment']
-    #                         , freq=cfg['freq_mask']
-    #                         , time=cfg['time_mask']
-    #                         )
 
-    # val_dataset = KnnwAudioDataset(knnw_audio_path
-    #                         , knnw_subtitle_path
-    #                         , KNNW_TOTAL_FRAMES
-    #                         , KNNW_TOTAL_DURATION
-    #                         , spec_aug=False
-    #                         )
-    train_dataset = Wav2vecProcessed(vec2wav_npy, knnw_subtitle_processed_path)
-    val_dataset = Wav2vecProcessed(vec2wav_npy, knnw_subtitle_processed_path)
+    if cfg['use_wav2vec']:
+        input_dim = 512
+        train_dataset = Wav2vecProcessed(vec2wav_npy, knnw_subtitle_processed_path)
+        val_dataset = Wav2vecProcessed(vec2wav_npy, knnw_subtitle_processed_path)
+    else:
+        input_dim = 129
+        train_dataset =  KnnwAudioDataset(knnw_audio_path
+                                , knnw_subtitle_path
+                                , KNNW_TOTAL_FRAMES
+                                , KNNW_TOTAL_DURATION
+                                , spec_aug=cfg['spec_augment']
+                                , freq=cfg['freq_mask']
+                                , time=cfg['time_mask']
+                                )
+
+        val_dataset = KnnwAudioDataset(knnw_audio_path
+                                , knnw_subtitle_path
+                                , KNNW_TOTAL_FRAMES
+                                , KNNW_TOTAL_DURATION
+                                , spec_aug=False
+                                , freq=0
+                                , time=0
+                                )
+    
+
 
     split_idx = int(cfg['train_test_split']*len(train_dataset))
     idxs = np.arange(len(train_dataset))
@@ -59,7 +68,7 @@ def train_model(config, **kwargs):
                             , shuffle=False
                             , collate_fn=pad_collate_fn)
 
-    model = Seq2Seq(input_dim=cfg['input_dim']
+    model = Seq2Seq(input_dim=input_dim
                     , vocab_size=len(LETTER_LIST)
                     , encoder_hidden_dim=config['enc_h']
                     , decoder_hidden_dim=config['dec_h']
@@ -77,8 +86,22 @@ def train_model(config, **kwargs):
 
     if cfg['transfer_knnw']:
         print("Transfer Learning from KNNW to KNNW")
-        knnw_ckpt = torch.load(knnw_ckpt_path)
-        model.load_state_dict(knnw_ckpt, strict=True)
+        if cfg['use_wav2vec']:
+            # when transferring from knnw dim 129 to wav2vec, ignore first layer
+            checkpoint = torch.load(knnw_ckpt_path)
+            transfer_keys = []
+            for key in checkpoint.keys():
+                if not key.startswith("encoder.encoder.0"):
+                    transfer_keys.append(key)
+            
+            transfer_state = dict()
+            for key in transfer_keys:
+                transfer_state[key] = checkpoint[key]
+            
+            model.load_state_dict(transfer_state, strict=False)
+        else:
+            knnw_ckpt = torch.load(knnw_ckpt_path)
+            model.load_state_dict(knnw_ckpt, strict=True)
     elif cfg['transfer_wsj']:
         if cfg['transfer_decoder']:
             print("Starting with decoder pretrained weights")
@@ -130,12 +153,12 @@ def train_model(config, **kwargs):
     decoder = CTCBeamDecoder(
         LETTER_LIST,
         model_path=kenlm_path,
-        alpha=0.05,
-        beta=0.01,
-        cutoff_top_n=40,
+        alpha=0.1,
+        beta=0.1,
+        cutoff_top_n=5,
         cutoff_prob=1.0,
-        beam_width=100,
-        num_processes=8,
+        beam_width=10,
+        num_processes=4,
         blank_id=letter2index["<EOS>"],
         log_probs_input=True
     )
@@ -283,13 +306,6 @@ def eval(model, val_loader, criterion, epoch, device, decoder):
         # outputs come out as (batch_size, max_target_length, classes)
         outputs, _, encoded_seq_lens = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
 
-        # outputs[outputs == 4] = 16
-        # print(f"inputs.size: {inputs.size()}")
-        # print(f"input_lengths: {input_lengths}")
-        # print(f"outputs: {outputs.size()}")
-        # print(outputs)
-        # print(f"encoded sequence lengths: {encoded_seq_lens}")
-        # exit()
         # beam search
         beam_results, beam_scores, timesteps, out_seq_len = decoder.decode(outputs, seq_lens=encoded_seq_lens)
         beam_output_paths = []
@@ -307,9 +323,6 @@ def eval(model, val_loader, criterion, epoch, device, decoder):
                 char_idx = int(torch.argmax(char_probs))
                 next_letter = index2letter[char_idx]
 
-                if next_letter == '<PAD>':
-                    print("FOUND PAD.... EXIT")
-                    exit()
                 if next_letter == '<EOS>' or next_letter == '<PAD>':
                     break
                 seq += next_letter
@@ -346,7 +359,7 @@ def eval(model, val_loader, criterion, epoch, device, decoder):
             for i in range(min(10, len(output_paths))):
                 print(f"TARGET {i}: {target_paths[i]}")
                 print(f"GREEDY {i}: {output_paths[i]}")
-                print(f"BEAM {i}: {beam_output_paths[i]}")
+                # print(f"BEAM {i}: {beam_output_paths[i]}")
         
         ctr += 1
 

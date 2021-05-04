@@ -12,7 +12,6 @@ train_shuffle: True
 val_shuffle: False
 device: "cuda:0"
 run_inference: False
-input_dim: 512
 update_freq: 24
 channels_last: False
 val_workers: 1
@@ -47,36 +46,35 @@ encoder_arch:
         - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
 
 # hyperparameters
-lr: [0.0005]
-weight_decay: [0.000005]
+lr: [0.001]
+weight_decay: [0.000001]
 gamma: [0.75]
 batch_size: [192]
-lr_step: [75]
+lr_step: [225]
 smooth_temp: 0.0
 train_test_split: 0.9
 random_sampling: True
 
-
-
 # transfer learning configuration
+use_wav2vec: True
 warmup_epochs: 0
 transfer_decoder: False
-transfer_full: False
-transfer_knnw: False #False
-transfer_wsj: False #True
+transfer_full: True
+transfer_knnw: True
+transfer_wsj: True
 freeze_encoder: False
 freeze_decoder: False
 warmup_zero_context: True
 decoder_ckpt_path: ~/autosubs/decoder_ckpts/decoder-2021-04-28-23-0617-epoch20-dist376-inner_0f2ed_00000.pth
-knnw_ckpt_path: ~/autosubs/full_ckpts/knnw-2021-05-02-23-3257-epoch62-dist26-inner_d0946_00000.pth
+knnw_ckpt_path: ~/autosubs/full_ckpts/knnw-2021-05-03-07-5841-epoch268-dist13-train_model_1110e_00000.pth
 wsj_ckpt_path: ~/autosubs/full_ckpts/final-kaggle-8pt86.pth
-
-
 
 # schedules
 tf_init: 0.90
-tf_drop_every: 25
+tf_drop_every: 125
 tf_drop: 0.05
+
+
 
 
 # PATHS
