@@ -2,7 +2,8 @@ from transformers import  Wav2Vec2Processor, Wav2Vec2ForCTC
 import librosa
 from setup import *
 from preprocess import *
-
+from datasets import load_dataset, load_metric, load_from_disk, dataset_dict
+from datasets import ClassLabel
 
 def spec_augment(X, max_freq_mask=57, max_time_mask=80, nfreq_masks=1, ntime_masks=1, max_time_pct=0.2):
 
@@ -223,7 +224,7 @@ def collate_test(batch):
 class Wav2vec2ExtractorDataset(Dataset):
     '''dataset that extract features from raw wav audio based on Wav2vec2 pretrained feature extracor'''
 
-    def __init__(self, subtitle_lookup_path, wav_dir, pretrained_chpt="facebook/wav2vec2-base-960h", num_proc=4, preprocess_batch_size=8):
+    def __init__(self, subtitle_lookup_path, wav_dir, wav2vec_checkpoint, pretrained_chpt="facebook/wav2vec2-base-960h", num_proc=4, preprocess_batch_size=8):
         """
         Args:
             subtitle_lookup_path (NOTE this file must be compatible with pd.read_csv())
@@ -238,28 +239,29 @@ class Wav2vec2ExtractorDataset(Dataset):
         self.wav_dir = wav_dir
         self.num_proc = num_proc
         self.preprocess_batch_size = preprocess_batch_size
-
         self.processor = Wav2Vec2Processor.from_pretrained(pretrained_chpt)
         self.feature_extractor = Wav2Vec2ForCTC.from_pretrained(pretrained_chpt).wav2vec2.feature_extractor
 
+        # self.knnw_prepared = dataset_dict.load_from_disk(wav2vec_checkpoint)
+        # self.knnw_prepared.save_to_disk(wavdir)
         self.knnw_prepared = self.setup_dataset()
 
     def __len__(self):
-        return len(self.subtitle_lookup)
+        return len(self.knnw_prepared["data"])
 
     def __getitem__(self, index):
         x = self.processor(
-            self.knnw_prepared['data'][index]["input_values"], 
+            self.knnw_prepared['data'][int(index)]["input_values"], 
             sampling_rate=16000, 
             return_tensors="pt").input_values
         
-        subtitle_item = torch.tensor(self.knnw_prepared['data'][index]["labels"], dtype=torch.long)
+        subtitle_item = torch.tensor(self.knnw_prepared['data'][int(index)]["labels"], dtype=torch.long)
         subtitle_item_length = len(subtitle_item)
 
         audio_item = self.feature_extractor(x).squeeze().T  # shape (seq_len, 512)
         audio_item_length = audio_item.shape[1]
 
-        return audio_item, audio_item_length, subtitle_item, subtitle_item_length
+        return audio_item.detach().numpy(), audio_item_length, subtitle_item, subtitle_item_length
     
     def setup_dataset(self):
         def remove_chars(batch):
@@ -308,11 +310,10 @@ class Wav2vec2ExtractorDataset(Dataset):
             ), f"Make sure all inputs have the same sampling rate of {self.processor.feature_extractor.sampling_rate}."
 
             batch["input_values"] = self.processor(batch["speech"], sampling_rate=batch["sampling_rate"][0]).input_values
-            with processor.as_target_processor():
+            with self.processor.as_target_processor():
                 batch["labels"] = batch["target_text"]
 
             return batch
-
         knnw = load_dataset('csv', data_files={'data': self.subtitle_lookup_path})
         knnw = knnw.map(remove_chars)
         knnw = knnw.map(speech_file_to_array_fn, remove_columns=knnw.column_names["data"], num_proc=self.num_proc)
@@ -324,3 +325,79 @@ class Wav2vec2ExtractorDataset(Dataset):
 
         return knnw
         
+
+
+class Wav2vecProcessed(torch.utils.data.Dataset):
+
+    def __init__(self, audio_path, subtitle_lookup_path):
+        self.audio = np.load(audio_path, allow_pickle=True)
+        self.subtitle_lookup = pd.read_table(subtitle_lookup_path, sep = ";", header=0)
+        self.length = len(self.subtitle_lookup)
+    
+    def __len__(self):
+        return self.length
+    
+    def __getitem__(self, i):
+        """getitem for Knnw
+        Args:
+            i (int): index
+        Returns:
+            [type]: [description]
+        """
+
+        # convert audio to tensor
+        audio_item = np.array(self.audio[i], dtype="float32")
+        audio_item = torch.tensor(audio_item, dtype=torch.float32)
+        audio_item_length = audio_item.shape[0]
+        # process subtitles
+        subtitle_item = self.subtitle_lookup.iloc[i, 3]
+        subtitle_item = knnw_process_string(subtitle_item)
+        subtitle_item = transform_letter_to_index(subtitle_item)
+        subtitle_item = torch.tensor(subtitle_item, dtype=torch.long)
+
+        return audio_item, audio_item_length, subtitle_item, len(subtitle_item)
+
+def Wav2Vec2Numpy():
+    w2 = Wav2vec2ExtractorDataset("../data/processed_comma.csv", '../wav/', None)
+    length = len(w2)
+    arr = []
+    print("length of w2", length)
+    for i in range(length):
+        audio_item, audio_item_length, subtitle_item, subtitle_item_length = w2.__getitem__(i)
+        if(i % 20 == 19):
+            print(i, "Audio_item.shape", audio_item.shape)
+            print(i, "np.array(audio_item, dtype=np.object).shape", np.array(audio_item, dtype=np.object).shape)
+            print(i, "Audio_item type", type(audio_item))
+        arr.append(np.array(audio_item, dtype=np.object))
+
+    arr = np.asarray(arr, dtype=np.object)
+    arr = np.save("../data/wav2vec.npy", arr, allow_pickle=True)
+    
+# Wav2Vec2Numpy()   
+
+# w2v = Wav2vecProcessed("../data/wav2vec.npy", "../data/processed.csv")
+# train_loader = DataLoader(dataset=w2v
+#                             , batch_size=2
+#                             , num_workers=2
+#                             , collate_fn=pad_collate_fn)
+# for i in train_loader:
+#     audio, subtitles, audio_lengths, subtitle_lengths = i
+#     print("audio", audio.shape)
+#     print("subtitles", subtitles.shape)
+#     print("audio_lengths", audio_lengths.shape)
+#     print("subtitle_lengths", subtitle_lengths.shape)
+
+# kn = KnnwAudioDataset(knnw_audio_path
+#                             , knnw_subtitle_path
+#                             , KNNW_TOTAL_FRAMES
+#                             , KNNW_TOTAL_DURATION
+#                             , spec_aug=cfg['spec_augment']
+#                             , freq=cfg['freq_mask']
+#                             , time=cfg['time_mask']
+#                             )
+# audio_item, audio_item_length, subtitle_item, subtitle_item_length = kn.__getitem__(0)
+# print("Audio_item", audio_item.shape)
+# print("audio_item_length", audio_item_length)
+# print("subtitle_item", subtitle_item)
+# print("subtitle_item_length", subtitle_item_length)
+
