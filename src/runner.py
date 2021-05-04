@@ -37,7 +37,7 @@ result = tune.run(run_or_experiment=tune.with_parameters(train_model, **cfg)
                 , num_samples=cfg['num_samples']
                 , resources_per_trial={'gpu': 1}
                 , config=search_space
-                , metric="eval_beam_dist"
+                , metric="eval_gr_dist"
                 , mode="min"
                 , scheduler=scheduler
                 , checkpoint_at_end=False

@@ -6,12 +6,6 @@ from decoder import Decoder
 from encoder import Encoder
 from layers import *
 from plots import plot_attention
-from ctcdecode import CTCBeamDecoder
-
-def beam_to_string(path_tokens, letter_list, seq_len):
-    return ''.join([letter_list[x] for x in path_tokens[:seq_len]])
-
-
 
 def train_model(config, **kwargs):
 
@@ -150,19 +144,6 @@ def train_model(config, **kwargs):
     model = model.to(device=device)
     lr_scheduler = StepLR(optimizer=optimizer, step_size=config['lr_step'], gamma=config['gamma'])
 
-    decoder = CTCBeamDecoder(
-        LETTER_LIST,
-        model_path=kenlm_path,
-        alpha=0.1,
-        beta=0.1,
-        cutoff_top_n=5,
-        cutoff_prob=1.0,
-        beam_width=10,
-        num_processes=4,
-        blank_id=letter2index["<EOS>"],
-        log_probs_input=True
-    )
-
     # Training Variables
     best_lev_dist = 1000000000
     last_ckpt_time = 0.0
@@ -186,13 +167,13 @@ def train_model(config, **kwargs):
                                                     , teacher_forcing
                                                     , scaler=None)
         
-        eval_gr_dist, eval_beam_dist = eval(model, val_loader, criterion, epoch, device, decoder)
+        eval_gr_dist = eval(model, val_loader, criterion, epoch, device)
 
         # Update Ray Tune
-        tune.report(train_loss=train_loss, eval_gr_dist=eval_gr_dist, eval_beam_dist=eval_beam_dist)
+        tune.report(train_loss=train_loss, eval_gr_dist=eval_gr_dist)
 
-        if min(eval_beam_dist, eval_gr_dist) <= best_lev_dist:
-            best_lev_dist = min(eval_gr_dist, eval_beam_dist)
+        if eval_gr_dist <= best_lev_dist:
+            best_lev_dist = eval_gr_dist
             best_model = copy.deepcopy(model.state_dict())
             curr_time = time.strftime("%Y-%m-%d-%H-%M%S")
             model_type = 'knnw'
@@ -282,13 +263,12 @@ def train(model, mode, config, train_loader, optimizer, criterion, lr_scheduler,
     return model, train_loss, teacher_forcing
 
 
-def eval(model, val_loader, criterion, epoch, device, decoder):
+def eval(model, val_loader, criterion, epoch, device):
 
     model.eval()
     torch.set_grad_enabled(False)
     running_loss = 0.
     running_lev_dist = 0.
-    running_beam_dist = 0.
     ctr = 0
     mode = 'val'
 
@@ -305,15 +285,6 @@ def eval(model, val_loader, criterion, epoch, device, decoder):
 
         # outputs come out as (batch_size, max_target_length, classes)
         outputs, _, encoded_seq_lens = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
-
-        # beam search
-        beam_results, beam_scores, timesteps, out_seq_len = decoder.decode(outputs, seq_lens=encoded_seq_lens)
-        beam_output_paths = []
-
-        for i, _ in enumerate(beam_results):
-            result = beam_to_string(beam_results[i][0], LETTER_LIST, out_seq_len[i][0])
-            beam_output_paths.append(result)
-        
 
         #  greedy search
         output_paths = []
@@ -349,27 +320,19 @@ def eval(model, val_loader, criterion, epoch, device, decoder):
         for out_path, targ_path in zip(output_paths, target_paths):
             dist += Levenshtein.distance(out_path, targ_path)
 
-        # accumulate levenshtein distance between each output and target
-        beam_dist = 0.0
-        for beam_path, targ_path in zip(beam_output_paths, target_paths):
-            beam_dist += Levenshtein.distance(beam_path, targ_path)
-
         assert(len(output_paths) == len(target_paths))
         if ctr < 3:
             for i in range(min(10, len(output_paths))):
                 print(f"TARGET {i}: {target_paths[i]}")
                 print(f"GREEDY {i}: {output_paths[i]}")
-                # print(f"BEAM {i}: {beam_output_paths[i]}")
         
         ctr += 1
 
         # update statistics
         running_lev_dist += dist
-        running_beam_dist += beam_dist
 
     # report statistics
     lev_dist = running_lev_dist / len(val_loader.dataset)
-    beam_lev_dist = running_beam_dist / len(val_loader.dataset)
 
-    return lev_dist, beam_lev_dist
+    return lev_dist
 
