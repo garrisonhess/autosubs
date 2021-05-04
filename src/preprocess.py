@@ -122,3 +122,4 @@ def knnw_process_string(text):
 
     return text
 
+# preprocess_wav('../data/knnw_en_mono.wav', '../data/processed_comma.csv', '../wav/')

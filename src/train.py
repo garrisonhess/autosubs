@@ -1,6 +1,6 @@
 from setup import *
 from preprocess import *
-from datasets import *
+from our_datasets import *
 from seq2seq import Seq2Seq
 from decoder import Decoder
 from encoder import Encoder
@@ -15,21 +15,23 @@ def beam_to_string(path_tokens, letter_list, seq_len):
 
 def train_model(config, **kwargs):
 
-    train_dataset = KnnwAudioDataset(knnw_audio_path
-                            , knnw_subtitle_path
-                            , KNNW_TOTAL_FRAMES
-                            , KNNW_TOTAL_DURATION
-                            , spec_aug=cfg['spec_augment']
-                            , freq=cfg['freq_mask']
-                            , time=cfg['time_mask']
-                            )
+    # train_dataset =  KnnwAudioDataset(knnw_audio_path
+    #                         , knnw_subtitle_path
+    #                         , KNNW_TOTAL_FRAMES
+    #                         , KNNW_TOTAL_DURATION
+    #                         , spec_aug=cfg['spec_augment']
+    #                         , freq=cfg['freq_mask']
+    #                         , time=cfg['time_mask']
+    #                         )
 
-    val_dataset = KnnwAudioDataset(knnw_audio_path
-                            , knnw_subtitle_path
-                            , KNNW_TOTAL_FRAMES
-                            , KNNW_TOTAL_DURATION
-                            , spec_aug=False
-                            )
+    # val_dataset = KnnwAudioDataset(knnw_audio_path
+    #                         , knnw_subtitle_path
+    #                         , KNNW_TOTAL_FRAMES
+    #                         , KNNW_TOTAL_DURATION
+    #                         , spec_aug=False
+    #                         )
+    train_dataset = Wav2vecProcessed(vec2wav_npy, knnw_subtitle_processed_path)
+    val_dataset = Wav2vecProcessed(vec2wav_npy, knnw_subtitle_processed_path)
 
     split_idx = int(cfg['train_test_split']*len(train_dataset))
     idxs = np.arange(len(train_dataset))
