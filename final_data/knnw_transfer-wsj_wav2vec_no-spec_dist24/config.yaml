@@ -1,0 +1,102 @@
+# DATASET NAME
+dataset: "KNNW" # or WSJ
+
+#### Configuration
+DEBUG: False
+threshold: 200 
+amp: False     # AMP helps w/ memory but causes gradient explosions
+experiment_name: exp
+num_workers: 6 
+pin_memory: True
+train_shuffle: True
+val_shuffle: False
+device: "cuda:0"
+run_inference: False
+update_freq: 24
+channels_last: False
+val_workers: 2
+val_batch_size: 64
+min_tf: 0.0
+grad_clip: 5.0
+
+# ray
+experiment_name: exp
+verbosity: 3
+
+# ASHA
+epochs: 5000
+grace_period: 5000
+reduction_factor: 2
+brackets: 1
+num_samples: 1
+
+# architectural parameters
+enc_h: [256]
+dec_h: [512]
+embed_dim: [256]
+attn_dim: [128]
+enc_dropout: [0.4]
+dec_dropout: [0.4]
+use_multihead: [False]
+nheads: [1]
+spec_augment: False
+freq_mask: 47
+time_mask: 47
+encoder_arch: 
+        - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
+
+# hyperparameters
+lr: [0.0005]
+weight_decay: [0.000005]
+gamma: [0.5]
+batch_size: [192]
+lr_step: [250]
+smooth_temp: 0.0
+train_test_split: 0.8
+random_sampling: True
+
+# transfer learning configuration
+use_wav2vec: True
+warmup_epochs: 0
+transfer_decoder: False
+transfer_full: True
+transfer_knnw: False
+transfer_wsj: True
+freeze_encoder: False
+freeze_decoder: False
+warmup_zero_context: True
+decoder_ckpt_path: ~/autosubs/decoder_ckpts/decoder-2021-04-28-23-0617-epoch20-dist376-inner_0f2ed_00000.pth
+knnw_ckpt_path: ~/autosubs/full_ckpts/knnw-2021-05-04-23-4335-epoch597-dist17-train_model_b5a42_00000.pth
+wsj_ckpt_path: ~/autosubs/full_ckpts/final-kaggle-8pt86.pth
+
+# schedules
+tf_init: 0.90
+tf_drop_every: 450
+tf_drop: 0.1
+
+
+
+
+# PATHS
+train_path: ~/autosubs/data/train.npy
+train_transcripts_path: ~/autosubs/data/train_transcripts.npy
+val_path: ~/autosubs/data/dev.npy
+val_transcripts_path: ~/autosubs/data/dev_transcripts.npy
+test_path: ~/autosubs/data/test.npy
+results_path: ~/autosubs/results/
+ray_results_dir: ~/autosubs/ray_logs/
+checkpoints_path: ~/autosubs/checkpoints/
+decoder_ckpt_dir: ~/autosubs/decoder_ckpts/
+debug_train_path: ~/autosubs/data/debug/train.npy
+debug_train_transcripts_path: ~/autosubs/data/debug/train_transcripts.npy
+debug_val_path: ~/autosubs/data/debug/dev.npy
+debug_val_transcripts_path: ~/autosubs/data/debug/dev_transcripts.npy
+plot_path: ~/autosubs/plots/
+knnw_audio_path: ~/autosubs/data/knnw_en.log_spectrogram.npy
+knnw_subtitle_path: ~/autosubs/data/knnw_en_sub_edit.csv
+knnw_subtitle_edit_path: ~/autosubs/data/knnw_en_sub_edit.csv
+knnw_subtitle_processed_path: ~/autosubs/data/processed.csv
+knnw_subtitle_wav2vec_processed_path: ~/autosubs/data/processed_comma.csv
+wav_folder: ~/autosubs/wav/
+vec2wav_npy: ~/autosubs/data/wav2vec.npy
+kenlm_path: "~/autosubs/data/kenlm_knnw.arpa"

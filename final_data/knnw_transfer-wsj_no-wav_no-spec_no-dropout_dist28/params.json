@@ -1,0 +1,25 @@
+{
+  "attn_dim": 128,
+  "batch_size": 192,
+  "dec_dropout": 0.0,
+  "dec_h": 512,
+  "embed_dim": 256,
+  "enc_dropout": 0.0,
+  "enc_h": 256,
+  "encoder_arch": [
+    "lstm",
+    "lstm",
+    "lstm",
+    "plstm",
+    "plstm",
+    "plstm",
+    "lstm"
+  ],
+  "gamma": 0.5,
+  "lr": 0.0005,
+  "lr_step": 250,
+  "nheads": 1,
+  "num_epochs": 5000,
+  "use_multihead": false,
+  "weight_decay": 5e-06
+}
