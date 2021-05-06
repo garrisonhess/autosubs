@@ -336,3 +336,78 @@ def eval(model, val_loader, criterion, epoch, device):
 
     return lev_dist
 
+
+
+
+global_results = []
+
+
+
+def inference(model, val_loader, criterion, epoch, device, outfile):
+
+    model.eval()
+    torch.set_grad_enabled(False)
+    running_loss = 0.
+    running_lev_dist = 0.
+    ctr = 0
+    mode = 'val'
+
+    for inputs, targets, input_lengths, target_lengths in val_loader:
+        assert(targets.size(0) == len(input_lengths))
+        assert(len(input_lengths) == len(target_lengths))
+        inputs = inputs.to(device, non_blocking=True)
+        targets = targets.to(device, non_blocking=True)
+        batch_size = inputs.size(0)
+        max_seq_len = inputs.size(1)
+        max_target_len = targets.size(1)
+        assert(max_seq_len == max(input_lengths))
+        assert(max_target_len == max(target_lengths))
+
+        # outputs come out as (batch_size, max_target_length, classes)
+        outputs, _, encoded_seq_lens = model(inputs=inputs, input_lengths=input_lengths, teacher_forcing=0.0, device=device, targets=targets, mode=mode)
+
+        #  greedy search
+        output_paths = []
+        for batch_idx, output in enumerate(outputs):
+            seq = ''
+            for seq_idx, char_probs in enumerate(output):
+                char_idx = int(torch.argmax(char_probs))
+                next_letter = index2letter[char_idx]
+
+                if next_letter == '<EOS>' or next_letter == '<PAD>':
+                    break
+                seq += next_letter
+            output_paths.append(seq)
+        
+
+        # build target string
+        target_paths = []
+        for batch_idx, target in enumerate(targets):
+            target_path = ""
+            curr_target_len = int(target_lengths[batch_idx])
+            curr_target = target[:curr_target_len]
+
+            for target_char_idx in curr_target:
+                next_letter = index2letter[int(target_char_idx)]
+                if next_letter == '<EOS>' or next_letter == '<PAD>':
+                    break
+                target_path += next_letter
+            
+            target_paths.append(target_path)
+        
+        # accumulate levenshtein distance between each output and target
+        dist = 0.0
+        for out_path, targ_path in zip(output_paths, target_paths):
+            curr_dist = Levenshtein.distance(out_path, targ_path)
+            out_line = out_path + ", " + targ_path + ", " + str(curr_dist) + "\n"
+            outfile.write(out_line)
+            dist += curr_dist
+
+        # update statistics
+        running_lev_dist += dist
+
+    # report statistics
+    lev_dist = running_lev_dist / len(val_loader.dataset)
+
+    return lev_dist
+

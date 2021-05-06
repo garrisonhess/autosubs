@@ -39,20 +39,21 @@ enc_dropout: [0.4]
 dec_dropout: [0.4]
 use_multihead: [False]
 nheads: [1]
+encoder_arch: 
+        - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
 spec_augment: True
 freq_mask: 47
 time_mask: 47
-encoder_arch: 
-        - [lstm, lstm, lstm, plstm, plstm, plstm, lstm]
+
 
 # hyperparameters
 lr: [0.0005]
 weight_decay: [0.000005]
 gamma: [0.5]
 batch_size: [192]
-lr_step: [250]
+lr_step: [100]
 smooth_temp: 0.0
-train_test_split: 0.8
+train_test_split: 0.9
 random_sampling: True
 
 # transfer learning configuration
@@ -60,7 +61,7 @@ use_wav2vec: False
 warmup_epochs: 0
 transfer_decoder: False
 transfer_full: True
-transfer_knnw: False
+transfer_knnw: True
 transfer_wsj: True
 freeze_encoder: False
 freeze_decoder: False
